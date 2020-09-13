@@ -1,9 +1,10 @@
-import React from "react";
-import {Navbar, Nav, Button, Form, FormControl,NavDropdown} from "react-bootstrap";
+import {React} from "react";
+import {Navbar, Nav, Container} from "react-bootstrap"; //, Button, Form, FormControl,NavDropdown
 import {Link} from "gatsby";
 
 const Label = ({siteTitle, menuLinks}) =>{
     return(
+      <Container>
         <Navbar bg="light" expand="lg" fixed="top">
   <Navbar.Brand href="#home">{siteTitle}</Navbar.Brand>
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -13,13 +14,13 @@ const Label = ({siteTitle, menuLinks}) =>{
     <Nav>
    <Link to="/" className="nav-link" activeClassName="active">Home</Link>
    <Link to="/page-2" className="nav-link" activeClassName="active">Page2</Link>
-      <NavDropdown title="Dropdown" id="basic-nav-dropdown">
+      {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">
         <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
         <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
         <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
         <NavDropdown.Divider />
         <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-      </NavDropdown>
+      </NavDropdown> */}
     </Nav>
     {/* <Form inline>
       <FormControl type="text" placeholder="Search" className="mr-sm-2" />
@@ -27,7 +28,8 @@ const Label = ({siteTitle, menuLinks}) =>{
     </Form> */}
   </Navbar.Collapse>
 </Navbar>
+</Container>
     );
 }
-
+// It is working
 export default Label;
