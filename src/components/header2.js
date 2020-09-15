@@ -7,15 +7,15 @@ const Label = ({siteTitle, menuLinks}) =>{
     return(
     <Container>
       <Row>
-      
         <Navbar expand="lg" fixed="top">
+          
          
-  <Navbar.Brand href="#home" className="text-light ml-2">{siteTitle}</Navbar.Brand>
+  <Navbar.Brand className="text-light ml-2 font-weight-bold"><Link to="/" style={{ textDecoration: 'none'}}> {siteTitle}</Link></Navbar.Brand>
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
   <Navbar.Collapse id="basic-navbar-nav">
     <Nav className="mr-auto">
         </Nav>
-    <Nav className="mr-3">
+    <Nav classname="mx-auto order-0">
     <NavDropdown title={  <span className="text-light font-weight-bold">Courses</span>} id="basic-nav-dropdown">
         <NavDropdown.Item href="#action/3.1">Course-1</NavDropdown.Item>
         <NavDropdown.Item href="#action/3.2">Course-2</NavDropdown.Item>
@@ -33,7 +33,11 @@ const Label = ({siteTitle, menuLinks}) =>{
       <Button variant="outline-success">Search</Button>
     </Form> */}
   </Navbar.Collapse>
+
 </Navbar>
+{/* <Nav className="ml-auto">
+        </Nav> */}
+
 </Row>
 </Container>
     );
