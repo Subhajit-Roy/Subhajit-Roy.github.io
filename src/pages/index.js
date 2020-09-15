@@ -15,6 +15,12 @@ const IndexPage = () => (
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       <Image />
     </div>
+    <p>This is just </p>
+    <br/>
+    <br/>
+    <br/>
+    <p>Plese just work please</p>
+    <p>I don't know </p>
     <Link to="/page-2/">Go to page 2</Link> <br />
     <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
   </Layout>
