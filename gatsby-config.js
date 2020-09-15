@@ -5,11 +5,11 @@ module.exports = {
     author: `Subho`,
     menuLinks:[
             {
-               name:'home',
+               name:'Home',
                link:'/'
             },
             {
-               name:'page2',
+               name:'Page-2',
                link:'/page-2'
             }
           ]
