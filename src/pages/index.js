@@ -2,23 +2,77 @@ import React, { Component } from "react"
 import { Link } from "gatsby"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Wave from 'react-wavify';
-
+import {Carousel} from "react-bootstrap"
 
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
-
+import ImageHead from "../components/image_head"
+import "./index.css"
 
 export default class IndexPage extends Component{
+  constructor() {
+    super();
+    this.state = {
+      width:  800,
+      height: 182
+    }
+  }
+
+  /**
+   * Calculate & Update state of new dimensions
+   */
+  updateDimensions() {
+    if(window.innerWidth < 500) {
+      this.setState({ width: 450, height: 102 });
+    } else {
+      let update_width  = window.innerWidth-100;
+      let update_height = Math.round(update_width/4.4);
+      this.setState({ width: update_width, height: update_height });
+    }
+  }
+
+  /**
+   * Add event listener
+   */
+  componentDidMount() {
+    this.updateDimensions();
+    window.addEventListener("resize", this.updateDimensions.bind(this));
+  }
+
+  /**
+   * Remove event listener
+   */
+  componentWillUnmount() {
+    window.removeEventListener("resize", this.updateDimensions.bind(this));
+  }
+
+
   render(){
     return(
       <Layout>
     <SEO title="Home" />
+    <div>
+    <Carousel>
+      <Carousel.Item>
+        <div className="image"><Image /></div>
+      </Carousel.Item>
+      <Carousel.Item>
+        <div className="image"><ImageHead /></div>
+      </Carousel.Item>
+    </Carousel></div>
+    <div
+        style={{
+          margin: `0 auto`,
+          maxWidth: 960,
+          padding: `0 1.0875rem 1.45rem`,
+        }}>
     <h1>Hi people</h1>
     <p>Welcome to your new Gatsby site.</p>
     <p>Now go build something great.</p>
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       <Image />
+      <ImageHead />
     </div>
     <p>This is just </p>
     <br/>
@@ -40,6 +94,7 @@ export default class IndexPage extends Component{
 </Wave>
     <Link to="/page-2/">Go to page 2</Link> <br />
     <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
+    </div>
   </Layout>
     );
   }
