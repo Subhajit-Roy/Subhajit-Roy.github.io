@@ -53,6 +53,8 @@ export default class IndexPage extends Component{
       <Layout>
     <SEO title="Home" />
     <div>
+    {/* <Wave mask="url(#mask)" fill="#1277b0"> */}
+      {/* <defs> */}
     <Carousel>
       <Carousel.Item>
         <div className="image"><Image /></div>
@@ -60,7 +62,18 @@ export default class IndexPage extends Component{
       <Carousel.Item>
         <div className="image"><ImageHead /></div>
       </Carousel.Item>
-    </Carousel></div>
+    </Carousel>
+    {/* <mask id="mask">
+      <rect x="0" y="0" width="2000" height="200" fill="url(#gradient)"  />
+    </mask> */}
+    {/* </defs> */}
+    {/* </Wave> */}
+    <Wave mask="url(#mask2)" fill="white" className="wave" options={{
+      height: 20,
+      amplitude: 100,
+      speed:0.2
+    }}/>
+    </div>
     <div
         style={{
           margin: `0 auto`,
@@ -71,8 +84,9 @@ export default class IndexPage extends Component{
     <p>Welcome to your new Gatsby site.</p>
     <p>Now go build something great.</p> */}
     <p><center><Button className="btn-grad align-self-center">Courses Offered</Button></center> </p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
+    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}> 
       <Image />
+      
       <ImageHead />
     </div>
     {/* <p>This is just </p>
@@ -100,36 +114,3 @@ export default class IndexPage extends Component{
     );
   }
 }
-// const IndexPage = () => (
-//   <Layout>
-//     <SEO title="Home" />
-//     <h1>Hi people</h1>
-//     <p>Welcome to your new Gatsby site.</p>
-//     <p>Now go build something great.</p>
-//     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-//       <Image />
-//     </div>
-//     <p>This is just </p>
-//     <br/>
-//     <br/>
-//     <br/>
-//     <p>Plese just work please</p>
-//     <p>I don't know </p>
-//     <Wave mask="url(#mask)" fill="#1277b0">
-//   <defs>
-//     <linearGradient id="gradient" gradientTransform="rotate(90)">
-//       <stop offset="0" stopColor="white" />
-//       <stop offset="0.5" stopColor="black" />
-//     </linearGradient>
-//     <p>This is wave</p>
-//     <mask id="mask">
-//       <rect x="0" y="0" width="2000" height="200" fill="url(#gradient)"  />
-//     </mask>
-//   </defs>
-// </Wave>
-//     <Link to="/page-2/">Go to page 2</Link> <br />
-//     <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
-//   </Layout>
-// )
-
-// export default IndexPage
