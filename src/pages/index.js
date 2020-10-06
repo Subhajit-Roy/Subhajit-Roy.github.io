@@ -2,7 +2,7 @@ import React, { Component } from "react"
 import { Link } from "gatsby"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Wave from 'react-wavify';
-import {Carousel} from "react-bootstrap"
+import {Button, Carousel} from "react-bootstrap"
 
 import Layout from "../components/layout"
 import Image from "../components/image"
@@ -67,19 +67,20 @@ export default class IndexPage extends Component{
           maxWidth: 960,
           padding: `0 1.0875rem 1.45rem`,
         }}>
-    <h1>Hi people</h1>
+    {/* <h1>Hi people</h1>
     <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
+    <p>Now go build something great.</p> */}
+    <p><center><Button className="btn-grad align-self-center">Courses Offered</Button></center> </p>
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       <Image />
       <ImageHead />
     </div>
-    <p>This is just </p>
+    {/* <p>This is just </p>
     <br/>
     <br/>
     <br/>
     <p>Plese just work please</p>
-    <p>I don't know </p>
+    <p>I don't know </p> */}
     <Wave mask="url(#mask)" fill="#1277b0">
   <defs>
     <linearGradient id="gradient" gradientTransform="rotate(90)">

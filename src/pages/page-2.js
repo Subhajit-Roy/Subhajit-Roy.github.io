@@ -21,7 +21,7 @@ const SecondPage = () => (
     <p><iframe title="youtube" 
         width="560" 
         height="315" 
-        src="https://www.youtube.com/embed/xbBr5b3-wSQ" 
+        src="https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ" 
         frameborder="0" 
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
         allowfullscreen="allowfullscreen"
