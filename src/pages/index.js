@@ -3,12 +3,26 @@ import { Link } from "gatsby"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Wave from 'react-wavify';
 import {Button, Carousel} from "react-bootstrap"
+import * as firebase from 'firebase';
 
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 import ImageHead from "../components/image_head"
 import "./index.css"
+
+var config ={
+  apiKey: "AIzaSyBng_25mFjggDCj3kkkBnMxn_utahT3W0Q",
+    authDomain: "edusite-cc257.firebaseapp.com",
+    databaseURL: "https://edusite-cc257.firebaseio.com",
+    projectId: "edusite-cc257",
+    storageBucket: "edusite-cc257.appspot.com",
+    messagingSenderId: "651286049339",
+    appId: "1:651286049339:web:52d48123d9481aa00be21e",
+    measurementId: "G-P4X2HGR51Z"
+
+};
+firebase.initializeApp(config);
 
 export default class IndexPage extends Component{
   constructor() {
