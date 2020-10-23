@@ -26,7 +26,6 @@ const Label = ({siteTitle, menuLinks}) =>{
      {menuLinks.map(item =>(
        <Link to={item.link} className="nav-link text-light pr-4 pl-4 font-weight-bold" activeClassName="active">{item.name}</Link>
      ))}
-      
     </Nav>
     {/* <Form inline>
       <FormControl type="text" placeholder="Search" className="mr-sm-2" />

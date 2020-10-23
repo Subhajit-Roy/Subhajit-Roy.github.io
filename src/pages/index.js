@@ -3,26 +3,15 @@ import { Link } from "gatsby"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Wave from 'react-wavify';
 import {Button, Carousel} from "react-bootstrap"
-import * as firebase from 'firebase';
 
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 import ImageHead from "../components/image_head"
 import "./index.css"
+import Signup from "../components/signup"
+//need to remove firebase ui
 
-var config ={
-  apiKey: "AIzaSyBng_25mFjggDCj3kkkBnMxn_utahT3W0Q",
-    authDomain: "edusite-cc257.firebaseapp.com",
-    databaseURL: "https://edusite-cc257.firebaseio.com",
-    projectId: "edusite-cc257",
-    storageBucket: "edusite-cc257.appspot.com",
-    messagingSenderId: "651286049339",
-    appId: "1:651286049339:web:52d48123d9481aa00be21e",
-    measurementId: "G-P4X2HGR51Z"
-
-};
-firebase.initializeApp(config);
 
 export default class IndexPage extends Component{
   constructor() {
@@ -60,6 +49,8 @@ export default class IndexPage extends Component{
   componentWillUnmount() {
     window.removeEventListener("resize", this.updateDimensions.bind(this));
   }
+
+  
 
 
   render(){
@@ -124,6 +115,7 @@ export default class IndexPage extends Component{
     <Link to="/page-2/">Go to page 2</Link> <br />
     <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
     </div>
+    <Signup />
   </Layout>
     );
   }
