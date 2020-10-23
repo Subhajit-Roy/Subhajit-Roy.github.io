@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import {Button} from "react-bootstrap";
-import { ThemeConsumer } from "react-bootstrap/esm/ThemeProvider";
 import firebase from "./fire";
+
+
 
 class Signup extends Component{
     constructor() {
@@ -10,7 +11,6 @@ class Signup extends Component{
             email: '',
             password: ''
         };
-        // this.handleClick = this.handleClick.bind(this);
       };
     handleChange = event => {
         this.setState({

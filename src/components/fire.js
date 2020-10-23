@@ -1,4 +1,6 @@
 import * as firebase from 'firebase';
+import fetch from "node-fetch";
+// const fetch = require('node-fetch');
 var config ={
     apiKey: "AIzaSyBng_25mFjggDCj3kkkBnMxn_utahT3W0Q",
       authDomain: "edusite-cc257.firebaseapp.com",
@@ -10,5 +12,8 @@ var config ={
       measurementId: "G-P4X2HGR51Z"
   
   };
-  firebase.initializeApp(config);
+  if (typeof window !== 'undefined') {
+    firebase.initializeApp(config);
+  }
+
   export default firebase;
