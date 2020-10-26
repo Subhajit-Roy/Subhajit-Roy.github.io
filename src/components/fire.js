@@ -1,5 +1,5 @@
 import * as firebase from 'firebase';
-import fetch from "node-fetch";
+// import fetch from "node-fetch";
 // const fetch = require('node-fetch');
 var config ={
     apiKey: "AIzaSyBng_25mFjggDCj3kkkBnMxn_utahT3W0Q",
@@ -10,7 +10,7 @@ var config ={
       messagingSenderId: "651286049339",
       appId: "1:651286049339:web:52d48123d9481aa00be21e",
       measurementId: "G-P4X2HGR51Z"
-  
+
   };
   if (typeof window !== 'undefined') {
     firebase.initializeApp(config);
