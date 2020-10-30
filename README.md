@@ -101,5 +101,6 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 - sudo apt install npm
 - sudo npm install -g gatsby-cli
 - Go to the project director and install all required npm package using   npm install
-- gatsby develop  > To run the project in development mode.
+- gatsby develop   To run the project in development mode.
 - Try using Atoms or VS code as they have github integration.
+- npm run deploy  To publish static pages on gh-pages node and the output will be displayed at subhajit-roy.github.io
