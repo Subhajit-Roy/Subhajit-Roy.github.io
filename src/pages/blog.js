@@ -14,12 +14,12 @@ const BlogPage = () => (
         }}>
   <Layout>
     <SEO title="Blog Page" />
-    
+
     <h1>This is blog page</h1>
     <p>It is working</p>
-        
+    <p><Link to="/blog/my-first-post">Test Blog </Link></p>
     <Link to="/">Go back to the homepage</Link>
-    
+
   </Layout>
   </div>
 )
