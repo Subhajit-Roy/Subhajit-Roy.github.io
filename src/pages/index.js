@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import { Link } from "gatsby"
+// import { Link } from "gatsby"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Wave from 'react-wavify';
 import {Button, Carousel} from "react-bootstrap"
@@ -88,18 +88,18 @@ export default class IndexPage extends Component{
     <p>Welcome to your new Gatsby site.</p>
     <p>Now go build something great.</p> */}
     <p><center><Button className="btn-grad align-self-center">Courses Offered</Button></center> </p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}> 
+    {/* <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}> 
       <Image />
       
       <ImageHead />
-    </div>
+    </div> */}
     {/* <p>This is just </p>
     <br/>
     <br/>
     <br/>
     <p>Plese just work please</p>
     <p>I don't know </p> */}
-    <Wave mask="url(#mask)" fill="#1277b0">
+    {/* <Wave mask="url(#mask)" fill="#1277b0">
   <defs>
     <linearGradient id="gradient" gradientTransform="rotate(90)">
       <stop offset="0" stopColor="white" />
@@ -110,9 +110,9 @@ export default class IndexPage extends Component{
       <rect x="0" y="0" width="2000" height="200" fill="url(#gradient)"  />
     </mask>
   </defs>
-</Wave>
-    <Link to="/page-2/">Go to page 2</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
+</Wave> */}
+    {/* <Link to="/page-2/">Go to page 2</Link> <br />
+    <Link to="/using-typescript/">Go to "Using TypeScript"</Link> */}
     </div>
   </Layout>
     );

@@ -3,7 +3,7 @@ import {Document, Page, pdfjs} from "react-pdf"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import gate from "../../public/pdf/gate.pdf"
+import gate from "../../public/pdf/GATE/Bio2020.pdf"
 import "./pdftest.css"
 import { Component } from "react"
 import {Button, h3} from "bootstrap-react"
@@ -75,7 +75,7 @@ export default class PdfTest extends Component{
           marginTop: '4em',
         }}>
         <Layout>
-            <SEO title="pdf Test" />           
+            <SEO title="GATE Biotechnology 2020" />           
 
             <div className="button" style={{display: "flex"}}>
                 <Button onClick={()=>this.prevPage()} className="prevButton mr-3">Previous  {this.state.pageNumber-1}</Button>

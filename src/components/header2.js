@@ -16,12 +16,16 @@ const Label = ({siteTitle, menuLinks}) =>{
     <Nav className="mr-auto">
         </Nav>
     <Nav classname="mx-auto order-0">
-    <NavDropdown title={  <span className="text-light font-weight-bold">Courses</span>} id="basic-nav-dropdown">
-        <NavDropdown.Item href="#action/3.1">Course-1</NavDropdown.Item>
-        <NavDropdown.Item href="#action/3.2">Course-2</NavDropdown.Item>
-        <NavDropdown.Item href="#action/3.3">Course-3</NavDropdown.Item>
-        <NavDropdown.Divider />
-        <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+    <NavDropdown title={  <span className="text-light font-weight-bold">Exam Analysis</span>} id="basic-nav-dropdown">
+        <NavDropdown.Item >GATE
+          <Link to="/pdf1" className="nav-link text-dark pr-4 pl-4 font-weight-bold" activeClassName="active">Biotechnology 2020 </Link>
+          <Link to="/pdf2" className="nav-link text-dark pr-4 pl-4 font-weight-bold" activeClassName="active">Biotechnology 2019 </Link>
+          <Link to="/pdf3" className="nav-link text-dark pr-4 pl-4 font-weight-bold" activeClassName="active">Biotechnology 2019 General Aptitude </Link>
+        </NavDropdown.Item>
+        {/* <NavDropdown.Item href="#action/3.2">Course-2</NavDropdown.Item> */}
+        {/* <NavDropdown.Item href="#action/3.3">Course-3</NavDropdown.Item> */}
+        {/* <NavDropdown.Divider /> */}
+        {/* <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item> */}
       </NavDropdown>
      {menuLinks.map(item =>(
        <Link to={item.link} className="nav-link text-light pr-4 pl-4 font-weight-bold" activeClassName="active">{item.name}</Link>
