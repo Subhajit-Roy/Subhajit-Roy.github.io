@@ -9,7 +9,6 @@ import Image from "../components/image"
 import SEO from "../components/seo"
 import ImageHead from "../components/image_head"
 import "./index.css"
-import Signup from "../components/signup"
 //need to remove firebase ui
 
 
@@ -115,7 +114,6 @@ export default class IndexPage extends Component{
     <Link to="/page-2/">Go to page 2</Link> <br />
     <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
     </div>
-    <Signup />
   </Layout>
     );
   }
