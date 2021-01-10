@@ -6,6 +6,7 @@ import SEO from "../components/seo"
 import gate from "../../public/pdf/gate.pdf"
 import "./pdftest.css"
 import { Component } from "react"
+import {Button, h3} from "bootstrap-react"
 
 
 pdfjs.GlobalWorkerOptions.workerSrc=`//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
@@ -70,25 +71,24 @@ export default class PdfTest extends Component{
         style={{
         //   margin: `0 auto`,
           maxWidth: 960,
-        //   padding: `0 1.0875rem 1.45rem`,
+          padding: `0 1.0875rem 1.45rem`,
           marginTop: '4em',
         }}>
         <Layout>
-            <SEO title="pdf Test" />
-            <h2> Hello </h2>
-            
+            <SEO title="pdf Test" />           
 
-            <div className="button">
-                <button onClick={()=>this.nextPage()}>Next</button>
-                <button onClick={()=>this.prevPage()}>Previous</button>
+            <div className="button" style={{display: "flex"}}>
+                <Button onClick={()=>this.prevPage()} className="prevButton mr-3">Previous  {this.state.pageNumber-1}</Button>
+                <h3>{this.state.pageNumber} of {this.state.maxPage}</h3>
+                <Button onClick={()=>this.nextPage()} className="nextButton ml-3" >Next   {this.state.pageNumber+1}</Button>    
             </div>
             <Document file={gate} onContextMenu={(e) => e.preventDefault()} className="pdf-document" onLoadSuccess={(pdf)=>this.onPDFLoad(pdf.numPages)} renderMode="canvas`">
                 <Page pageNumber={this.state.pageNumber} width={this.state.width}/>
             </Document>
+            <div style={{display:"flex"}}>
+                <Button onClick={()=>this.nextPage()} className="buttonLast"> <h2>Next</h2></Button>
+            </div>
         </Layout>
-    </div>
-    <div>
-    
     </div>
     </>
         );
