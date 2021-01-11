@@ -9,7 +9,7 @@ import Image from "../components/image"
 import SEO from "../components/seo"
 import ImageHead from "../components/image_head"
 import "./index.css"
-//need to remove firebase ui  
+//need to remove firebase ui
 
 
 export default class IndexPage extends Component{
