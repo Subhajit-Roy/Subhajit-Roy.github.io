@@ -9,7 +9,7 @@ import Image from "../components/image"
 import SEO from "../components/seo"
 import ImageHead from "../components/image_head"
 import "./index.css"
-//need to remove firebase ui
+//need to remove firebase ui  
 
 
 export default class IndexPage extends Component{
@@ -49,7 +49,7 @@ export default class IndexPage extends Component{
     window.removeEventListener("resize", this.updateDimensions.bind(this));
   }
 
-  
+
 
 
   render(){
@@ -88,9 +88,9 @@ export default class IndexPage extends Component{
     <p>Welcome to your new Gatsby site.</p>
     <p>Now go build something great.</p> */}
     <p><center><Button className="btn-grad align-self-center">Courses Offered</Button></center> </p>
-    {/* <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}> 
+    {/* <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       <Image />
-      
+
       <ImageHead />
     </div> */}
     {/* <p>This is just </p>
