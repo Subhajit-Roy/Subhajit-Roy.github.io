@@ -3,7 +3,7 @@ import {Document, Page, pdfjs} from "react-pdf"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import gate from "../../public/pdf/GATE/Bio2019B.pdf"
+import gate from "../../public/storage/pdf/GATE/Bio2019B.pdf"
 import "./pdftest.css"
 import { Component } from "react"
 import {Button, h3} from "bootstrap-react"
