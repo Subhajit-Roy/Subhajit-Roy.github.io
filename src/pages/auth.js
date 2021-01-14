@@ -61,28 +61,26 @@ export default function Auth(){
             <div style={{display: 'flex', alignItems: 'center', backgroundColor: "transparent", height: "100vh", paddingTop:"3%", paddingLeft:"3%", paddingBottom:"3%"}}>
                 <div style={{display: 'flex', backgroundColor: "white", height:"100%", width: "100%", borderRadius: "1.5%", padding: "3%", flexShrink:"20", justifyContent:"center", alignItems:"center", flexDirection:"column"}}>
                     <div style={{display:'flex', flexDirection:"column"}}>
-                        <h1 style={{paddingBottom:"5vh"}}>Login with your Email</h1>
-                        <h4>Email</h4>
+                        <h3 style={{paddingBottom:"5vh"}}>Login with your Email</h3>
+                        <h6>Email</h6>
                         <TextField label="Your E-mail*" onChange={(event)=>{setEmail(event.target.value)}}/>
-                        <p style={{paddingTop:"10%"}}><h4>Password</h4></p>
+                        <p style={{paddingTop:"10%"}}><h6>Password</h6></p>
                         <TextField label="Your Password*" onKeyDown={onEnter} type="password" style={{paddingBottom:"4vh"}} onChange={(event)=>{setPassword(event.target.value)}}/>
                         <div className={classes.submitButton}><Button variant="contained" color="primary" onClick={()=>{console.log("email is "+email); console.log("password is "+password)}}>Login</Button></div>
-                        <div style={{margin:"10%"}}><h4>Or use other gateway</h4></div>
+                        <div style={{margin:"10%"}}><h6>Or use other gateway</h6></div>
                         <Img fluid={data.image2.childImageSharp.fluid} style={{width: "10rem"}}/>
                     </div>
                 </div>
                 {/* <div style={{width:"12%"}}/> */}
                 <div className={classes.side}>
                     <div style={{display:"flex",height: "80vh", justifyContent:"center", alignItems:"center"}}><h1 style={{color:"white"}}></h1></div>
-                    <div style={{display: "flex",alignSelf: "flex-end",flexDirection:"row"}}><h5 style={{color:"white"}}>
+                    <div style={{display: "flex",alignSelf: "flex-end",flexDirection:"row"}}><h9 style={{color:"white"}}>
                             <a href="https://www.pexels.com/photo/hot-air-ballons-in-the-sky-2325446/">Background Image by Francesco Ungaro, from PEXELS</a>
-                        </h5>
+                        </h9>
                         </div>
                 </div>
-                             
+
             </div>
         </BackgroundImage>
     )
 }
-
-
