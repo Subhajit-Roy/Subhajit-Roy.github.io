@@ -1,12 +1,13 @@
 import React from "react"
-import {Document, Page, pdfjs} from "react-pdf"
-
+// import {Page,Document,pdfjs} from "react-pdf"
+import { Document,Page,pdfjs } from 'react-pdf/dist/esm/entry.webpack';
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-// import gate from "../../public/storage/pdf/GATE/Bio2020.pdf"
+import gate from "../../public/storage/pdf/GATE/Bio2020.pdf"
 import "./pdftest.css"
-import {Button, h3} from "bootstrap-react"
+import {Button} from "bootstrap-react"
 import { Component } from "react"
+
 
 pdfjs.GlobalWorkerOptions.workerSrc=`//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
@@ -72,7 +73,6 @@ export default class Pdf1 extends Component{
           height: 182,
           pageNumber: 1,
           maxPage: 30,
-          pdf: "",
         }
       }
     
@@ -128,7 +128,6 @@ export default class Pdf1 extends Component{
             }
 
       render(){
-          const {url}= this.props;
           return(
             <>
          <div
@@ -147,13 +146,12 @@ export default class Pdf1 extends Component{
                         <Button onClick={()=>this.nextPage()} className="nextButton ml-3" >Next   {this.state.pageNumber+1}</Button>    
                     </div>
                     <div style={{display: "flex"}}>
-                    <Document file={require('../../public/storage/pdf/GATE/Bio2020.pdf')} onContextMenu={(e) => e.preventDefault()} className="pdf-document" onLoadSuccess={(pdf)=>this.onPDFLoad(pdf.numPages)} renderMode="canvas`">
+                    <Document file={gate} onContextMenu={(e) => e.preventDefault()} className="pdf-document" onLoadSuccess={(pdf)=>this.onPDFLoad(pdf.numPages)} renderMode="canvas`">
                         <Page pageNumber={this.state.pageNumber} width={this.state.width}/>
                     </Document>
                     </div>
                     <div style={{display:"flex"}}>
                         <Button onClick={()=>this.nextPage()} className="buttonLast"> <h2>Next</h2></Button>
-                        <p>Url is {url}</p>
                     </div>
                 </Layout>
             </div>
