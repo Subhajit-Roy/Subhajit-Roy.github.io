@@ -8,7 +8,7 @@ import "./pdftest.css"
 import {Button, h3} from "bootstrap-react"
 import { Component } from "react"
 
-
+pdfjs.GlobalWorkerOptions.workerSrc=`//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 
 // export default function Pdf1(){
@@ -95,7 +95,6 @@ export default class Pdf1 extends Component{
        * Add event listener
        */
       componentDidMount() {
-        pdfjs.GlobalWorkerOptions.workerSrc=`//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
         this.updateDimensions();
         if (typeof window !== `undefined`) {
         window.addEventListener("resize", this.updateDimensions.bind(this));
