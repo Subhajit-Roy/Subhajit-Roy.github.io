@@ -6,6 +6,8 @@ import SocialLink from '../components/SocialLink';
 import { useScrollSection } from 'react-scroll-section';
 import MouseIcon from '../components/ScrollIcon';
 import Triangle from '../components/Triangle';
+import GitHubIcon from '@material-ui/icons/GitHub';
+import AccessAlarmsIcon from '@material-ui/icons/AccessAlarms';
 // import { useSiteQuery } from '../queries/useSiteQuery';
 
 const centerHorizontally = { marginRight: 'auto', marginLeft: 'auto' };
@@ -24,7 +26,7 @@ const LandingPage = () => {
         mb={[3, 4, 5]}
       >
         {/* {`Hello, I'm ${name}!`} */}
-        {`Hello, I'm !`}
+        {`Edusite, Subhajit !`}
       </Heading>
 
       <Heading
@@ -43,6 +45,9 @@ const LandingPage = () => {
                 {text}
               </Text>
             ))} */}
+          <Text>Welcome0</Text>
+          <Text>This is text 2</Text>
+          <Text>This is text 3</Text>
         </TextLoop>
       </Heading>
 
@@ -52,6 +57,10 @@ const LandingPage = () => {
             <SocialLink {...sl} />
           </Box>
         ))} */}
+        <Box mx={3} fontSize={[5,6,6]}>
+          <AccessAlarmsIcon style={{fontSize: 40, color: '7E45AD', marginRight: '10' }}/>
+          <GitHubIcon style={{fontSize: 40, color: '7E45AD'}} />
+        </Box>
       </Flex>
 
       <MouseIcon onClick={aboutSection.onClick} />

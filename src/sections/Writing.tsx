@@ -11,12 +11,15 @@ const Writing = () => {
 
   return (
     <Section.Container id="writing" Background={Background}>
-      <Section.Header name="Writing" icon="✍️" label="writing" />
+      <Section.Header name="Blogs" icon="✍️" label="writing" />
       <CardContainer minWidth="300px">
         <Fade direction="down" triggerOnce cascade damping={0.5}>
           {/* {posts.map((p) => (
             <Post {...p} key={p.url} />
           ))} */}
+          <Post title="Post 1"/>
+          <Post title ="Post 2"/>
+          <Post title = "Post 3"/>
         </Fade>
       </CardContainer>
     </Section.Container>

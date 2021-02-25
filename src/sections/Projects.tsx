@@ -11,13 +11,16 @@ const Projects = () => {
 
   return (
     <Section.Container id="projects" Background={Background}>
-      <Section.Header name="Projects" icon="💻" label="notebook" />
+      <Section.Header name="Courses" icon="💻" label="notebook" />
 
       <CardContainer minWidth="350px">
         <Fade direction="down" cascade damping={0.5} triggerOnce>
           {/* {projects.map((p, i) => (
             <Project {...p} key={i} />
           ))} */}
+          <Project name="Pro 1"/>
+          <Project name="Pro 2"/>
+          <Project name="Pro 3" />
         </Fade>
       </CardContainer>
     </Section.Container>

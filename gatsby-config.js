@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: "edusite",
+    siteUrl: "https://subhajit-roy.github.io",
   },
   plugins: [
     "gatsby-plugin-styled-components",
