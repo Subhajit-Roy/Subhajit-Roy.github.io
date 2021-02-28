@@ -5,26 +5,57 @@ import { CardContainer } from '../components/Card';
 import Triangle from '../components/Triangle';
 // import { useMediumQuery } from '../queries/useMediumQuery';
 import { Post } from '../components/Post';
+import { graphql, useStaticQuery } from 'gatsby';
 
-const Writing = () => {
+export default function Writing(){
   // const { posts } = useMediumQuery();
-
+  const data = useStaticQuery(graphql`
+  query MyQuery {
+    allMarkdownRemark {
+      totalCount
+      edges {
+        node {
+          frontmatter {
+            date
+            slug
+            title
+          }
+        }
+      }
+    }
+  }
+  `)
+  const points = data.allMarkdownRemark.edges
   return (
     <Section.Container id="writing" Background={Background}>
       <Section.Header name="Blogs" icon="✍️" label="writing" />
       <CardContainer minWidth="300px">
         <Fade direction="down" triggerOnce cascade damping={0.5}>
-          {/* {posts.map((p) => (
-            <Post {...p} key={p.url} />
-          ))} */}
-          <Post title="Post 1"/>
-          <Post title ="Post 2"/>
-          <Post title = "Post 3"/>
+            {points.map(edge => (
+              <Post title={edge.node.frontmatter.title} date={edge.node.frontmatter.date} url={edge.node.frontmatter.slug} time ="00"/>
+            ))}
         </Fade>
       </CardContainer>
     </Section.Container>
   );
 };
+
+// export const query = graphql`
+// query MyQuery {
+//   allMarkdownRemark {
+//     edges {
+//       node {
+//         frontmatter {
+//           date
+//           slug
+//           title
+//         }
+//       }
+//     }
+//   }
+// }
+// `
+
 
 const Background = () => (
   <>
@@ -51,4 +82,4 @@ const Background = () => (
   </>
 );
 
-export default Writing;
+// export default Writing;

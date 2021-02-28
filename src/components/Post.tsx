@@ -6,6 +6,7 @@ import { MediumAuthor, MediumPost as MediumPostType } from '../types';
 import { MEDIUM_URL } from '../utils/constants';
 import { Card } from './Card';
 import ImageLabel from './ImageLabel';
+import { Link } from 'gatsby';
 
 type PostProps = MediumPostType;
 
@@ -67,8 +68,8 @@ type PostContainerProps = {
 };
 
 const PostContainer = ({ url, title, children }: PostContainerProps) => (
-  <a
-    href={url}
+  <Link
+    to={url}
     target="__blank"
     title={title}
     style={{ textDecoration: 'none' }}
@@ -76,7 +77,7 @@ const PostContainer = ({ url, title, children }: PostContainerProps) => (
     <Card p={0} pb={4}>
       {children}
     </Card>
-  </a>
+  </Link>
 );
 
 const CoverImage = styled.img`
