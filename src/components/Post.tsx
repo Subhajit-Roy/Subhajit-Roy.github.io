@@ -10,6 +10,22 @@ import { Link } from 'gatsby';
 
 type PostProps = MediumPostType;
 
+// export function Post({ title, text, cover, url, date, time }: PostProps){
+//   <PostContainer url={url} title={title}>
+//     <EllipsisHeading m={3} color="text">
+//       {title}
+//     </EllipsisHeading>
+//     {cover && <CoverImage src={cover} height="200px" alt={title} />}
+//     <Text m={3} color="text">
+//       {text}
+//     </Text>
+//     <ImageLabel bg="primary" color="white" position="bottom-right" round>
+//       {`${date} - ${Math.ceil(time)} min`}
+//     </ImageLabel>
+//   </PostContainer>
+// }
+// export const 
+
 export const Post = ({ title, text, cover, url, date, time }: PostProps) => (
   <PostContainer url={url} title={title}>
     <EllipsisHeading m={3} color="text">

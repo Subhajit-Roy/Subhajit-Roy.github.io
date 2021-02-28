@@ -19,6 +19,10 @@ export default function Writing(){
             date
             slug
             title
+            date
+            img
+            description
+            time
           }
         }
       }
@@ -32,29 +36,13 @@ export default function Writing(){
       <CardContainer minWidth="300px">
         <Fade direction="down" triggerOnce cascade damping={0.5}>
             {points.map(edge => (
-              <Post title={edge.node.frontmatter.title} date={edge.node.frontmatter.date} url={edge.node.frontmatter.slug} time ="00"/>
+              <Post title={edge.node.frontmatter.title} date={edge.node.frontmatter.date} url={edge.node.frontmatter.slug} time ={edge.node.frontmatter.time} text={edge.node.frontmatter.description} cover={edge.node.frontmatter.img}/>
             ))}
         </Fade>
       </CardContainer>
     </Section.Container>
   );
 };
-
-// export const query = graphql`
-// query MyQuery {
-//   allMarkdownRemark {
-//     edges {
-//       node {
-//         frontmatter {
-//           date
-//           slug
-//           title
-//         }
-//       }
-//     }
-//   }
-// }
-// `
 
 
 const Background = () => (
