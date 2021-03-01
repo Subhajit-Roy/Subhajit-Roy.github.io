@@ -6,40 +6,28 @@ import { MediumAuthor, MediumPost as MediumPostType } from '../types';
 import { MEDIUM_URL } from '../utils/constants';
 import { Card } from './Card';
 import ImageLabel from './ImageLabel';
-import { Link } from 'gatsby';
+import { Link} from 'gatsby';
+import Img from "gatsby-image"
 
 type PostProps = MediumPostType;
 
-// export function Post({ title, text, cover, url, date, time }: PostProps){
-//   <PostContainer url={url} title={title}>
-//     <EllipsisHeading m={3} color="text">
-//       {title}
-//     </EllipsisHeading>
-//     {cover && <CoverImage src={cover} height="200px" alt={title} />}
-//     <Text m={3} color="text">
-//       {text}
-//     </Text>
-//     <ImageLabel bg="primary" color="white" position="bottom-right" round>
-//       {`${date} - ${Math.ceil(time)} min`}
-//     </ImageLabel>
-//   </PostContainer>
-// }
-// export const 
-
-export const Post = ({ title, text, cover, url, date, time }: PostProps) => (
+export function Post({ title, text, url, date, time, featuredImage}: PostProps){
+  return(
   <PostContainer url={url} title={title}>
-    <EllipsisHeading m={3} color="text">
-      {title}
-    </EllipsisHeading>
-    {cover && <CoverImage src={cover} height="200px" alt={title} />}
-    <Text m={3} color="text">
-      {text}
-    </Text>
-    <ImageLabel bg="primary" color="white" position="bottom-right" round>
-      {`${date} - ${Math.ceil(time)} min`}
-    </ImageLabel>
-  </PostContainer>
-);
+     <EllipsisHeading m={3} color="text">
+       {title}
+     </EllipsisHeading>
+     <Img fluid={featuredImage}/>
+
+     <Text m={3} color="text">
+       {text}
+     </Text>
+     <ImageLabel bg="primary" color="white" position="bottom-right" round>
+       {`${date} - ${Math.ceil(time)} min`}
+     </ImageLabel>
+   </PostContainer>
+  )
+}
 
 type MorePostsProps = {
   author: MediumAuthor;
@@ -96,10 +84,6 @@ const PostContainer = ({ url, title, children }: PostContainerProps) => (
   </Link>
 );
 
-const CoverImage = styled.img`
-  width: 100%;
-  object-fit: cover;
-`;
 
 const EllipsisHeading = styled(Heading)`
   overflow: hidden;

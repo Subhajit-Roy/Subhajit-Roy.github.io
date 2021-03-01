@@ -20,9 +20,15 @@ export default function Writing(){
             slug
             title
             date
-            img
             description
             time
+            featuredImage{
+              childImageSharp {
+                fluid(maxWidth: 200) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
           }
         }
       }
@@ -36,7 +42,7 @@ export default function Writing(){
       <CardContainer minWidth="300px">
         <Fade direction="down" triggerOnce cascade damping={0.5}>
             {points.map(edge => (
-              <Post title={edge.node.frontmatter.title} date={edge.node.frontmatter.date} url={edge.node.frontmatter.slug} time ={edge.node.frontmatter.time} text={edge.node.frontmatter.description} cover={edge.node.frontmatter.img}/>
+              <Post title={edge.node.frontmatter.title} date={edge.node.frontmatter.date} url={edge.node.frontmatter.slug} time ={edge.node.frontmatter.time} text={edge.node.frontmatter.description} featuredImage={edge.node.frontmatter.featuredImage.childImageSharp.fluid}/>
             ))}
         </Fade>
       </CardContainer>

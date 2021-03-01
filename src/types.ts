@@ -33,10 +33,10 @@ export type SocialLink = {
 export type MediumPost = {
   title: string;
   text: string;
-  cover: string;
   url: string;
   date: string;
   time: number;
+  featuredImage: File;
 };
 
 export type MediumAuthor = {
