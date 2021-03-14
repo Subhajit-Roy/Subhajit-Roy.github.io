@@ -15,5 +15,4 @@ var config ={
   if (typeof window !== 'undefined') {
     firebase.initializeApp(config);
   }
-
   export default firebase;
