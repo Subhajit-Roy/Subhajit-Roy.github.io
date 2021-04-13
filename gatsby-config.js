@@ -42,6 +42,14 @@ module.exports = {
       },
       __key: "blog",
     },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "mdx",
+        path: "./src/markdownJs/",
+      },
+      __key: "blog",
+    },
     `gatsby-transformer-remark`,
   ],
 }
