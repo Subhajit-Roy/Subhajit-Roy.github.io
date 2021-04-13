@@ -33,3 +33,21 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       })
     })
   }
+
+
+const fs = require("fs")
+const yaml = require("js-yaml")
+exports.createPages = ({ actions }) => {
+  const { createPage } = actions
+  const ymlDoc = yaml.load(fs.readFileSync("./src/Course/index.yaml", "utf-8"))
+  ymlDoc.forEach(element => {
+    createPage({
+      path: element.path,
+      component: require.resolve("./src/templates/basicTemplate.js"),
+      context: {
+        pageContent: element.content,
+        links: element.links,
+      },
+    })
+  })
+}
