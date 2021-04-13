@@ -1,3 +1,6 @@
+const fs = require("fs")
+const yaml = require("js-yaml")
+
 exports.createPages = async ({ actions, graphql, reporter }) => {
     const { createPage } = actions
     const blogPostTemplate = require.resolve(`./src/templates/blogTemplate.js`)
@@ -31,14 +34,8 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
           slug: node.frontmatter.slug,
         },
       })
-    })
-  }
-
-
-const fs = require("fs")
-const yaml = require("js-yaml")
-exports.createPages = ({ actions }) => {
-  const { createPage } = actions
+    });
+  // const { createPage } = actions
   const ymlDoc = yaml.load(fs.readFileSync("./src/Course/index.yaml", "utf-8"))
   ymlDoc.forEach(element => {
     createPage({
@@ -50,4 +47,4 @@ exports.createPages = ({ actions }) => {
       },
     })
   })
-}
+  }
