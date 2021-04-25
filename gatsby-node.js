@@ -41,10 +41,13 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     createPage({
       path: element.path,
       component: require.resolve("./src/templates/basicTemplate.js"),
-      context: {
-        pageContent: element.content,
-        links: element.links,
-      },
+      context:{
+        name: element.name
+      }
+      // context: {
+      //   pageContent: element.content,
+      //   links: element.links,
+      // },
     })
   })
   }
