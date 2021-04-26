@@ -46,9 +46,17 @@ module.exports = {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "mdx",
-        path: "./src/markdownJs/",
+        path: "./src/Course/mdx",
       },
-      __key: "blog",
+      __key: "mdx",
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "mdx",
+        path: "./src/images/",
+      },
+      __key: "images",
     },
     `gatsby-transformer-remark`,
   ],

@@ -49,5 +49,14 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       //   links: element.links,
       // },
     })
+     element.content.forEach(ele => {
+      createPage({
+        path: ele.path,
+        component: require.resolve("./src/templates/postTemplate.js"),
+        context: {
+          slug: ele.mdxpath
+        }
+      })
+    })
   })
   }
