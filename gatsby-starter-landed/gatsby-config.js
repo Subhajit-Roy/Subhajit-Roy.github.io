@@ -1,8 +1,8 @@
 module.exports = {
   //pathPrefix: `/mygatsby`,
   siteMetadata: {
-    title: 'Landed',
-    author: 'vasrush',
+    title: 'PLAS-5k',
+    author: 'Subhajit',
     description: 'A Gatsby.js V2 Starter based on Landed by HTML5 UP',
     menuLinks: [
       {
@@ -10,7 +10,11 @@ module.exports = {
         link: '/',
       },
       {
-        name: 'Layouts',
+        name:'Query',
+        link:'/query',
+      },
+      {
+        name: 'Others',
         link: '#',
         items: [
           {
@@ -50,12 +54,8 @@ module.exports = {
         ],
       },
       {
-        name: 'Elements',
-        link: '/elements',
-      },
-      {
         name: 'Sign Up',
-        link: '#',
+        link: '/auth',
         cl: 'button primary',
       },
     ],

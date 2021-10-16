@@ -12,7 +12,7 @@ class Home extends React.Component {
   render() {
     return (
       <Layout location="/">
-        <Helmet
+        {/* <Helmet
           htmlAttributes={{ lang: 'en' }}
           title="Gatsby Starter - Landed"
           meta={[
@@ -25,7 +25,7 @@ class Home extends React.Component {
         <Two />
         <Three />
         <Four />
-        <Five />
+        <Five /> */}
       </Layout>
     )
   }
