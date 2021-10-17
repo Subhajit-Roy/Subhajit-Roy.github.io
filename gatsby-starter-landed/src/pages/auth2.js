@@ -2,7 +2,7 @@ import { onAuthStateChanged } from '@firebase/auth';
 import { Button, Stack, TextField } from '@mui/material';
 import React, { useState } from 'react';
 import '../service/fire';
-import auth from '../service/fire';
+// import auth from '../service/fire';
 
 export function onSubmit(email,pass){
     console.log(email);
@@ -12,9 +12,9 @@ export function onSubmit(email,pass){
 export default function Auth(){
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
-    onAuthStateChanged(auth,user=>{
-        console.log("State Changed");
-    });
+    // onAuthStateChanged(auth,user=>{
+    //     console.log("State Changed");
+    // });
     return(
         <div className="contain">
             <Stack spacing={2} direction="column">
