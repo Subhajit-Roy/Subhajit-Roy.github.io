@@ -19,8 +19,7 @@ const Elements = props => (
         <header className="major">
           <h2>Elements</h2>
           <p>
-            Ipsum dolor feugiat aliquam tempus sed magna lorem consequat
-            accumsan
+            Hi Partho.
           </p>
         </header>
 
