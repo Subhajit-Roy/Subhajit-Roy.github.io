@@ -1,6 +1,7 @@
-import * as firebase from 'firebase';
+import * as firebase from 'firebase/app';
+import {getAuth} from 'firebase/auth';
 
-const firebaseConfig = {
+var config = {
     apiKey: "AIzaSyDbbvMpHagiUbg2pLkKTeth-nty3V8NlNY",
     authDomain: "plas-5k.firebaseapp.com",
     projectId: "plas-5k",
@@ -13,7 +14,7 @@ const firebaseConfig = {
 if (typeof window !== 'undefined') {
     firebase.initializeApp(config);
 }
-const app = initializeApp(firebaseConfig);
-export const analytics = getAnalytics(app);
+
+export const auth = getAuth(firebase);
 
 export default firebase;

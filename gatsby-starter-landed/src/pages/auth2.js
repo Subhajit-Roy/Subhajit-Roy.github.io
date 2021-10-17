@@ -1,9 +1,20 @@
+import { onAuthStateChanged } from '@firebase/auth';
 import { Button, Stack, TextField } from '@mui/material';
-import React, { useState } from 'react'
+import React, { useState } from 'react';
+import '../service/fire';
+import auth from '../service/fire';
+
+export function onSubmit(email,pass){
+    console.log(email);
+    console.log(pass);
+}
 
 export default function Auth(){
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
+    onAuthStateChanged(auth,user=>{
+        console.log("State Changed");
+    });
     return(
         <div className="contain">
             <Stack spacing={2} direction="column">
@@ -27,7 +38,9 @@ export default function Auth(){
           }}
           onChange={(event)=>{setPassword(event.target.value)}}
         />
-        <Button variant="contained">Submit</Button>
+        <Button variant="contained"
+            onClick={()=>{onSubmit(email,password)}}>
+            Submit</Button>
         </Stack>
         </div>
     );
