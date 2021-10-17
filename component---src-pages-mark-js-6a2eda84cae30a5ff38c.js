@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[11],{iY5c:function(n,p,w){"use strict";w.r(p);w("q1tI"),w("7ljp"),w("KAy6")}}]);
-//# sourceMappingURL=component---src-pages-mark-js-6a2eda84cae30a5ff38c.js.map
