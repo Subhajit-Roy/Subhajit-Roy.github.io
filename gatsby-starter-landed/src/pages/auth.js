@@ -24,7 +24,7 @@ const Elements = props => (
           </p>
         </header>
 
-        <section>
+        {/* <section>
           <h3>Text</h3>
           <p>
             This is <b>bold</b> and this is <strong>strong</strong>. This is{' '}
@@ -646,7 +646,7 @@ const Elements = props => (
             col morbi felis faucibus in gravida sollicitudin interdum commodo.
             Ante aliquam vis iaculis accumsan lorem ipsum dolor sit amet nullam.
           </p>
-        </section>
+        </section> */}
       </div>
     </div>
   </Layout>

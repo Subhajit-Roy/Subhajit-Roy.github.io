@@ -12,20 +12,20 @@ class Home extends React.Component {
   render() {
     return (
       <Layout location="/">
-        {/* <Helmet
+        <Helmet
           htmlAttributes={{ lang: 'en' }}
-          title="Gatsby Starter - Landed"
+          title="PLAS-5k-Home"
           meta={[
-            { name: 'description', content: 'Landed Gatsby Starter' },
+            { name: 'description', content: 'Home Page' },
             { name: 'keywords', content: 'sample, something' },
           ]}
         ></Helmet>
         <Banner />
         <One />
         <Two />
-        <Three />
-        <Four />
-        <Five /> */}
+        {/* <Three /> */}
+        {/* <Four /> */}
+        <Five />
       </Layout>
     )
   }

@@ -35,12 +35,12 @@ const Footer = props => (
       </li>
     </ul>
     <ul className="copyright">
-      <li>&copy; Untitled. All rights reserved.</li>
+      <li>&copy; devalab. All rights reserved.</li>
       <li>
-        Design: <a href="http://html5up.net">HTML5 UP</a>
+        Made with: <a href="https://www.gatsbyjs.com/">Gatsby JS</a>
       </li>
       <li>
-        Demo Images: <a href="https://unsplash.com">Unsplash</a>
+        Hosted on: <a href="https://guides.github.com/features/pages/">Github Pages</a>
       </li>
     </ul>
   </footer>
