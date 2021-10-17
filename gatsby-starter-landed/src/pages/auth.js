@@ -19,7 +19,7 @@ const Elements = props => (
         <header className="major">
           <h2>Elements</h2>
           <p>
-            Hi Partho.
+            Low Partho.
           </p>
         </header>
 
