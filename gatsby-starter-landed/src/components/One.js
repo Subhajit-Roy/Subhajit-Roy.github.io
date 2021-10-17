@@ -2,6 +2,7 @@ import React from 'react'
 import pic02 from '../assets/images/pic02.jpg'
 import { Link as ScrollLink } from 'react-scroll'
 import Fade from 'react-reveal/Fade'
+import { Link } from 'gatsby'
 
 const One = props => (
   <section
@@ -18,28 +19,25 @@ const One = props => (
           <div className="row">
             <div className="col-4 col-12-medium">
               <header>
-                <h2>Odio faucibus ipsum integer consequat</h2>
+                <h2>How to access the Database</h2>
                 <p>
-                  Nascetur eu nibh vestibulum amet gravida nascetur praesent
+                  PLAS-5k Database
                 </p>
               </header>
             </div>
             <div className="col-4 col-12-medium">
+              <h3>New User:</h3>
               <p>
-                Feugiat accumsan lorem eu ac lorem amet sed accumsan donec.
-                Blandit orci porttitor semper. Arcu phasellus tortor enim mi
-                nisi praesent dolor adipiscing. Integer mi sed nascetur cep
-                aliquet augue varius tempus lobortis porttitor accumsan
-                consequat adipiscing lorem dolor.
+                If your are a new user please go ahead and <Link to="/auth">sign up</Link> using your email and password or via 3rd party authenticator like Google, Facebook etc.
+                This is done to keep record of total client accessing our database and a higher number of access will help us getting funds.
+                Which in turn will enable us to continue the project.
               </p>
             </div>
             <div className="col-4 col-12-medium">
+              <h3>Old User:</h3>
               <p>
-                Morbi enim nascetur et placerat lorem sed iaculis neque ante
-                adipiscing adipiscing metus massa. Blandit orci porttitor
-                semper. Arcu phasellus tortor enim mi mi nisi praesent
-                adipiscing. Integer mi sed nascetur cep aliquet augue varius
-                tempus. Feugiat lorem ipsum dolor nullam.
+                If you are a returning member no need to create a new account and simply login in the <Link to="/auth">authentication</Link> page.
+                In case there are any error while signing up, no need to worry we will soon update the features for change of names.
               </p>
             </div>
           </div>

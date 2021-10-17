@@ -2,6 +2,7 @@ import React from 'react'
 import pic03 from '../assets/images/pic03.jpg'
 import { Link as ScrollLink } from 'react-scroll'
 import Fade from 'react-reveal/Fade'
+import { Link } from 'gatsby'
 
 const Two = props => (
   <section
@@ -15,20 +16,27 @@ const Two = props => (
     <Fade right big>
       <div className="content">
         <header>
-          <h2>Interdum amet non magna accumsan</h2>
-          <p>Nunc commodo accumsan eget id nisi eu col volutpat magna</p>
+          <h2>Advantages of the Dataset</h2>
+          {/* <p>Nunc commodo accumsan eget id nisi eu col volutpat magna</p> */}
         </header>
         <p>
-          Feugiat accumsan lorem eu ac lorem amet ac arcu phasellus tortor enim
-          mi mi nisi praesent adipiscing. Integer mi sed nascetur cep aliquet
-          augue varius tempus lobortis porttitor lorem et accumsan consequat
-          adipiscing lorem.
+          <ul>
+            <li>Probably the first database to be fully simulated with 5000 number of pdbids</li>
+            <li>Not only Binding Affinity value is present but also other energetic component like polar and non-polar interaction, 
+              Vander Wall's interaction, Electrostatic interactions.</li>
+            <li>Our results showed good statistical correlation with the experimental results.</li>
+            <li>We were approximately able to find the Binding Energy of the proteins-ligand complexes for which the experimental values
+              were unknown, thereby supplementing the exesting dataset.
+            </li>
+            
+
+          </ul>
         </p>
         <ul className="actions">
           <li>
-            <a href="/" className="button">
+            <Link href="/" className="button">
               Learn More
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
