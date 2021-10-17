@@ -1,5 +1,4 @@
-import * as firebase from 'firebase';
-import {getAuth} from 'firebase/auth';
+import * as firebase from 'firebase/app';
 
 var config = {
     apiKey: "AIzaSyDbbvMpHagiUbg2pLkKTeth-nty3V8NlNY",
@@ -12,7 +11,7 @@ var config = {
   };
 
 if (typeof window !== 'undefined') {
-    firebase.app().initializeApp(config);
+    firebase.initializeApp(config);
 }
 
 
