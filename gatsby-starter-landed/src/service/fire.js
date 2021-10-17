@@ -1,4 +1,4 @@
-import * as firebase from 'firebase/app';
+import * as firebase from 'firebase';
 import {getAuth} from 'firebase/auth';
 
 var config = {
@@ -12,7 +12,7 @@ var config = {
   };
 
 if (typeof window !== 'undefined') {
-    firebase.initializeApp(config);
+    firebase.app().initializeApp(config);
 }
 
 
