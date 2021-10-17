@@ -1,8 +1,7 @@
-import { onAuthStateChanged } from '@firebase/auth';
+import { getAuth, onAuthStateChanged } from '@firebase/auth';
 import { Button, Stack, TextField } from '@mui/material';
 import React, { useState } from 'react';
 import '../service/fire';
-// import auth from '../service/fire';
 
 export function onSubmit(email,pass){
     console.log(email);
@@ -12,9 +11,15 @@ export function onSubmit(email,pass){
 export default function Auth(){
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
-    // onAuthStateChanged(auth,user=>{
-    //     console.log("State Changed");
-    // });
+    const auth = getAuth();
+    onAuthStateChanged(auth,(user)=>{
+        if(user){
+            const uid = user.uid;
+            console.log(uid);
+        }else{
+            console.log("Logged Out");
+        }
+    });
     return(
         <div className="contain">
             <Stack spacing={2} direction="column">
