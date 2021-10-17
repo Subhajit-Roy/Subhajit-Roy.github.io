@@ -10,7 +10,7 @@ import pic08 from '../assets/images/pic08.jpg'
 const Elements = props => (
   <Layout>
     <Helmet>
-      <title>PLAS-5k: Authentication</title>
+      <title>Elements - Landed by HTML5 UP</title>
       <meta name="description" content="Elements Page" />
     </Helmet>
 
@@ -19,11 +19,12 @@ const Elements = props => (
         <header className="major">
           <h2>Elements</h2>
           <p>
-            Low Partho.
+            Ipsum dolor feugiat aliquam tempus sed magna lorem consequat
+            accumsan
           </p>
         </header>
 
-        {/* <section>
+        <section>
           <h3>Text</h3>
           <p>
             This is <b>bold</b> and this is <strong>strong</strong>. This is{' '}
@@ -645,7 +646,7 @@ const Elements = props => (
             col morbi felis faucibus in gravida sollicitudin interdum commodo.
             Ante aliquam vis iaculis accumsan lorem ipsum dolor sit amet nullam.
           </p>
-        </section> */}
+        </section>
       </div>
     </div>
   </Layout>
