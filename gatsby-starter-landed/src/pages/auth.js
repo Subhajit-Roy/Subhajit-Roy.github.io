@@ -1,15 +1,16 @@
-import { alpha, Grid, styled, Tab, Tabs, TextField, Typography } from '@material-ui/core'
+import { alpha, Grid, Icon, styled, Tab, Tabs, TextField, Typography } from '@material-ui/core'
 import { Box } from '@mui/system'
 import React from 'react'
 import { Helmet } from 'react-helmet'
 import Layout from '../components/layout'
 import PropTypes from 'prop-types';
-import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
+import pic from '../assets/images/g1.png';
 // import pic02 from '../assets/images/pic02.jpg'
 // import pic03 from '../assets/images/pic03.jpg'
 // import pic04 from '../assets/images/pic04.jpg'
 // import pic07 from '../assets/images/pic07.jpg'
 // import pic08 from '../assets/images/pic08.jpg'
+
 
 
 function TabPanel(props) {
@@ -38,13 +39,17 @@ const SubhoTextField = styled((props)=>(
 ))(({theme})=>({
   '& .MuiInputBase-root':{
     color: 'white',
-    borderColor: '#1C1D26'
+    borderColor: '#1C1D26',
+    border: 1,
+    justifyContent: 'center',
   },
   '& .MuiInput-root':{
+    border: 1,
     color:'white',
     borderColor: '#1C1D26'
   },
   '& MuiInputBase-input':{
+    border:1,
     color: 'white',
     borderColor: '#1C1D26'
   },
@@ -107,7 +112,7 @@ export default function Auth(props){
                   <TabPanel value={value} index={0}>
                     <Grid container spacing={2} justifyContent="center" alignItems="center" direction="column">
                       <Grid item xs="auto">
-                        <h3 style={{display: 'flex', justifyContent: 'center', alignItems: 'center', fontWeight: 'bolder'}}>Sign IN</h3>
+                        <h3 style={{display: 'flex', justifyContent: 'center', alignItems: 'center', fontWeight: 'bolder'}}>Log In</h3>
                       </Grid>
                       <Grid item>
                         <SubhoTextField className="Email" variant="standard" label="E-mail" onChange={()=>{}} noborder 
@@ -116,7 +121,7 @@ export default function Auth(props){
                         />
                       </Grid>
                       <Grid item>
-                        <SubhoTextField className="Password" varient="password" label="Password" onChange={()=>{}}
+                        <SubhoTextField className="Password" type="password" label="Password" onChange={()=>{}}
                         style={{fontDisplay: 'white', display: 'flex', justifyContent: 'center',}}
                         color="secondary" 
                         />
@@ -124,13 +129,65 @@ export default function Auth(props){
                       <Grid item>
                         <h4 style={{paddingTop: '3rem'}}>Third Party Authentication</h4>
                       </Grid>
-                      <Grid item>
+                      <Grid container spacing={2} justifyContent="center" alignItems="center" direction='row' alignContent="center">
+                        <Grid item xs="auto">
+                          <Icon fontSize="large">facebook_rounded</Icon>
+                        </Grid>
+
+                        {/* <Grid item xs="auto"> */}
+                          {/* <Icon fontSize="large">google_icon</Icon> */}
+                          {/* <img src={pic} style={{maxWidth: '50h'}}/> */}
+                        {/* </Grid> */}
+
 
                       </Grid>
                     </Grid>
                   </TabPanel>
                   <TabPanel value={value} index={1}>
-                    Item Two
+                  <Grid container spacing={2} justifyContent="center" alignItems="center" direction="column">
+                      <Grid item xs="auto">
+                        <h3 style={{display: 'flex', justifyContent: 'center', alignItems: 'center', fontWeight: 'bolder'}}>Sign Up</h3>
+                      </Grid>
+                      <Grid item>
+                        <SubhoTextField className="Email" variant="standard" label="E-mail" onChange={()=>{}} noborder 
+                        style={{fontDisplay: 'white', display: 'flex', justifyContent: 'center',}}
+                        color="secondary" 
+                        />
+                      </Grid>
+                      <Grid item>
+                        <SubhoTextField className="Name" variant="standard" label="Name" onChange={()=>{}} noborder 
+                        style={{fontDisplay: 'white', display: 'flex', justifyContent: 'center',}}
+                        color="secondary" 
+                        />
+                      </Grid>
+                      <Grid item>
+                        <SubhoTextField className="Username" variant="standard" label="Username" onChange={()=>{}} noborder 
+                        style={{fontDisplay: 'white', display: 'flex', justifyContent: 'center',}}
+                        color="secondary" 
+                        />
+                      </Grid>
+                      <Grid item>
+                        <SubhoTextField className="Password" type="password" label="Password" onChange={()=>{}}
+                        style={{fontDisplay: 'white', display: 'flex', justifyContent: 'center',}}
+                        color="secondary" 
+                        />
+                      </Grid>
+                      <Grid item>
+                        <h4 style={{paddingTop: '3rem'}}>Third Party Authentication</h4>
+                      </Grid>
+                      <Grid container spacing={2} justifyContent="center" alignItems="center" direction='row' alignContent="center">
+                        <Grid item xs="auto">
+                          <Icon fontSize="large">facebook_rounded</Icon>
+                        </Grid>
+
+                        {/* <Grid item xs="auto"> */}
+                          {/* <Icon fontSize="large">google_icon</Icon> */}
+                          {/* <img src={pic} style={{maxWidth: '50%'}}/> */}
+                        {/* </Grid> */} 
+
+
+                      </Grid>
+                    </Grid>
                   </TabPanel>
                 </Box>
               </Grid>

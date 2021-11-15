@@ -63,6 +63,22 @@ module.exports = {
   plugins: [
     'gatsby-plugin-react-helmet',
     {
+      resolve: `gatsby-plugin-google-fonts`,
+      options:{
+        fonts:[
+          `Material Icons`
+        ]
+      }
+    },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options:{
+        fonts:[
+          `Roboto`
+        ]
+      }
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: 'gatsby-starter-default',
