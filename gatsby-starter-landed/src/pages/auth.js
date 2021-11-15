@@ -1,9 +1,10 @@
-import { Grid, Tab, Tabs, Typography } from '@material-ui/core'
+import { alpha, Grid, styled, Tab, Tabs, TextField, Typography } from '@material-ui/core'
 import { Box } from '@mui/system'
 import React from 'react'
 import { Helmet } from 'react-helmet'
 import Layout from '../components/layout'
 import PropTypes from 'prop-types';
+import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
 // import pic02 from '../assets/images/pic02.jpg'
 // import pic03 from '../assets/images/pic03.jpg'
 // import pic04 from '../assets/images/pic04.jpg'
@@ -31,6 +32,34 @@ function TabPanel(props) {
   );
 }
 
+
+const SubhoTextField = styled((props)=>(
+  <TextField InputProps ={{disableUnderline: true}}{...props}/>
+))(({theme})=>({
+  '& .MuiInputBase-root':{
+    color: 'white',
+    borderColor: '#1C1D26'
+  },
+  '& .MuiInput-root':{
+    color:'white',
+    borderColor: '#1C1D26'
+  },
+  '& MuiInputBase-input':{
+    color: 'white',
+    borderColor: '#1C1D26'
+  },
+  '& .MuiInputLabel-root':{
+    color:'white',
+    borderColor: '#1C1D26'
+  },
+  '& ..MuiFormControl-root':{
+    borderColor: '#1C1D26'
+  }
+}))
+
+
+
+
 TabPanel.propTypes = {
   children: PropTypes.node,
   index: PropTypes.number.isRequired,
@@ -44,7 +73,9 @@ function a11yProps(index) {
   };
 }
 
+
 export default function Auth(props){
+  const {classes} = props;
   const [value, setValue] = React.useState(0);
 
   const handleChange = (event, newValue) => {
@@ -74,7 +105,29 @@ export default function Auth(props){
                     <Tab label="Sign Up" {...a11yProps(1)}/>
                   </Tabs>
                   <TabPanel value={value} index={0}>
-                    <h3 style={{}}>Sign IN</h3>
+                    <Grid container spacing={2} justifyContent="center" alignItems="center" direction="column">
+                      <Grid item xs="auto">
+                        <h3 style={{display: 'flex', justifyContent: 'center', alignItems: 'center', fontWeight: 'bolder'}}>Sign IN</h3>
+                      </Grid>
+                      <Grid item>
+                        <SubhoTextField className="Email" variant="standard" label="E-mail" onChange={()=>{}} noborder 
+                        style={{fontDisplay: 'white', display: 'flex', justifyContent: 'center',}}
+                        color="secondary" 
+                        />
+                      </Grid>
+                      <Grid item>
+                        <SubhoTextField className="Password" varient="password" label="Password" onChange={()=>{}}
+                        style={{fontDisplay: 'white', display: 'flex', justifyContent: 'center',}}
+                        color="secondary" 
+                        />
+                      </Grid>
+                      <Grid item>
+                        <h4 style={{paddingTop: '3rem'}}>Third Party Authentication</h4>
+                      </Grid>
+                      <Grid item>
+
+                      </Grid>
+                    </Grid>
                   </TabPanel>
                   <TabPanel value={value} index={1}>
                     Item Two
