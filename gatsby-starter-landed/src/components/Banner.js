@@ -26,7 +26,7 @@ const Banner = props => (
         </p>
       </header>
       <span className="image">
-        <img src={pic01} alt="intro" />
+        <img src={pic01} alt="intro"/>
       </span>
     </div>
     <ScrollLink

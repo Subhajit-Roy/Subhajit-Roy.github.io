@@ -4,8 +4,8 @@ import Layout from '../components/layout'
 import Banner from '../components/Banner'
 import One from '../components/One'
 import Two from '../components/Two'
-import Three from '../components/Three'
-import Four from '../components/Four'
+// import Three from '../components/Three'
+// import Four from '../components/Four'
 import Five from '../components/Five'
 
 class Home extends React.Component {
