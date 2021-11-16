@@ -28,7 +28,7 @@ const Elements = props => (
         </header>
         <section>
           <Grid container spacing={2} justifyContent="center" alignItems="center">
-            <Grid item xs='auto' md='auto'>
+            <Grid item xs='auto' md={6}>
             <Card sx={{ display: 'flex', maxWidth: 500, maxHeight: 500, borderRadius: '3%'}}>
               <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between',}}>
                 <CardContent sx={{ flex: '1 0 auto' }}>
