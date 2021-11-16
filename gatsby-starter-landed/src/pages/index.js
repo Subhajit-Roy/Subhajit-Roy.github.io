@@ -14,7 +14,7 @@ class Home extends React.Component {
       <Layout location="/">
         <Helmet
           htmlAttributes={{ lang: 'en' }}
-          title="PLAS-5k-Home"
+          title="PLAS: Home"
           meta={[
             { name: 'description', content: 'Home Page' },
             { name: 'keywords', content: 'sample, something' },

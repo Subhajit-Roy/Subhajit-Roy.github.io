@@ -18,10 +18,10 @@ const Banner = props => (
         borderRadius: 50,
       }} >
       <header>
-        <h2>PLAS-5k</h2>
+        <h2>PLAS</h2>
         <p>
-          5000 pdbids with their binding affinity and other data included.
-          <br />
+          Binding affinity and other interaction Energies like Electrostatic, Van Der Walls, <br/> Polar and Non-polar are also included.
+          <br /> <br/>
           All the datas were derived by using Molecular Dynamics Simulation.
         </p>
       </header>

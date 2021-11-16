@@ -16,7 +16,7 @@ const Two = props => (
     <Fade right big>
       <div className="content">
         <header>
-          <h2>Advantages of the Dataset</h2>
+          <h2>Advantages of the PLAS-5k Dataset</h2>
           {/* <p>Nunc commodo accumsan eget id nisi eu col volutpat magna</p> */}
         </header>
         <p>
