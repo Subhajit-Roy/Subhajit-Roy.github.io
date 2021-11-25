@@ -36,7 +36,7 @@ const Elements = props => (
                     Subhajit Roy ABCD
                   </Typography>
                   <Typography variant="subtitle1" color="text.secondary" component="div">
-                    Mac Miller
+                    CEBS
                   </Typography>
                 </CardContent>
               </Box>
@@ -61,7 +61,7 @@ const Elements = props => (
                     Subhajit Roy
                   </Typography>
                   <Typography variant="subtitle1" color="text.secondary" component="div">
-                    Mac Miller
+                    CEBS
                   </Typography>
                 </CardContent>
               </Box>
