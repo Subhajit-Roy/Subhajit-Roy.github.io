@@ -6,25 +6,49 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 import { Helmet } from "react-helmet"
 import { withPrefix } from "gatsby-link"
-import { Component, Stage } from "react-ngl"
+import { Stage, StructureComponent } from "react-ngl"
 import { Autocomplete, TextField } from "@mui/material"
 import finalData from '../database/5000_final.json'
 
 
 
-
 export default function IndexPage(){
-  const reprList = React.useMemo(()=>
-    [{
+  const reprList = React.useMemo(() => ({
+    'ball+stick': [{
+      type: 'ball+stick'
+    }],
+    cartoon: [{
       type: 'cartoon'
-    }],[]
-  );
+    }],
+    'ribbon and line': [{
+      type: 'ribbon',
+      param: {
+        color: 'atomindex'
+      }
+    }, {
+      type: 'line',
+      param: {
+        color: 'element'
+      }
+    }],
+    spacefill: [{
+      type: 'spacefill',
+      param: {
+        color: 'element'
+      }
+    }],
+    surface: [{
+      type: 'surface',
+      param: {
+        color: 'element'
+      }
+    }]
+  }), []);
   const cameraState = React.useMemo(()=>({
     Reset:{},
   }),[])
 
   const [inputValue, setInputValue] = React.useState('');
-  
   return(
     <Layout>
     <Seo title="Home" />
@@ -37,18 +61,23 @@ export default function IndexPage(){
       id="pdbid"
       options={finalData.map((option)=>option.pdbid)}
       sx={{ width: 300 }}
-      renderInput={(params) => <TextField {...params} label="PDB ID" />}
+      renderInput={(params) => <TextField {...params} label="PDB ID"  />}
       onInputChange={(event,newInputValue)=>{
         setInputValue(newInputValue)
       }}
     />
-    <Stage width="600px" height="600px" cameraState={cameraState}>
+    {/* <Stage width="600px" height="600px" cameraState={cameraState}>
       <Component path={"/pdb/"+inputValue+".pdb"} reprList={reprList}/>
-    </Stage>
+    </Stage> */}
     {
       inputValue !== '' 
-        ? <h1>{inputValue}</h1>
-        : <h1>This is blank.</h1>
+        ? <div>
+        <Stage width="600px" height="600px" cameraState={cameraState}>
+            <StructureComponent path={"/pdb/"+inputValue+".pdb"} reprList={reprList['ball+stick']} selection="Ligand"/>
+            <StructureComponent path={"/pdb/"+inputValue+".pdb"} reprList={reprList['cartoon']} selection="protein"/>
+          </Stage>
+          </div>
+        : <p></p>
     }
   </Layout>
   );
