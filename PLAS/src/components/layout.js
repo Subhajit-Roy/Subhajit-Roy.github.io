@@ -1,46 +1,49 @@
-import * as React from "react"
-import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
+import React from "react";
+import { StaticQuery, graphql } from 'gatsby'
+import '../assets/scss/main.scss'
+import Header from './Header'
+import Footer from './Footer'
 
-import Header from "./header"
-import "./layout.css"
-
-const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
+const Layout = ({ children, ...props }) => (
+  <StaticQuery
+    query={graphql`
+      query SiteTitleQuery2 {
+        site {
+          siteMetadata {
+            title
+            description
+            menuLinks {
+              name
+              link
+              cl
+              items {
+                link
+                name
+                items {
+                  link
+                  name
+                }
+              }
+            }
+          }
         }
       }
-    }
-  `)
-
-  return (
-    <>
-      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
-        <main>{children}</main>
-        <footer
-          style={{
-            marginTop: `2rem`,
-          }}
-        >
-          © {new Date().getFullYear()} devalab. Built by Subhajit
-        </footer>
-      </div>
-    </>
-  )
-}
-
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
-}
+    `}
+    render={data => (
+      <React.Fragment>
+        <div className={props.location == '/' ? 'landing' : ''}>
+          <div id="page-wrapper">
+            <Header
+              menuLinks={data.site.siteMetadata.menuLinks}
+              siteTitle={data.site.siteMetadata.title}
+            />
+            {children}
+            <Footer />
+          </div>
+        </div>
+      </React.Fragment>
+    )}
+  />
+)
 
 export default Layout

@@ -4,6 +4,61 @@ module.exports = {
     description: `PLAS-5k`,
     author: `@gatsbyjs`,
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    menuLinks:[
+      {
+        name: 'Home',
+        link: '/',
+      },
+      {
+        name: 'Others',
+        link: '#',
+        items: [
+          {
+            name: 'Left Sidebar',
+            link: '/left-sidebar',
+          },
+          {
+            name: 'Right Sidebar',
+            link: '/right-sidebar',
+          },
+          {
+            name: 'No Sidebar',
+            link: '/no-sidebar',
+          },
+          {
+            name: 'SubMenu',
+            link: '#',
+            items: [
+              {
+                name: 'Option 1',
+                link: '#',
+              },
+              {
+                name: 'Option 2',
+                link: '#',
+              },
+              {
+                name: 'Option 3',
+                link: '#',
+              },
+              {
+                name: 'Option 4',
+                link: '#',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        name:'Query',
+        link:'/query',
+      },
+      {
+        name: 'Sign Up',
+        link: '/auth',
+        cl: 'button primary',
+      },
+    ]
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -27,7 +82,7 @@ module.exports = {
         background_color: `#663399`,
         // This will impact how browsers show your PWA/website
         // https://css-tricks.com/meta-theme-color-and-trickery/
-        // theme_color: `#663399`,
+        theme_color: `#663399`,
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
