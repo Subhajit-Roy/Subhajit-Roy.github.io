@@ -65,6 +65,22 @@ module.exports = {
     `gatsby-plugin-image`,
     `gatsby-plugin-sass`,
     {
+      resolve: `gatsby-plugin-google-fonts`,
+      options:{
+        fonts:[
+          `Material Icons`
+        ]
+      }
+    },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options:{
+        fonts:[
+          `Roboto`
+        ]
+      }
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
