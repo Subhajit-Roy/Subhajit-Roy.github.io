@@ -62,20 +62,47 @@ export default function IndexPage(){
     <Layout>
     <Seo title="Home" />
     <Helmet>
-      <script src={withPrefix('ngl.js')} type="text/javascript"/>
-      <script src={withPrefix('script.js')} type="text/javascript"/>
+      {/* <script src={withPrefix('ngl.js')} type="text/javascript"/> */}
     </Helmet>
+    <div style={{}}>
     <Autocomplete
+      style={{paddingTop: '2rem'}}
       freeSolo
       id="pdbid"
       options={finalData.map((option)=>option.pdbid)}
       sx={{ width: 300 }}
-      renderInput={(params) => <TextField {...params} label="PDB ID"  />}
-      onInputChange={(event,newInputValue)=>{
+      renderInput={(params) => <TextField {...params} label="PDB ID" sx={{
+        '& .MuiInputBase-root':{
+          color: 'white',
+          borderColor: '#1C1D26',
+          justifyContent: 'center',
+        },
+        '& .MuiInput-root':{
+          border: 1,
+          color:'white',
+          borderColor: '#1C1D26'
+        },
+        '& MuiInputBase-input':{
+          color: 'white',
+        },
+        '& .MuiInputLabel-root':{
+          color:'white',
+        },
+        // '& ..MuiFormControl-root':{
+        //   borderColor: '#1C1D26'
+        // }
+      }}/>}
+      onChange={(event,newInputValue)=>{
         setInputValue(newInputValue);
         setIndex(finalData.findIndex(obj => obj.pdbid === newInputValue));
       }}
+      // sx={{
+      //   '& .MuiAutocomplete-input':{
+      //     backgroundColor:"white"
+      //   }
+      // }}
     />
+    </div>
     {/* <Stage width="600px" height="600px" cameraState={cameraState}>
       <Component path={"/pdb/"+inputValue+".pdb"} reprList={reprList}/>
     </Stage> */}

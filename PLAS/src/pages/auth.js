@@ -1,10 +1,13 @@
-import { Grid, Icon, styled, Tab, Tabs, TextField, Typography } from "@mui/material"
+import { Button, Grid, Icon, styled, Tab, Tabs, TextField, Typography } from "@mui/material"
 import { Box } from '@mui/system'
-import React from 'react'
+import React, { useState } from 'react'
 import { Helmet } from 'react-helmet'
 import Layout from '../components/layout'
 import PropTypes from 'prop-types';
-import pic from '../assets/images/g1.png';
+import config from "../service/fireconf"
+import { getAuth,createUserWithEmailAndPassword,signInWithEmailAndPassword,sendEmailVerification } from 'firebase/auth';
+import * as firebase from 'firebase/app';
+// import pic from '../assets/images/g1.png';
 // import pic02 from '../assets/images/pic02.jpg'
 // import pic03 from '../assets/images/pic03.jpg'
 // import pic04 from '../assets/images/pic04.jpg'
@@ -12,6 +15,9 @@ import pic from '../assets/images/g1.png';
 // import pic08 from '../assets/images/pic08.jpg'
 
 
+if (typeof window !== 'undefined') {
+  firebase.initializeApp(config);
+}
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -78,14 +84,55 @@ function a11yProps(index) {
   };
 }
 
+function LogIn(username,password){
+  const auth = getAuth();
+  signInWithEmailAndPassword(auth, username, password)
+  .then((userCredential) => {
+    const user = userCredential.user;
+    console.log(user);
+  })
+  .catch((error) => {
+    const errorCode = error.code;
+    const errorMessage = error.message;
+    console.log("Error:",errorMessage);
+  });
+}
+
+function SignUp(username,password){
+  // console.log("Username ",username)
+  // console.log("Password",password)
+  var auth = getAuth();
+  createUserWithEmailAndPassword(auth,username,password).then((user)=>{
+    console.log(user.user);
+    signInWithEmailAndPassword(auth, username, password).then((user)=>{
+      console.log("Signed In after sign Up");
+      sendEmailVerification(auth.currentUser).then(()=>{
+        console.log("Verification mail sent.")
+      })
+    })
+  }).catch((error)=>{
+    console.log("Error Code:",error.code);
+    console.log("Error Message:", error.message);
+  })
+
+}
 
 export default function Auth(props){
   const {classes} = props;
   const [value, setValue] = React.useState(0);
-
+  const [username,setUsername]= useState("")
+  const [password,setPassword]=useState("")
   const handleChange = (event, newValue) => {
     setValue(newValue);
-  };
+  }
+  // firebase.auth()
+  // const auth = () => getAuth(firebase);
+  //   var user = auth.currentUser;
+  //   if(user){
+  //       console.log(user.uid);
+  //   }else{
+  //       console.log("Logged Out");
+  //   }
   return(
     <Layout>
     <Helmet>
@@ -105,7 +152,7 @@ export default function Auth(props){
             <Grid container spacing={2} justifyContent="center" alignItems="center">
               <Grid item xs="auto">
                 <Box sx={{width: 'auto', bgcolor: 'background.paper'}}>
-                  <Tabs centered value={value} onChange={handleChange}>
+                  <Tabs centered value={value} onChange={handleChange} textColor="white">
                     <Tab label="Sign In" {...a11yProps(0)} />
                     <Tab label="Sign Up" {...a11yProps(1)}/>
                   </Tabs>
@@ -115,16 +162,26 @@ export default function Auth(props){
                         <h3 style={{display: 'flex', justifyContent: 'center', alignItems: 'center', fontWeight: 'bolder'}}>Log In</h3>
                       </Grid>
                       <Grid item>
-                        <SubhoTextField className="Email" variant="standard" label="E-mail" onChange={()=>{}} noborder 
+                        <SubhoTextField className="Email" variant="standard" label="E-mail" onChange={(user)=>{setUsername(user.target.value)}} noborder 
                         style={{fontDisplay: 'white', display: 'flex', justifyContent: 'center',}}
                         color="secondary" 
                         />
                       </Grid>
                       <Grid item>
-                        <SubhoTextField className="Password" type="password" label="Password" onChange={()=>{}}
+                        <SubhoTextField className="Password" type="password" label="Password" variant="standard" onChange={(user)=>{setPassword(user.target.value)}} noborder
                         style={{fontDisplay: 'white', display: 'flex', justifyContent: 'center',}}
                         color="secondary" 
                         />
+                      </Grid>
+                      <Grid item>
+                        <Grid container>
+                          <Grid item spacing={2}>
+                            <Button variant="contained" endIcon={<Icon>login</Icon>}>Sign IN</Button>
+                          </Grid>
+                          <Grid item spacing={2}>
+                            <Button varient ="Outlined" color="secondary" startIcon={<Icon color="primary">delet_forever</Icon>}>Reset</Button>
+                          </Grid>
+                        </Grid>
                       </Grid>
                       <Grid item>
                         <h4 style={{paddingTop: '3rem'}}>Third Party Authentication</h4>
@@ -149,28 +206,38 @@ export default function Auth(props){
                         <h3 style={{display: 'flex', justifyContent: 'center', alignItems: 'center', fontWeight: 'bolder'}}>Sign Up</h3>
                       </Grid>
                       <Grid item>
-                        <SubhoTextField className="Email" variant="standard" label="E-mail" onChange={()=>{}} noborder 
-                        style={{fontDisplay: 'white', display: 'flex', justifyContent: 'center',}}
-                        color="secondary" 
-                        />
-                      </Grid>
-                      <Grid item>
                         <SubhoTextField className="Name" variant="standard" label="Name" onChange={()=>{}} noborder 
                         style={{fontDisplay: 'white', display: 'flex', justifyContent: 'center',}}
                         color="secondary" 
                         />
                       </Grid>
                       <Grid item>
-                        <SubhoTextField className="Username" variant="standard" label="Username" onChange={()=>{}} noborder 
+                        <SubhoTextField className="University" variant="standard" label="University" onChange={()=>{}} noborder 
                         style={{fontDisplay: 'white', display: 'flex', justifyContent: 'center',}}
                         color="secondary" 
                         />
                       </Grid>
                       <Grid item>
-                        <SubhoTextField className="Password" type="password" label="Password" onChange={()=>{}}
+                        <SubhoTextField className="Email" variant="standard" label="E-mail" onChange={(user)=>{setUsername(user.target.value)}} noborder 
                         style={{fontDisplay: 'white', display: 'flex', justifyContent: 'center',}}
                         color="secondary" 
                         />
+                      </Grid>
+                      <Grid item>
+                        <SubhoTextField className="Password" type="password" label="Password" onChange={(user)=>{setPassword(user.target.value)}}
+                        style={{fontDisplay: 'white', display: 'flex', justifyContent: 'center',}}
+                        color="secondary" variant="standard"
+                        />
+                      </Grid>
+                      <Grid item>
+                        <Grid container>
+                          <Grid item spacing={2}>
+                            <Button variant="contained" endIcon={<Icon>login</Icon>} onClick={()=>{SignUp(username,password)}}>Sign UP</Button>
+                          </Grid>
+                          <Grid item spacing={2}>
+                            <Button varient ="Outlined" color="secondary" startIcon={<Icon color="primary">delet_forever</Icon>}>Reset</Button>
+                          </Grid>
+                        </Grid>
                       </Grid>
                       <Grid item>
                         <h4 style={{paddingTop: '3rem'}}>Third Party Authentication</h4>
