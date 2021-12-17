@@ -10,20 +10,24 @@ module.exports = {
         link: '/',
       },
       {
+        name:'Query',
+        link:'/query',
+      },
+      {
         name: 'Others',
         link: '#',
         items: [
           {
-            name: 'Left Sidebar',
-            link: '/left-sidebar',
+            name: 'PDB Viewer',
+            link: '/viewer',
           },
           {
-            name: 'Right Sidebar',
-            link: '/right-sidebar',
+            name: 'Contributors',
+            link: '/contributors',
           },
           {
-            name: 'No Sidebar',
-            link: '/no-sidebar',
+            name: 'Terms and Condition',
+            link: '/tc',
           },
           {
             name: 'SubMenu',
@@ -48,10 +52,6 @@ module.exports = {
             ],
           },
         ],
-      },
-      {
-        name:'Query',
-        link:'/query',
       },
       {
         name: 'Sign Up',
