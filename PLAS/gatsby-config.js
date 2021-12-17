@@ -10,10 +10,6 @@ module.exports = {
         link: '/',
       },
       {
-        name:'Query',
-        link:'/query',
-      },
-      {
         name: 'Others',
         link: '#',
         items: [
@@ -52,6 +48,10 @@ module.exports = {
             ],
           },
         ],
+      },
+      {
+        name:'Query',
+        link:'/query',
       },
       {
         name: 'Sign Up',
