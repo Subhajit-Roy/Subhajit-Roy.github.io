@@ -20,7 +20,7 @@ const Banner = props => (
       <header>
         <h2>PLAS</h2>
         <p>
-          Binding affinity and other interaction Energies like Electrostatic, Van Der Walls, <br/> Polar and Non-polar are also included.
+          Binding affinity and other interaction Energies like Electrostatic, van Der Waals, <br/> Polar and Non-polar are also included.
           <br /> <br/>
           All the datas were derived by using Molecular Dynamics Simulation.
         </p>

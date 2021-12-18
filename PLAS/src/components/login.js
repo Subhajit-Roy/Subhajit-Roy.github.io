@@ -2,13 +2,18 @@ import { Button, Grid, Icon, styled, Tab, Tabs, TextField, Typography } from "@m
 import { Box } from '@mui/system'
 import React, { useState } from 'react'
 import { Helmet } from 'react-helmet'
-import Layout from '../components/layout'
 import PropTypes from 'prop-types';
 import config from "../service/fireconf"
 import { getAuth,createUserWithEmailAndPassword,signInWithEmailAndPassword,sendEmailVerification } from 'firebase/auth';
 import * as firebase from 'firebase/app';
+import { navigate } from "gatsby"
 
 
+const auth = getAuth();
+const user = auth.currentUser;
+if(user){
+    navigate('/app/profile')
+}   
 
 if (typeof window !== 'undefined') {
   firebase.initializeApp(config);
@@ -85,11 +90,13 @@ function LogIn(username,password){
   .then((userCredential) => {
     const user = userCredential.user;
     console.log(user);
+    navigate("/app/profile")
   })
   .catch((error) => {
     const errorCode = error.code;
     const errorMessage = error.message;
     console.log("Error:",errorMessage);
+    alert("Error:",errorMessage);
   });
 }
 
@@ -102,17 +109,25 @@ function SignUp(username,password){
     signInWithEmailAndPassword(auth, username, password).then((user)=>{
       console.log("Signed In after sign Up");
       sendEmailVerification(auth.currentUser).then(()=>{
-        console.log("Verification mail sent.")
+        console.log("Verification mail sent.");
+        alert("Please verify your email by clicking the verification mail sent to your inbox");
+        navigate("/app/profile")
       })
     })
   }).catch((error)=>{
     console.log("Error Code:",error.code);
     console.log("Error Message:", error.message);
+    alert("Error",error.message)
   })
 
 }
 
 export default function Auth(props){
+    const auth = getAuth();
+    const user = auth.currentUser;
+    if(user){
+        navigate('/app/profile')
+    }
   const {classes} = props;
   const [value, setValue] = React.useState(0);
   const [username,setUsername]= useState("")
@@ -129,7 +144,7 @@ export default function Auth(props){
   //       console.log("Logged Out");
   //   }
   return(
-    <Layout>
+    <>
     <Helmet>
       <title>PLAS: Authentication</title>
       <meta name="description" content="Elements Page" />
@@ -260,7 +275,7 @@ export default function Auth(props){
         </section>
       </div>
     </div>
-  </Layout>
+  </>
   );
 }
 

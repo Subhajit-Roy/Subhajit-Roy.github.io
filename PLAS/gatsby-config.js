@@ -54,8 +54,8 @@ module.exports = {
         link:'/query',
       },
       {
-        name: 'Sign Up',
-        link: '/auth',
+        name: 'Profile',
+        link: '/app/profile',
         cl: 'button primary',
       },
     ]

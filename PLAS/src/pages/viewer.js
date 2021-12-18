@@ -132,7 +132,7 @@ export default function IndexPage(){
               <h4><b>Binding Affinity:</b> {finalData[index]['di4_DELTA TOTAL_mean']}</h4>
             </Grid>
             <Grid item xs={2}>
-              <h4><b>Van der Walls Interaction Energy:</b> {finalData[index]['VDW']}</h4>
+              <h4><b>van der Waals Interaction Energy:</b> {finalData[index]['VDW']}</h4>
             </Grid>
             <Grid item xs="auto">
               <h4><b>Electrostatic Interaction Energy</b> {finalData[index]['di4_EEL_mean']}</h4>
