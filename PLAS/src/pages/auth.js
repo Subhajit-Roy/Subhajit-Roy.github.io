@@ -89,7 +89,7 @@ function LogIn(username,password){
       navigate('/profile')
     })
     .catch((error) => {
-      const errorCode = error.code;
+      // const errorCode = error.code;
       const errorMessage = error.message;
       console.log("Error:",errorMessage);
     });
@@ -122,7 +122,7 @@ function SignUp(username,password,name,uni){
 }
 
 export default function Auth(props){
-  const {classes} = props;
+  // const {classes} = props;
   const [value, setValue] = React.useState(0);
   const [username,setUsername]= useState("");
   const [password,setPassword]=useState("");

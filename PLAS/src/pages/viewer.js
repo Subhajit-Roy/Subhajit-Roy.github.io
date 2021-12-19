@@ -5,13 +5,29 @@ import * as React from "react"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import { Helmet } from "react-helmet"
-import { withPrefix } from "gatsby-link"
 import { Stage, StructureComponent } from "react-ngl"
 import { Autocomplete, Checkbox, Grid, TextField } from "@mui/material"
 import finalData from '../database/5000_final.json'
-
+import { initializeApp } from 'firebase/app';
+import { getAuth, onAuthStateChanged } from "firebase/auth";
+import { navigate } from "gatsby"
+import { useEffect} from "react";
+import config from "../service/fireconf"
 
 export default function IndexPage(){
+  useEffect(()=>{
+    if(typeof window !== 'undefined'){
+        const app =initializeApp(config);
+        const auth = getAuth(app);
+        onAuthStateChanged(auth, (user)=>{
+            if(!user){
+                navigate("/auth")
+            }else{
+                console.log(user.email);
+            }
+        })
+    }
+})
   const reprList = React.useMemo(() => ({
     'ball+stick': [{
       type: 'ball+stick',
