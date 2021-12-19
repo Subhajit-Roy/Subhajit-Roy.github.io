@@ -55,7 +55,7 @@ module.exports = {
       },
       {
         name: 'Profile',
-        link: '/app/profile',
+        link: '/profile',
         cl: 'button primary',
       },
     ]

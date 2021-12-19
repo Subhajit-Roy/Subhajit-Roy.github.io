@@ -12,10 +12,13 @@ if (typeof window !== 'undefined') {
   }
 
 export default function PrivateRoute({component:Component,location, ...rest}){
+    if (typeof window !== 'undefined') {
+        firebase.initializeApp(config);
+      }
     const auth = getAuth();
     const user = auth.currentUser;
     if(!user && location.pathname !=='/app/login'){
-        navigate("/app/login")
+        navigate('/app/login')
         return null
     }
     return <Component {...rest}/>

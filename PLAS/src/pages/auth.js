@@ -1,17 +1,17 @@
 import { Button, Grid, Icon, styled, Tab, Tabs, TextField, Typography } from "@mui/material"
 import { Box } from '@mui/system'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Helmet } from 'react-helmet'
 import Layout from '../components/layout'
 import PropTypes from 'prop-types';
 import config from "../service/fireconf"
-import { getAuth,createUserWithEmailAndPassword,signInWithEmailAndPassword,sendEmailVerification } from 'firebase/auth';
-import * as firebase from 'firebase/app';
-
+import { getAuth,createUserWithEmailAndPassword,signInWithEmailAndPassword,sendEmailVerification, onAuthStateChanged, updateProfile } from 'firebase/auth';
+import { navigate } from "gatsby"
+import { initializeApp } from "firebase/app"
 
 
 if (typeof window !== 'undefined') {
-  firebase.initializeApp(config);
+  initializeApp(config);
 }
 
 function TabPanel(props) {
@@ -80,54 +80,70 @@ function a11yProps(index) {
 }
 
 function LogIn(username,password){
-  const auth = getAuth();
-  signInWithEmailAndPassword(auth, username, password)
-  .then((userCredential) => {
-    const user = userCredential.user;
-    console.log(user);
-  })
-  .catch((error) => {
-    const errorCode = error.code;
-    const errorMessage = error.message;
-    console.log("Error:",errorMessage);
-  });
+  if(typeof window !== 'undefined'){
+    const auth = getAuth();
+    signInWithEmailAndPassword(auth, username, password)
+    .then((userCredential) => {
+      const user = userCredential.user;
+      console.log(user);
+      navigate('/profile')
+    })
+    .catch((error) => {
+      const errorCode = error.code;
+      const errorMessage = error.message;
+      console.log("Error:",errorMessage);
+    });
+  }
 }
 
-function SignUp(username,password){
-  // console.log("Username ",username)
-  // console.log("Password",password)
-  var auth = getAuth();
-  createUserWithEmailAndPassword(auth,username,password).then((user)=>{
-    console.log(user.user);
-    signInWithEmailAndPassword(auth, username, password).then((user)=>{
-      console.log("Signed In after sign Up");
-      sendEmailVerification(auth.currentUser).then(()=>{
-        console.log("Verification mail sent.")
+function SignUp(username,password,name,uni){
+  if(typeof window !== 'undefined'){
+    var auth = getAuth();
+    createUserWithEmailAndPassword(auth,username,password).then((user)=>{
+      console.log(user.user);
+      updateProfile(auth.currentUser,{
+        displayName:name,
+        photoURL:uni
       })
+      signInWithEmailAndPassword(auth, username, password).then((user)=>{
+        console.log("Signed In after sign Up");
+        sendEmailVerification(auth.currentUser).then(()=>{
+          console.log("Verification mail sent.");
+          alert("Verification Email sent");
+          navigate('/profile');
+        })
+      })
+    }).catch((error)=>{
+      console.log("Error Code:",error.code);
+      console.log("Error Message:", error.message);
     })
-  }).catch((error)=>{
-    console.log("Error Code:",error.code);
-    console.log("Error Message:", error.message);
-  })
+  }
 
 }
 
 export default function Auth(props){
   const {classes} = props;
   const [value, setValue] = React.useState(0);
-  const [username,setUsername]= useState("")
-  const [password,setPassword]=useState("")
+  const [username,setUsername]= useState("");
+  const [password,setPassword]=useState("");
+  const [name,setName] = useState("");
+  const [uni,setUni] = useState("");
   const handleChange = (event, newValue) => {
     setValue(newValue);
   }
-  // firebase.auth()
-  // const auth = () => getAuth(firebase);
-  //   var user = auth.currentUser;
-  //   if(user){
-  //       console.log(user.uid);
-  //   }else{
-  //       console.log("Logged Out");
-  //   }
+  useEffect(()=>{
+    if(typeof window !== 'undefined'){
+      const app =initializeApp(config);
+      const auth = getAuth(app);
+      onAuthStateChanged(auth, (user)=>{
+          if(user){
+              navigate("/profile")
+          }else{
+            console.log("Scope to login In")
+          }
+      })
+    }
+  })
   return(
     <Layout>
     <Helmet>
@@ -171,7 +187,7 @@ export default function Auth(props){
                       <Grid item>
                         <Grid container>
                           <Grid item spacing={2}>
-                            <Button variant="contained" endIcon={<Icon>login</Icon>}>Sign IN</Button>
+                            <Button variant="contained" endIcon={<Icon>login</Icon>} onClick={()=>{LogIn(username,password)}}>Sign IN</Button>
                           </Grid>
                           <Grid item spacing={2}>
                             <Button varient ="Outlined" color="secondary" startIcon={<Icon color="primary">delet_forever</Icon>}>Reset</Button>
@@ -201,13 +217,13 @@ export default function Auth(props){
                         <h3 style={{display: 'flex', justifyContent: 'center', alignItems: 'center', fontWeight: 'bolder'}}>Sign Up</h3>
                       </Grid>
                       <Grid item>
-                        <SubhoTextField className="Name" variant="standard" label="Name" onChange={()=>{}} noborder 
+                        <SubhoTextField className="Name" variant="standard" label="Name" onChange={(data)=>{setName(data.target.value)}} noborder 
                         style={{fontDisplay: 'white', display: 'flex', justifyContent: 'center',}}
                         color="secondary" 
                         />
                       </Grid>
                       <Grid item>
-                        <SubhoTextField className="University" variant="standard" label="University" onChange={()=>{}} noborder 
+                        <SubhoTextField className="University" variant="standard" label="University" onChange={(data)=>{setUni(data.target.value)}} noborder 
                         style={{fontDisplay: 'white', display: 'flex', justifyContent: 'center',}}
                         color="secondary" 
                         />
@@ -227,7 +243,7 @@ export default function Auth(props){
                       <Grid item>
                         <Grid container>
                           <Grid item spacing={2}>
-                            <Button variant="contained" endIcon={<Icon>login</Icon>} onClick={()=>{SignUp(username,password)}}>Sign UP</Button>
+                            <Button variant="contained" endIcon={<Icon>login</Icon>} onClick={()=>{SignUp(username,password,name,uni)}}>Sign UP</Button>
                           </Grid>
                           <Grid item spacing={2}>
                             <Button varient ="Outlined" color="secondary" startIcon={<Icon color="primary">delet_forever</Icon>}>Reset</Button>

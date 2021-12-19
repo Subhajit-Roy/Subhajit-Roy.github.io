@@ -23,10 +23,14 @@ exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
   }
 }
 
-exports.onCreatePage = async({page,actions})=>{
-  const {createPage} = actions;
-  if(page.path.match(/^\/app/)){
-    page.matchPath="/app/*"
-    createPage(page)
-  }
-}
+// exports.onCreatePage = async({page,actions})=>{
+//   const {createPage} = actions;
+//   if(page.path.match(/^\/auth/)){
+//     page.matchPath="/auth/*"
+//     createPage(page)
+//   }
+//   if(page.path.match(/^\/profile/)){
+//     page.matchPath="/profile/*"
+//     createPage(page)
+//   }
+// }

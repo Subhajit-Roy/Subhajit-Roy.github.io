@@ -4,12 +4,26 @@ import Layout from "../components/layout";
 import Profile from "../components/profile";
 import PrivateRoute from "../components/privateRoute";
 import Auth from "../components/login";
+import config from "../service/fireconf";
+import * as firebase from 'firebase/app';
+import { navigate } from "gatsby";
+import { getAuth } from "firebase/auth";
 
-export default function App(){
+
+if (typeof window !== 'undefined') {
+    firebase.initializeApp(config);
+  }
+export default function App(){ 
+    const auth = getAuth();
+    const user = auth.currentUser;
+    if(user){
+        navigate('/app/profile')
+    }else{
+        navigate('/app/login')
+    }
     return(
         <Layout>
             <Router>
-                {/* <Profile path="/app/profile"/> */}
                 <PrivateRoute path="/app/profile" component={Profile}/>
                 <Auth path="/app/login"/>
             </Router>

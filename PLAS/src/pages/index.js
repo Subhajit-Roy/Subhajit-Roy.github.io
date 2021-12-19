@@ -7,6 +7,13 @@ import Two from '../components/Two'
 // import Three from '../components/Three'
 // import Four from '../components/Four'
 import Five from '../components/Five'
+import config from "../service/fireconf";
+import * as firebase from 'firebase/app';
+
+
+if (typeof window !== 'undefined') {
+    firebase.initializeApp(config);
+  }
 
 class Home extends React.Component {
   render() {
