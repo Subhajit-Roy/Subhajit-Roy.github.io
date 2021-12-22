@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix:`/dataset/d4/plas5k`,
   siteMetadata: {
     title: `PLAS`,
     description: `PLAS-5k`,
