@@ -26,19 +26,40 @@ function DownCSV(){
     getDownloadURL(ref(storage, 'PLAS-5k/database/5000_final.csv')).then((urlt)=>{
         console.log(urlt);
         axios({
-            url: {urlt},
+            url: urlt,
             method: 'GET',
             responseType: 'blob', // important
         }).then((response) => {
             const url = window.URL.createObjectURL(new Blob([response.data]));
             const link = document.createElement('a');
             link.href = url;
-            link.setAttribute('download', 'file.pdf');
+            link.setAttribute('download', '5000_final.csv');
             document.body.appendChild(link);
             link.click();
           });
     })
     }
+}
+
+function DownPDB(){
+    if(typeof window !== "undefined"){
+        const storage = getStorage();
+        getDownloadURL(ref(storage, 'PLAS-5k/database/allPDB.zip')).then((urlt)=>{
+            console.log(urlt);
+            axios({
+                url: urlt,
+                method: 'GET',
+                responseType: 'blob', // important
+            }).then((response) => {
+                const url = window.URL.createObjectURL(new Blob([response.data]));
+                const link = document.createElement('a');
+                link.href = url;
+                link.setAttribute('download', 'allPDB.zip');
+                document.body.appendChild(link);
+                link.click();
+              });
+        })
+        }
 }
 
 export default function Profile(){
@@ -99,6 +120,9 @@ export default function Profile(){
                         <>
                         <Grid item>
                             Please download all the data as a csv file by clicking <Button onClick={()=>{DownCSV()}}>here</Button>.
+                        </Grid>
+                        <Grid item>
+                            To download all the initial structures in pdb format click <Button onClick={()=>{DownPDB()}}>here</Button>.
                         </Grid>
                         <Grid>
                             Wish to view the structure click <Link to="/viewer">here.</Link>
