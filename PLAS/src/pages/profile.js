@@ -4,13 +4,52 @@ import { Link, navigate } from "gatsby"
 import { Button, Grid } from "@mui/material";
 import config from "../service/fireconf"
 import { initializeApp } from 'firebase/app';
-import { getAuth, onAuthStateChanged } from "firebase/auth";
+import { getAuth, onAuthStateChanged, signOut } from "firebase/auth";
+// import "../database/5000_final.csv" as csvdata;
+import { getDownloadURL, getStorage, ref } from "firebase/storage";
+import axios from "axios";
+
+
+function LogOut(){
+    const auth = getAuth()
+    signOut(auth).then(()=>{
+        navigate("/auth")
+        alert("Sign Out success");
+    }).catch((error)=>{
+        alert("Error message: ",error.message)
+    })
+}
+
+function DownCSV(){
+    if(typeof window !== "undefined"){
+    const storage = getStorage();
+    getDownloadURL(ref(storage, 'PLAS-5k/database/5000_final.csv')).then((urlt)=>{
+        console.log(urlt);
+        axios({
+            url: {urlt},
+            method: 'GET',
+            responseType: 'blob', // important
+        }).then((response) => {
+            const url = window.URL.createObjectURL(new Blob([response.data]));
+            const link = document.createElement('a');
+            link.href = url;
+            link.setAttribute('download', 'file.pdf');
+            document.body.appendChild(link);
+            link.click();
+          });
+    })
+    }
+}
 
 export default function Profile(){
     const [name,setName] = useState("");
     const [uni,setUni] = useState("");
     const [everify,setEverify] = useState(false);
+    const [sUrl,setSUrl] = useState("");
+    // const [binding, setBinding] = useState(require("/blank.csv"));
     useEffect(()=>{
+        // const cors = require('cors')
+        // app.use(cors())
         if(typeof window !== 'undefined'){
             const app =initializeApp(config);
             const auth = getAuth(app);
@@ -23,9 +62,17 @@ export default function Profile(){
                     setUni(user.photoURL);
                     if(user.emailVerified){
                         setEverify(true);
+                        // setBinding(require('/bindingFinal.csv'))
                     }
                 }
-            })
+            });
+            // const storage = getStorage;
+            // getDownloadURL(ref(storage, 'PLAS-5k/database/5000_final.csv')).then((url)=>{
+            //     setSUrl(url);
+            //     console.log(url);
+            // }).catch((error)=>{
+            //     alert('Error',error.message);
+            // })
         }
     })
 
@@ -51,14 +98,14 @@ export default function Profile(){
                         {everify &&
                         <>
                         <Grid item>
-                            Please download all the data as a csv file by clicking <a>here</a>.
+                            Please download all the data as a csv file by clicking <Button onClick={()=>{DownCSV()}}>here</Button>.
                         </Grid>
                         <Grid>
                             Wish to view the structure click <Link to="/viewer">here.</Link>
                         </Grid>
                         </>}
                         <Grid item>
-                            <Button variant="contained" onClick={()=>{console.log(getAuth().currentUser);console.log(name)}}>Sign Out</Button>
+                            <Button variant="contained" onClick={()=>{LogOut()}}>Sign Out</Button>
                         </Grid>
                     </Grid>
                     </section>
