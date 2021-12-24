@@ -1,4 +1,4 @@
-import { Button, Grid, Icon, styled, Tab, Tabs, TextField, Typography } from "@mui/material"
+import { Button, Checkbox, Grid, Icon, styled, Tab, Tabs, TextField, Typography } from "@mui/material"
 import { Box } from '@mui/system'
 import React, { useEffect, useState } from 'react'
 import { Helmet } from 'react-helmet'
@@ -6,8 +6,9 @@ import Layout from '../components/layout'
 import PropTypes from 'prop-types';
 import config from "../service/fireconf"
 import { getAuth,createUserWithEmailAndPassword,signInWithEmailAndPassword,sendEmailVerification, onAuthStateChanged, updateProfile } from 'firebase/auth';
-import { navigate } from "gatsby"
+import { Link, navigate } from "gatsby"
 import { initializeApp } from "firebase/app"
+// import "./auth.css"
 
 
 if (typeof window !== 'undefined') {
@@ -239,6 +240,16 @@ export default function Auth(props){
                         style={{fontDisplay: 'white', display: 'flex', justifyContent: 'center',}}
                         color="secondary" variant="standard"
                         />
+                      </Grid>
+                      <Grid item>
+                        {/* <FormGroup>
+                          <FormControlLabel control={<Checkbox defaultChecked />} label={<div>I agree to the <Link to="/tc">terms and condition</Link> </div>}/>
+                        </FormGroup> */}
+                        <Checkbox defaultChecked disabled sx={{
+                          '&.MuiButtonBase-root': {
+                            color: "#E44C65",
+                          },
+                        }}/> I agree to the <Link to="/tc">terms and condition</Link>.
                       </Grid>
                       <Grid item>
                         <Grid container>
