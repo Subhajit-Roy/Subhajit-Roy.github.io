@@ -1,5 +1,5 @@
 module.exports = {
-  pathPrefix:`/dataset/d4/plas5k`,
+  // pathPrefix:`/dataset/d4/plas5k`,
   siteMetadata: {
     title: `PLAS`,
     description: `PLAS-5k`,
@@ -27,25 +27,25 @@ module.exports = {
             link: '/tc',
           },
           {
-            name: 'SubMenu',
+            name: 'Legals',
             link: '#',
             items: [
               {
-                name: 'Option 1',
-                link: '#',
+                name: 'Terms and Conditions',
+                link: '/tc',
               },
               {
-                name: 'Option 2',
-                link: '#',
+                name: 'License Agreement',
+                link: '/license',
               },
-              {
-                name: 'Option 3',
-                link: '#',
-              },
-              {
-                name: 'Option 4',
-                link: '#',
-              },
+              // {
+              //   name: 'Option 3',
+              //   link: '#',
+              // },
+              // {
+              //   name: 'Option 4',
+              //   link: '#',
+              // },
             ],
           },
         ],

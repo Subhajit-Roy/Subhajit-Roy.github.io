@@ -6,13 +6,14 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 import { Helmet } from "react-helmet"
 import { Stage, StructureComponent } from "react-ngl"
-import { Autocomplete, Checkbox, Grid, TextField } from "@mui/material"
+import { Autocomplete, Checkbox, Grid, Paper, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, TextField } from "@mui/material"
 import finalData from '../database/5000_final.json'
 import { initializeApp } from 'firebase/app';
 import { getAuth, onAuthStateChanged } from "firebase/auth";
 import { navigate } from "gatsby"
 import { useEffect} from "react";
 import config from "../service/fireconf"
+import MathJax from "react-mathjax"
 
 export default function IndexPage(){
   useEffect(()=>{
@@ -124,7 +125,7 @@ export default function IndexPage(){
     </Stage> */}
     {
       inputValue !== '' 
-        ? <div>
+        ? <div id="main" className="wrapper style1">
           <Grid container spacing={4} direction="row">
             <Grid item>
               <Stage width="600px" height="600px" cameraState={cameraState}>
@@ -142,8 +143,48 @@ export default function IndexPage(){
                 </Grid>
               </Grid>
             </Grid>
+            <Grid item>
+              <TableContainer component={Paper}>
+                <Table>
+                  <TableHead>
+                    <TableCell align="left">{finalData[index]['pdbid']}</TableCell>
+                    <TableCell align="right">Parameter Values (SD)</TableCell>
+                  </TableHead>
+                  <TableBody>
+                    <TableRow>
+                      <TableCell align="left">Ligand RMSD</TableCell>
+                      <TableCell align="right">{finalData[index]['LigandRmsdMean']} ({finalData[index]['LigandRmsdSd']})</TableCell>
+                    </TableRow>
+                    <TableRow>
+                      <TableCell align="left">Protein RMSD</TableCell>
+                      <TableCell align="right">{finalData[index]['ProteinRmsdMean']} ({finalData[index]['ProteinRmsdSd']})</TableCell>
+                    </TableRow>
+                    <TableRow>
+                      <TableCell align="left">Non-Polar Solvational Energy</TableCell>
+                      <TableCell align="right">{finalData[index]['di4_EPB_mean']} ({finalData[index]['di4_EPB_sd']}) </TableCell>
+                    </TableRow>
+                    <TableRow>
+                      <TableCell align="left">Polar Solvational Energy</TableCell>
+                      <TableCell align="right">{finalData[index]['di4_ENPOLAR_mean']} ({finalData[index]['di4_ENPOLAR_sd']}) </TableCell>
+                    </TableRow>
+                    <TableRow>
+                      <TableCell align="left">Electrostatic Interaction Energy</TableCell>
+                      <TableCell align="right">{finalData[index]['di4_EEL_mean']} ({finalData[index]['di4_EEL_sd']})</TableCell>
+                    </TableRow>
+                    <TableRow>
+                      <TableCell align="left">van der Walls Interaction</TableCell>
+                      <TableCell align="right">{finalData[index]['VDW']}</TableCell>
+                    </TableRow>
+                    <TableRow>
+                      <TableCell align="left">Binding Affinity</TableCell>
+                      <TableCell align="right">{finalData[index]['di4_DELTA TOTAL_mean']} ({finalData[index]['di4_DELTA TOTAL_sd']}) </TableCell>
+                    </TableRow>
+                  </TableBody>
+                </Table>
+              </TableContainer>
+            </Grid>
           </Grid>
-          <Grid container spacing="auto" direction="column">
+          {/* <Grid container spacing="auto" direction="column">
             <Grid item xs={2}>
               <h4><b>Binding Affinity:</b> {finalData[index]['di4_DELTA TOTAL_mean']}</h4>
             </Grid>
@@ -156,7 +197,7 @@ export default function IndexPage(){
             <Grid>
               <h4><b>Non-Polar Interaction Energy</b> {finalData[index]['di4_EPB_mean']}</h4>
             </Grid>
-          </Grid>
+          </Grid> */}
           </div>
         : <p></p>
     }
