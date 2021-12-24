@@ -8,6 +8,7 @@ import { getAuth, onAuthStateChanged, signOut } from "firebase/auth";
 // import "../database/5000_final.csv" as csvdata;
 import { getDownloadURL, getStorage, ref } from "firebase/storage";
 import axios from "axios";
+import Layout from "../components/layout";
 
 
 function LogOut(){
@@ -98,7 +99,7 @@ export default function Profile(){
     })
 
     return(
-        <>
+        <Layout>
             <Helmet>
                 <title>PLAS: Profile</title>
             </Helmet>
@@ -135,6 +136,6 @@ export default function Profile(){
                     </section>
                 </div>
             </div>
-        </>
+        </Layout>
     );
 }

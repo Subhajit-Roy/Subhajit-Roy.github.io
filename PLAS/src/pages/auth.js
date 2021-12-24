@@ -250,6 +250,14 @@ export default function Auth(props){
                             color: "#E44C65",
                           },
                         }}/> I agree to the <Link to="/tc">terms and condition</Link>.
+                        
+                      </Grid>
+                      <Grid item>
+                        <Checkbox defaultChecked disabled sx={{
+                          '&.MuiButtonBase-root': {
+                            color: "#E44C65",
+                          },
+                        }}/> I agree to the <Link to="/license">liscence agreement.</Link>
                       </Grid>
                       <Grid item>
                         <Grid container>
