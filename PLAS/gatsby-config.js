@@ -1,5 +1,5 @@
 module.exports = {
-  pathPrefix:`/plas-5k`,
+  // pathPrefix:`/plas-5k`,
   siteMetadata: {
     title: `PLAS`,
     description: `PLAS-5k`,
