@@ -13,7 +13,8 @@ import { getAuth, onAuthStateChanged } from "firebase/auth";
 import { navigate } from "gatsby"
 import { useEffect} from "react";
 import config from "../service/fireconf"
-import MathJax from "react-mathjax"
+// import MathJax from "react-mathjax";
+import { getDownloadURL, getStorage, ref } from "firebase/storage";
 
 export default function IndexPage(){
   useEffect(()=>{
@@ -74,6 +75,21 @@ export default function IndexPage(){
   const [index, setIndex] = React.useState('');
   const [receptorState, setReceptorStae]= React.useState(true);
   const [ligandState, setLigandState]= React.useState(true);
+  const [pdburl,setPdburl] = React.useState("");
+
+  function PdbRequest(newInputValue){
+    if(typeof window !== 'undefined'){
+      const storage = getStorage();
+      getDownloadURL(ref(storage, "PLAS-5k/pdb/"+inputValue+".pdb")).then((url)=>{
+        console.log(url)
+        setPdburl(url);
+      }).catch((error)=>{
+        alert("Error",error.message);
+      })
+    }
+    setInputValue(newInputValue);
+    setIndex(finalData.findIndex(obj => obj.pdbid === newInputValue));
+  }
 
   return(
     <Layout>
@@ -109,10 +125,7 @@ export default function IndexPage(){
         //   borderColor: '#1C1D26'
         // }
       }}/>}
-      onChange={(event,newInputValue)=>{
-        setInputValue(newInputValue);
-        setIndex(finalData.findIndex(obj => obj.pdbid === newInputValue));
-      }}
+      onChange={(event,newInputValue)=>PdbRequest(newInputValue)}
       // sx={{
       //   '& .MuiAutocomplete-input':{
       //     backgroundColor:"white"
@@ -129,8 +142,8 @@ export default function IndexPage(){
           <Grid container spacing={4} direction="row">
             <Grid item>
               <Stage width="600px" height="600px" cameraState={cameraState}>
-                <StructureComponent path={"/pdb/"+inputValue+".pdb"} reprList={reprList['ball+stick']} selection={ligandState ? 'Ligand' : 'not all'}/>
-                <StructureComponent path={"/pdb/"+inputValue+".pdb"} reprList={reprList['cartoon']} selection={receptorState ? 'protein' : 'not all'}/>
+                <StructureComponent path={pdburl} reprList={reprList['ball+stick']} selection={ligandState ? 'Ligand' : 'not all'}/>
+                <StructureComponent path={pdburl} reprList={reprList['cartoon']} selection={receptorState ? 'protein' : 'not all'}/>
               </Stage>
             </Grid>
             <Grid item>

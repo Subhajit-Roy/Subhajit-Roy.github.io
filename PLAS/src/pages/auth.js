@@ -92,7 +92,7 @@ function LogIn(username,password){
     .catch((error) => {
       // const errorCode = error.code;
       const errorMessage = error.message;
-      console.log("Error:",errorMessage);
+      alert("Error:",errorMessage);
     });
   }
 }
