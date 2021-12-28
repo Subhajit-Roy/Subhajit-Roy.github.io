@@ -35,12 +35,12 @@ const Footer = props => (
       </li>
     </ul>
     <ul className="copyright">
-      <li>&copy; devalab. All rights reserved.</li>
+      <li><a href='https://creativecommons.org/licenses/by-nc-sa/4.0/'>&copy; CC BY-NC-SA</a></li>
       <li>
         Made with: <a href="https://www.gatsbyjs.com/">Gatsby JS</a>
       </li>
       <li>
-        Hosted on: <a href="https://guides.github.com/features/pages/">Github Pages</a>
+        Hosted on: <a href="https://guides.github.com/features/pages/">IIIT Hyderabad</a>
       </li>
     </ul>
   </footer>

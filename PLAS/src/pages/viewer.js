@@ -7,7 +7,7 @@ import Seo from "../components/seo"
 import { Helmet } from "react-helmet"
 import { Stage, StructureComponent } from "react-ngl"
 import { Autocomplete, Checkbox, Grid, Paper, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, TextField } from "@mui/material"
-import finalData from '../database/5000_final.json'
+// import finalData from '../database/5000_final.json'
 import { initializeApp } from 'firebase/app';
 import { getAuth, onAuthStateChanged } from "firebase/auth";
 import { navigate } from "gatsby"
@@ -16,7 +16,25 @@ import config from "../service/fireconf"
 // import MathJax from "react-mathjax";
 import { getDownloadURL, getStorage, ref } from "firebase/storage";
 
+
+
+
 export default function IndexPage(){
+  function ObtainJSON(){
+    if(typeof window !== 'undefined'){
+      const storage = getStorage();
+      getDownloadURL(ref(storage, "PLAS-5k/database/plas5k.json")).then((url)=>{
+        fetch(url).then((response)=>response.json()).then((responseJSON)=>{
+          setFinalData(responseJSON); 
+          // console.log(responseJSON[0])
+        });
+      }).catch((error)=>{
+        alert("Error in obtainint JSON");
+      })
+    }
+  }
+
+
   useEffect(()=>{
     if(typeof window !== 'undefined'){
         const app =initializeApp(config);
@@ -25,7 +43,8 @@ export default function IndexPage(){
             if(!user){
                 navigate("/auth")
             }else{
-                console.log(user.email);
+                // console.log(user.email);
+                ObtainJSON();
             }
         })
     }
@@ -76,19 +95,23 @@ export default function IndexPage(){
   const [receptorState, setReceptorStae]= React.useState(true);
   const [ligandState, setLigandState]= React.useState(true);
   const [pdburl,setPdburl] = React.useState("");
+  const [finalData,setFinalData] = React.useState([]);
 
   function PdbRequest(newInputValue){
-    if(typeof window !== 'undefined'){
-      const storage = getStorage();
-      getDownloadURL(ref(storage, "PLAS-5k/pdb/"+inputValue+".pdb")).then((url)=>{
-        console.log(url)
-        setPdburl(url);
-      }).catch((error)=>{
-        alert("Error",error.message);
-      })
+    if (newInputValue.length == 4 && newInputValue.length !==null){
+      if(typeof window !== 'undefined'){
+        const storage = getStorage();
+        getDownloadURL(ref(storage, "PLAS-5k/pdb/"+inputValue+".pdb")).then((url)=>{
+          console.log(url)
+          setPdburl(url);
+        }).catch((error)=>{
+          alert("Error",error.message);
+        })
+      }
+      setInputValue(newInputValue);
+      setIndex(finalData.findIndex(obj => obj.pdbid === newInputValue));
+      console.log(index);
     }
-    setInputValue(newInputValue);
-    setIndex(finalData.findIndex(obj => obj.pdbid === newInputValue));
   }
 
   return(
@@ -164,33 +187,33 @@ export default function IndexPage(){
                     <TableCell align="right">Parameter Values (SD)</TableCell>
                   </TableHead>
                   <TableBody>
-                    <TableRow>
+                    {/* <TableRow>
                       <TableCell align="left">Ligand RMSD</TableCell>
                       <TableCell align="right">{finalData[index]['LigandRmsdMean']} ({finalData[index]['LigandRmsdSd']})</TableCell>
                     </TableRow>
                     <TableRow>
                       <TableCell align="left">Protein RMSD</TableCell>
                       <TableCell align="right">{finalData[index]['ProteinRmsdMean']} ({finalData[index]['ProteinRmsdSd']})</TableCell>
-                    </TableRow>
+                    </TableRow> */}
                     <TableRow>
-                      <TableCell align="left">Non-Polar Solvational Energy</TableCell>
-                      <TableCell align="right">{finalData[index]['di4_EPB_mean']} ({finalData[index]['di4_EPB_sd']}) </TableCell>
-                    </TableRow>
-                    <TableRow>
-                      <TableCell align="left">Polar Solvational Energy</TableCell>
-                      <TableCell align="right">{finalData[index]['di4_ENPOLAR_mean']} ({finalData[index]['di4_ENPOLAR_sd']}) </TableCell>
-                    </TableRow>
-                    <TableRow>
-                      <TableCell align="left">Electrostatic Interaction Energy</TableCell>
-                      <TableCell align="right">{finalData[index]['di4_EEL_mean']} ({finalData[index]['di4_EEL_sd']})</TableCell>
+                      <TableCell align="left">Binding Affinity</TableCell>
+                      <TableCell align="right">{finalData[index]['binding_affinity']} </TableCell>
                     </TableRow>
                     <TableRow>
                       <TableCell align="left">van der Walls Interaction</TableCell>
-                      <TableCell align="right">{finalData[index]['VDW']}</TableCell>
+                      <TableCell align="right">{finalData[index]['vdW']}</TableCell>
                     </TableRow>
                     <TableRow>
-                      <TableCell align="left">Binding Affinity</TableCell>
-                      <TableCell align="right">{finalData[index]['di4_DELTA TOTAL_mean']} ({finalData[index]['di4_DELTA TOTAL_sd']}) </TableCell>
+                      <TableCell align="left">Electrostatic Interaction Energy</TableCell>
+                      <TableCell align="right">{finalData[index]['electrostatic']}</TableCell>
+                    </TableRow>
+                    <TableRow>
+                      <TableCell align="left">Polar Solvational Energy</TableCell>
+                      <TableCell align="right">{finalData[index]['polar_solvation']} </TableCell>
+                    </TableRow>
+                    <TableRow>
+                      <TableCell align="left">Non-Polar Solvational Energy</TableCell>
+                      <TableCell align="right">{finalData[index]['non_polar_solvation']} </TableCell>
                     </TableRow>
                   </TableBody>
                 </Table>
