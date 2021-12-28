@@ -36,7 +36,7 @@ module.exports = {
               },
               {
                 name: 'License Agreement',
-                link: '/license',
+                link: 'https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode',
               },
               // {
               //   name: 'Option 3',

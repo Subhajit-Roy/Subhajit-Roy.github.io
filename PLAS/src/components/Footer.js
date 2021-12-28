@@ -40,7 +40,7 @@ const Footer = props => (
         Made with: <a href="https://www.gatsbyjs.com/">Gatsby JS</a>
       </li>
       <li>
-        Hosted on: <a href="https://guides.github.com/features/pages/">IIIT Hyderabad</a>
+        Hosted on: <a href="https://guides.github.com/features/pages/">Github Pages</a>
       </li>
     </ul>
   </footer>
