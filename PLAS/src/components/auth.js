@@ -87,7 +87,7 @@ function LogIn(username,password){
     .then((userCredential) => {
       const user = userCredential.user;
       console.log(user);
-      navigate('/profile')
+      navigate('/app/profile')
     })
     .catch((error) => {
       // const errorCode = error.code;
@@ -111,7 +111,7 @@ function SignUp(username,password,name,uni){
         sendEmailVerification(auth.currentUser).then(()=>{
           console.log("Verification mail sent.");
           alert("Verification Email sent");
-          navigate('/profile');
+          navigate('/app/profile');
         })
       })
     }).catch((error)=>{
