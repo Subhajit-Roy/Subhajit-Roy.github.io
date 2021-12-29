@@ -50,6 +50,7 @@ export default function IndexPage(){
     }
 })
   const reprList = React.useMemo(() => ({
+    'backgroundColor':"white",
     'ball+stick': [{
       type: 'ball+stick',
       param:{
