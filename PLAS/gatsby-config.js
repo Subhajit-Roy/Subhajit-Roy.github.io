@@ -23,10 +23,6 @@ module.exports = {
             link: '/contributors',
           },
           {
-            name: 'Terms and Condition',
-            link: '/tc',
-          },
-          {
             name: 'Legals',
             link: '#',
             items: [
