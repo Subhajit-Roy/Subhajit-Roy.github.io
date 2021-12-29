@@ -2,7 +2,8 @@ import React from 'react'
 import { Helmet } from 'react-helmet'
 import Layout from '../components/layout'
 import pic03 from '../assets/images/pic03.jpg'
-
+import data from "../database/contributors.json";
+import data2 from "../database/author.json"
 import { Card, CardActionArea, CardContent, CardMedia, Container, Grid, Typography } from '@mui/material'
 import { borderRight, Box } from '@mui/system'
 
@@ -24,13 +25,57 @@ const Elements = props => (
           </p>
         </header>
         <section>
+          <Typography variant="h2" color="primary" style={{paddingTop:'2rem', paddingBottom:'2rem'}}>
+            Corresponding Authors
+          </Typography>
+        </section>
+        <section style={{paddingBottom:"5rem"}}>
+            <Grid container spacing={2} justifyContent="center" alignItems="center">
+            {data2.map((data)=>
+            <Grid item xs='auto' md={6}>
+            <Card sx={{ display: 'flex', maxWidth: 500, maxHeight: 500, borderRadius: '3%'}}>
+              <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between',}}>
+                <CardContent sx={{ flex: '1 0 auto' }}>
+                  <Typography component="div" variant="h5">
+                    {data.Name}
+                  </Typography>
+                  <Typography variant="subtitle1" color="text.secondary" component="div">
+                    {data.Affiliation}
+                  </Typography>
+                  <Typography variant="subtitle2" color="text.primary" component="div">
+                    {data.Designation}
+                  </Typography>
+                  <Typography variant="caption" component="div">
+                    {data.description}
+                  </Typography>
+                </CardContent>
+              </Box>
+              <CardActionArea
+                sx={{maxWidth: 300,ml:'auto'}}
+              >
+                <CardMedia
+                  component="img"
+                  sx={{ maxWidth: 200,maxHeight:200,ml: 'auto'}}
+                  image={data.picture_name}
+                  alt="Image is not available try refreshing the page"
+                />
+              </CardActionArea>
+            </Card>
+            </Grid>)}
+            </Grid>
+            <hr/>
+        </section>
+        <section>
+        <Typography variant="h2" color="primary" style={{paddingBottom:'2rem'}}>
+          Contributors
+        </Typography>
           <Grid container spacing={2} justifyContent="center" alignItems="center">
-            <Grid item xs='auto' md={6}>
+            {/*<Grid item xs='auto' md={6}>
             <Card sx={{ display: 'flex', maxWidth: 500, maxHeight: 500, borderRadius: '3%'}}>
               <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between',}}>
                 <CardContent sx={{ flex: '1 0 auto' }}>
                   <Typography component="div" variant="h5">
-                    Subhajit Roy ABCD
+                    Subhajit Roy ABC
                   </Typography>
                   <Typography variant="subtitle1" color="text.secondary" component="div">
                     CEBS
@@ -48,17 +93,23 @@ const Elements = props => (
                 />
               </CardActionArea>
             </Card>
-            </Grid>
-
+            </Grid>*/}
+            {data.map((data)=>
             <Grid item xs='auto' md={6}>
             <Card sx={{ display: 'flex', maxWidth: 500, maxHeight: 500, borderRadius: '3%'}}>
               <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between',}}>
                 <CardContent sx={{ flex: '1 0 auto' }}>
                   <Typography component="div" variant="h5">
-                    Subhajit Roy
+                    {data.Name}
                   </Typography>
                   <Typography variant="subtitle1" color="text.secondary" component="div">
-                    CEBS
+                    {data.Affiliation}
+                  </Typography>
+                  <Typography variant="subtitle2" color="text.primary" component="div">
+                    {data.Designation}
+                  </Typography>
+                  <Typography variant="caption" component="div">
+                    {data.description}
                   </Typography>
                 </CardContent>
               </Box>
@@ -67,13 +118,13 @@ const Elements = props => (
               >
                 <CardMedia
                   component="img"
-                  sx={{ maxWidth: 300,ml: 'auto'}}
-                  image={pic03}
-                  alt="Live from space album cover"
+                  sx={{ maxWidth: 200,maxHeight:200,ml: 'auto'}}
+                  image={data.picture_name}
+                  alt="Image is not available try refreshing the page"
                 />
               </CardActionArea>
             </Card>
-            </Grid>
+            </Grid>)}
             </Grid>
         </section>
       </div>
