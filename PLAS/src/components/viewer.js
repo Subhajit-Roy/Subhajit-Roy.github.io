@@ -98,7 +98,7 @@ export default function IndexPage(){
   const [finalData,setFinalData] = React.useState([]);
 
   function PdbRequest(newInputValue){
-    if (newInputValue.length == 4 && newInputValue.length !==null){
+    if (newInputValue.length === 4 && newInputValue.length !==null){
       if(typeof window !== 'undefined'){
         const storage = getStorage();
         getDownloadURL(ref(storage, "PLAS-5k/pdb/"+inputValue+".pdb")).then((url)=>{

@@ -26,7 +26,7 @@ const Elements = props => (
         </header>
         <section>
           <Typography variant="h2" color="primary" style={{paddingTop:'2rem', paddingBottom:'2rem'}}>
-            Corresponding Authors
+            Principal Investigator
           </Typography>
         </section>
         <section style={{paddingBottom:"5rem"}}>

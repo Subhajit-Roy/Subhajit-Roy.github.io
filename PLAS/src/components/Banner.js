@@ -22,7 +22,7 @@ const Banner = props => (
         <p>
           Binding affinity and other interaction energy components like Electrostatic, van der Waals, <br/> Polar and Non-polar solvation energies are included.
           <br /> <br/>
-          All the datas were derived using Molecular Dynamics Simulation.
+          All the data were derived using Molecular Dynamics Simulation.
         </p>
       </header>
       <span className="image">

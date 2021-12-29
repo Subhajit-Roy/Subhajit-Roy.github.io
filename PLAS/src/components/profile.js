@@ -45,7 +45,7 @@ function DownCSV(){
 function DownPDB(){
     if(typeof window !== "undefined"){
         const storage = getStorage();
-        getDownloadURL(ref(storage, 'PLAS-5k/database/allPDB.zip')).then((urlt)=>{
+        getDownloadURL(ref(storage, 'PLAS-5k/database/input.7z')).then((urlt)=>{
             console.log(urlt);
             axios({
                 url: urlt,
