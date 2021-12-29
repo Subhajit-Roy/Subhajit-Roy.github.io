@@ -1,11 +1,10 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
 import Layout from '../components/layout'
-import pic03 from '../assets/images/pic03.jpg'
 import data from "../database/contributors.json";
 import data2 from "../database/author.json"
-import { Card, CardActionArea, CardContent, CardMedia, Container, Grid, Typography } from '@mui/material'
-import { borderRight, Box } from '@mui/system'
+import { Card, CardActionArea, CardContent, CardMedia, Grid, Typography } from '@mui/material'
+import { Box } from '@mui/system'
 
 const Elements = props => (
   <Layout>
@@ -119,7 +118,7 @@ const Elements = props => (
                 <CardMedia
                   component="img"
                   sx={{ maxWidth: 200,maxHeight:200,ml: 'auto'}}
-                  image={data.picture_name}
+                  image={"/"+data.picture_name}
                   alt="Image is not available try refreshing the page"
                 />
               </CardActionArea>

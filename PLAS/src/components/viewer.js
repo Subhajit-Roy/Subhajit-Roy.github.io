@@ -2,7 +2,7 @@ import * as React from "react"
 // import { Link } from "gatsby"
 // import { StaticImage } from "gatsby-plugin-image"
 
-import Layout from "../components/layout"
+// import Layout from "../components/layout"
 import Seo from "../components/seo"
 import { Helmet } from "react-helmet"
 import { Stage, StructureComponent } from "react-ngl"
@@ -98,16 +98,17 @@ export default function IndexPage(){
   const [finalData,setFinalData] = React.useState([]);
 
   function PdbRequest(newInputValue){
-    if (newInputValue.length === 4 && newInputValue.length !==null){
-      if(typeof window !== 'undefined'){
-        const storage = getStorage();
-        getDownloadURL(ref(storage, "PLAS-5k/pdb/"+inputValue+".pdb")).then((url)=>{
-          console.log(url)
-          setPdburl(url);
-        }).catch((error)=>{
-          alert("Error",error.message);
-        })
-      }
+    if (newInputValue.length !==null && newInputValue.length === 4){
+      // if(typeof window !== 'undefined'){
+      //   const storage = getStorage();
+      //   getDownloadURL(ref(storage, "PLAS-5k/pdb/"+inputValue+".pdb")).then((url)=>{
+      //     console.log(url)
+      //     setPdburl(url);
+      //   }).catch((error)=>{
+      //     alert("Error",error.message);
+      //   })
+      // }
+      setPdburl("/input/"+newInputValue+".pdb");
       setInputValue(newInputValue);
       setIndex(finalData.findIndex(obj => obj.pdbid === newInputValue));
       console.log(index);
@@ -115,7 +116,7 @@ export default function IndexPage(){
   }
 
   return(
-    <Layout>
+    <>
     <Seo title="Home" />
     <Helmet>
       {/* <script src={withPrefix('ngl.js')} type="text/javascript"/> */}
@@ -237,6 +238,6 @@ export default function IndexPage(){
           </div>
         : <p></p>
     }
-  </Layout>
+  </>
   );
 }
