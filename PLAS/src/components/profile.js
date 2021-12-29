@@ -152,6 +152,8 @@ export default function Profile(){
                             {progress >1 &&
                             <div style={{paddingLeft:'1rem'}}>Progress: {progress}%</div>
                             }
+                            <br/>
+                            Password to open the above file is OpenMePLAS5k. The above is a 7z file.
                         </Grid>
                         <Grid>
                             Wish to view the structure click <Link to="/app/viewer">here.</Link>
