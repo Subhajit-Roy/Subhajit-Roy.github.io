@@ -16,7 +16,7 @@ module.exports = {
         items: [
           {
             name: 'PDB Viewer',
-            link: '/viewer',
+            link: '/app/viewer',
           },
           {
             name: 'Contributors',
@@ -56,7 +56,7 @@ module.exports = {
       },
       {
         name: 'Profile',
-        link: '/profile',
+        link: '/app/profile',
         cl: 'button primary',
       },
     ]
