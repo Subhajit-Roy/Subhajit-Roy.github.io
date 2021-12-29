@@ -183,7 +183,7 @@ export default function IndexPage(){
               <TableContainer component={Paper}>
                 <Table>
                   <TableHead>
-                    <TableCell align="left">{finalData[index]['pdbid']}</TableCell>
+                    <TableCell align="left">{finalData[index]['pdbid'].toFixed(2)}</TableCell>
                     <TableCell align="right">Parameter Values (SD)</TableCell>
                   </TableHead>
                   <TableBody>
@@ -197,23 +197,23 @@ export default function IndexPage(){
                     </TableRow> */}
                     <TableRow>
                       <TableCell align="left">Binding Affinity</TableCell>
-                      <TableCell align="right">{finalData[index]['binding_affinity']} </TableCell>
+                      <TableCell align="right">{finalData[index]['binding_affinity'].toFixed(2)} </TableCell>
                     </TableRow>
                     <TableRow>
                       <TableCell align="left">van der Walls Interaction</TableCell>
-                      <TableCell align="right">{finalData[index]['vdW']}</TableCell>
+                      <TableCell align="right">{finalData[index]['vdW'].toFixed(2)}</TableCell>
                     </TableRow>
                     <TableRow>
                       <TableCell align="left">Electrostatic Interaction Energy</TableCell>
-                      <TableCell align="right">{finalData[index]['electrostatic']}</TableCell>
+                      <TableCell align="right">{finalData[index]['electrostatic'].toFixed(2)}</TableCell>
                     </TableRow>
                     <TableRow>
                       <TableCell align="left">Polar Solvational Energy</TableCell>
-                      <TableCell align="right">{finalData[index]['polar_solvation']} </TableCell>
+                      <TableCell align="right">{finalData[index]['polar_solvation'].toFixed(2)} </TableCell>
                     </TableRow>
                     <TableRow>
                       <TableCell align="left">Non-Polar Solvational Energy</TableCell>
-                      <TableCell align="right">{finalData[index]['non_polar_solvation']} </TableCell>
+                      <TableCell align="right">{finalData[index]['non_polar_solvation'].toFixed(2)} </TableCell>
                     </TableRow>
                   </TableBody>
                 </Table>

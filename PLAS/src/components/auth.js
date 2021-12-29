@@ -138,7 +138,7 @@ export default function Auth(props){
       const auth = getAuth(app);
       onAuthStateChanged(auth, (user)=>{
           if(user){
-              navigate("/profile")
+              navigate("/app/profile")
           }else{
             console.log("Scope to login In")
           }

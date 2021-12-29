@@ -14,7 +14,7 @@ import Layout from "../components/layout";
 function LogOut(){
     const auth = getAuth()
     signOut(auth).then(()=>{
-        navigate("/auth")
+        navigate("/app/auth");
         alert("Sign Out success");
     }).catch((error)=>{
         alert("Error message: ",error.message)
@@ -77,7 +77,7 @@ export default function Profile(){
             const auth = getAuth(app);
             onAuthStateChanged(auth, (user)=>{
                 if(!user){
-                    navigate("/auth")
+                    navigate("/app/auth")
                 }else{
                     console.log(user.email);
                     setName(user.displayName)
@@ -126,7 +126,7 @@ export default function Profile(){
                             To download all the initial structures in pdb format click <Button onClick={()=>{DownPDB()}}>here</Button>.
                         </Grid>
                         <Grid>
-                            Wish to view the structure click <Link to="/viewer">here.</Link>
+                            Wish to view the structure click <Link to="/app/viewer">here.</Link>
                         </Grid>
                         </>}
                         <Grid item>
