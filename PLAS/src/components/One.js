@@ -29,15 +29,13 @@ const One = props => (
               <h3>New User:</h3>
               <p>
                 If your are a new user please go ahead and <Link to="/auth">sign up</Link> using your email and password or via 3rd party authenticator like Google, Facebook etc.
-                This is done to keep record of total client accessing our database and a higher number of access will help us getting funds.
-                Which in turn will enable us to continue the project.
               </p>
             </div>
             <div className="col-4 col-12-medium">
               <h3>Old User:</h3>
               <p>
                 If you are a returning member no need to create a new account and simply login in the <Link to="/auth">authentication</Link> page.
-                In case there are any error while signing up, no need to worry we will soon update the features for change of names.
+                In case there are any error while signing up please contact us.
               </p>
             </div>
           </div>

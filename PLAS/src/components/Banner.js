@@ -18,11 +18,11 @@ const Banner = props => (
         borderRadius: 50,
       }} >
       <header>
-        <h2>PLAS</h2>
+        <h2>PLAS-5k</h2>
         <p>
-          Binding affinity and other interaction Energies like Electrostatic, van Der Waals, <br/> Polar and Non-polar are also included.
+          Binding affinity and other interaction energy components like Electrostatic, van der Waals, <br/> Polar and Non-polar solvation energies are included.
           <br /> <br/>
-          All the datas were derived by using Molecular Dynamics Simulation.
+          All the datas were derived using Molecular Dynamics Simulation.
         </p>
       </header>
       <span className="image">

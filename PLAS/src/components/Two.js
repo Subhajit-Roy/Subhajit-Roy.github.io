@@ -21,12 +21,11 @@ const Two = props => (
         </header>
         <p>
           <ul>
-            <li>Probably the first database to be fully simulated with 5000 number of pdbids</li>
-            <li>Not only Binding Affinity value is present but also other energetic component like polar and non-polar interaction, 
-              Vander Wall's interaction, Electrostatic interactions.</li>
+            <li>One of the first database with 5000 protein-ligand complexes generated using Molecular Dynamics simulation.</li>
+            <li>It also consists of energy components like van der Waals, Electrostatic, Polar, Non-polar solvational energy.</li>
             <li>Our results showed good statistical correlation with the experimental results.</li>
-            <li>We were approximately able to find the Binding Energy of the proteins-ligand complexes for which the experimental values
-              were unknown, thereby supplementing the exesting dataset.
+            <li>We were approximately able to find the binding affinity of the protein-ligand complexes for which the experimental values
+              were unknown, thereby supplementing the existing dataset.
             </li>
             
 
