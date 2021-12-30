@@ -10,5 +10,17 @@
         "responseHeader": ["text/csv"],
         "method": ["GET", "HEAD", "DELETE"],
         "maxAgeSeconds": 3600
-      }
+      },
+      {
+        "origin": ["https://subhajit-roy.github.io"],
+        "responseHeader": ["x-7z-compressed"],
+        "method": ["GET", "HEAD", "DELETE"],
+        "maxAgeSeconds": 3600
+      },
+      {
+          "origin": ["https://subhajit-roy.github.io"],
+          "responseHeader": ["text/csv"],
+          "method": ["GET", "HEAD", "DELETE"],
+          "maxAgeSeconds": 3600
+        }
 ]
