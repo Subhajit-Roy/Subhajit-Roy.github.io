@@ -1,0 +1,14 @@
+[
+    {
+      "origin": ["https://plas-5k.web.app"],
+      "responseHeader": ["x-7z-compressed"],
+      "method": ["GET", "HEAD", "DELETE"],
+      "maxAgeSeconds": 3600
+    },
+    {
+        "origin": ["https://plas-5k.web.app"],
+        "responseHeader": ["text/csv"],
+        "method": ["GET", "HEAD", "DELETE"],
+        "maxAgeSeconds": 3600
+      }
+]
