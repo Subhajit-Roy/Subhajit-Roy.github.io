@@ -36,7 +36,10 @@ export default function Profile(){
                 responseType: 'blob', // important
                 onDownloadProgress: (progressEvent)=>{
                     setProgress2(Math.round((progressEvent.loaded*100)/progressEvent.total))
-                }
+                },
+                headers: {
+                    "Access-Control-Allow-Origin": "*"
+                  }
             }).then((response) => {
                 const url = window.URL.createObjectURL(new Blob([response.data]));
                 const link = document.createElement('a');
@@ -71,7 +74,10 @@ export default function Profile(){
                     responseType: 'blob', // important
                     onDownloadProgress: (progressEvent)=>{
                         setProgress(Math.round((progressEvent.loaded*100)/progressEvent.total))
-                    }
+                    },
+                    headers: {
+                        "Access-Control-Allow-Origin": "*"
+                      }
                 }).then((response) => {
                     const url = window.URL.createObjectURL(new Blob([response.data]));
                     const link = document.createElement('a');
