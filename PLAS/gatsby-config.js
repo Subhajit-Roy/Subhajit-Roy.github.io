@@ -14,10 +14,11 @@ module.exports = {
         name: 'Others',
         link: '#',
         items: [
-          {
-            name: 'PDB Viewer',
-            link: '/app/viewer',
-          },
+          // {
+          //   name: 'PDB Viewer',
+          //   // link: '/app/viewer',
+          //   link: '/viewer'
+          // },
           {
             name: 'Contributors',
             link: '/contributors',
@@ -51,8 +52,8 @@ module.exports = {
         link:'/query',
       },
       {
-        name: 'Profile',
-        link: '/app/profile',
+        name: 'Viewer',
+        link: '/viewer',
         cl: 'button primary',
       },
     ]

@@ -2,37 +2,38 @@ import * as React from "react"
 // import { Link } from "gatsby"
 // import { StaticImage } from "gatsby-plugin-image"
 
-import Layout from "../components/layout"
+// import Layout from "../components/layout"
 import Seo from "../components/seo"
 import { Helmet } from "react-helmet"
 import { Stage, StructureComponent } from "react-ngl"
 import { Autocomplete, Checkbox, Grid, Paper, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, TextField } from "@mui/material"
-// import finalData from '../database/5000_final.json'
+import finalData from '../database/plas5k.json'
 import { initializeApp } from 'firebase/app';
 import { getAuth, onAuthStateChanged } from "firebase/auth";
 import { navigate } from "gatsby"
 import { useEffect} from "react";
 import config from "../service/fireconf"
+import Layout from "../components/layout";
 // import MathJax from "react-mathjax";
-import { getDownloadURL, getStorage, ref } from "firebase/storage";
+// import { getDownloadURL, getStorage, ref } from "firebase/storage";
 
 
 
 
 export default function IndexPage(){
-  function ObtainJSON(){
-    if(typeof window !== 'undefined'){
-      const storage = getStorage();
-      getDownloadURL(ref(storage, "PLAS-5k/database/plas5k.json")).then((url)=>{
-        fetch(url).then((response)=>response.json()).then((responseJSON)=>{
-          setFinalData(responseJSON); 
-          // console.log(responseJSON[0])
-        });
-      }).catch((error)=>{
-        alert("Error in obtainint JSON");
-      })
-    }
-  }
+  // function ObtainJSON(){
+  //   if(typeof window !== 'undefined'){
+  //     const storage = getStorage();
+  //     getDownloadURL(ref(storage, "PLAS-5k/database/plas5k.json")).then((url)=>{
+  //       fetch(url).then((response)=>response.json()).then((responseJSON)=>{
+  //         setFinalData(responseJSON); 
+  //         // console.log(responseJSON[0])
+  //       });
+  //     }).catch((error)=>{
+  //       alert("Error in obtainint JSON");
+  //     })
+  //   }
+  // }
 
 
   useEffect(()=>{
@@ -44,12 +45,13 @@ export default function IndexPage(){
                 navigate("/auth")
             }else{
                 // console.log(user.email);
-                ObtainJSON();
+                // ObtainJSON();
             }
         })
     }
 })
   const reprList = React.useMemo(() => ({
+    'backgroundColor':"white",
     'ball+stick': [{
       type: 'ball+stick',
       param:{
@@ -92,22 +94,23 @@ export default function IndexPage(){
 
   const [inputValue, setInputValue] = React.useState('');
   const [index, setIndex] = React.useState('');
-  const [receptorState, setReceptorStae]= React.useState(true);
+  const [receptorState, setReceptorState]= React.useState(true);
   const [ligandState, setLigandState]= React.useState(true);
   const [pdburl,setPdburl] = React.useState("");
-  const [finalData,setFinalData] = React.useState([]);
+  // const [finalData,setFinalData] = React.useState([]);
 
   function PdbRequest(newInputValue){
-    if (newInputValue.length === 4 && newInputValue.length !==null){
-      if(typeof window !== 'undefined'){
-        const storage = getStorage();
-        getDownloadURL(ref(storage, "PLAS-5k/pdb/"+inputValue+".pdb")).then((url)=>{
-          console.log(url)
-          setPdburl(url);
-        }).catch((error)=>{
-          alert("Error",error.message);
-        })
-      }
+    if (newInputValue.length !== null && newInputValue.length === 4){
+      // if(typeof window !== 'undefined'){
+      //   const storage = getStorage();
+      //   getDownloadURL(ref(storage, "PLAS-5k/pdb/"+inputValue+".pdb")).then((url)=>{
+      //     console.log(url)
+      //     setPdburl(url);
+      //   }).catch((error)=>{
+      //     alert("Error",error.message);
+      //   })
+      // }
+      setPdburl("/input/"+newInputValue+".pdb");
       setInputValue(newInputValue);
       setIndex(finalData.findIndex(obj => obj.pdbid === newInputValue));
       console.log(index);
@@ -165,14 +168,14 @@ export default function IndexPage(){
           <Grid container spacing={4} direction="row">
             <Grid item>
               <Stage width="600px" height="600px" cameraState={cameraState}>
-                <StructureComponent path={pdburl} reprList={reprList['ball+stick']} selection={ligandState ? 'Ligand' : 'not all'}/>
-                <StructureComponent path={pdburl} reprList={reprList['cartoon']} selection={receptorState ? 'protein' : 'not all'}/>
+                <StructureComponent path={"/ligand/ligand-"+inputValue+".pdb"} reprList={reprList['ball+stick']} selection={ligandState ? 'all' : 'not all'}/>
+                <StructureComponent path={"/protein/protein-"+inputValue+".pdb"} reprList={reprList['cartoon']} selection={receptorState ? 'all' : 'not all'}/>
               </Stage>
             </Grid>
             <Grid item>
               <Grid container direction="column">
                 <Grid item>
-                  <h5>Receptor <Checkbox defaultChecked onChange={()=>{setReceptorStae(!receptorState)}}/></h5>
+                  <h5>Receptor <Checkbox defaultChecked onChange={()=>{setReceptorState(!receptorState)}}/></h5>
                 </Grid>
                 <Grid item>
                   <h5>Ligand <Checkbox defaultChecked onChange={()=>{setLigandState(!ligandState)}}/></h5>
@@ -183,7 +186,7 @@ export default function IndexPage(){
               <TableContainer component={Paper}>
                 <Table>
                   <TableHead>
-                    <TableCell align="left">{parseFloat(finalData[index]['pdbid']).toFixed(2)}</TableCell>
+                    <TableCell align="left">{(finalData[index]['pdbid'])}</TableCell>
                     <TableCell align="right">Energy components(kcal/mol)</TableCell>
                   </TableHead>
                   <TableBody>

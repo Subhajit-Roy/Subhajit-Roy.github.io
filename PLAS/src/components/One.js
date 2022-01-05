@@ -28,13 +28,13 @@ const One = props => (
             <div className="col-4 col-12-medium">
               <h3>New User:</h3>
               <p>
-                If your are a new user please go ahead and <Link to="/app/auth">sign up</Link> using your email and password or via 3rd party authenticator like Google, Facebook etc.
+                If your are a new user please go ahead and <Link to="/">sign up</Link> using your email and password or via 3rd party authenticator like Google, Facebook etc.
               </p>
             </div>
             <div className="col-4 col-12-medium">
               <h3>Old User:</h3>
               <p>
-                If you are a returning member no need to create a new account and simply login in the <Link to="/app/auth">authentication</Link> page.
+                If you are a returning member no need to create a new account and simply login in the <Link to="/">authentication</Link> page.
                 In case there are any error while signing up please contact us.
               </p>
             </div>
