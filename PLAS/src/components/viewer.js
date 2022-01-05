@@ -93,13 +93,13 @@ export default function IndexPage(){
 
   const [inputValue, setInputValue] = React.useState('');
   const [index, setIndex] = React.useState('');
-  const [receptorState, setReceptorStae]= React.useState(true);
+  const [receptorState, setReceptorState]= React.useState(true);
   const [ligandState, setLigandState]= React.useState(true);
   const [pdburl,setPdburl] = React.useState("");
   // const [finalData,setFinalData] = React.useState([]);
 
   function PdbRequest(newInputValue){
-    if (newInputValue.length !==null && newInputValue.length === 4){
+    if (newInputValue.length !== null && newInputValue.length === 4){
       // if(typeof window !== 'undefined'){
       //   const storage = getStorage();
       //   getDownloadURL(ref(storage, "PLAS-5k/pdb/"+inputValue+".pdb")).then((url)=>{
@@ -167,14 +167,14 @@ export default function IndexPage(){
           <Grid container spacing={4} direction="row">
             <Grid item>
               <Stage width="600px" height="600px" cameraState={cameraState}>
-                <StructureComponent path={pdburl} reprList={reprList['ball+stick']} selection={ligandState ? 'Ligand' : 'not all'}/>
-                <StructureComponent path={pdburl} reprList={reprList['cartoon']} selection={receptorState ? 'protein' : 'not all'}/>
+                <StructureComponent path={"/ligand/ligand-"+inputValue+".pdb"} reprList={reprList['ball+stick']} selection={ligandState ? 'all' : 'not all'}/>
+                <StructureComponent path={"/protein/protein-"+inputValue+".pdb"} reprList={reprList['cartoon']} selection={receptorState ? 'all' : 'not all'}/>
               </Stage>
             </Grid>
             <Grid item>
               <Grid container direction="column">
                 <Grid item>
-                  <h5>Receptor <Checkbox defaultChecked onChange={()=>{setReceptorStae(!receptorState)}}/></h5>
+                  <h5>Receptor <Checkbox defaultChecked onChange={()=>{setReceptorState(!receptorState)}}/></h5>
                 </Grid>
                 <Grid item>
                   <h5>Ligand <Checkbox defaultChecked onChange={()=>{setLigandState(!ligandState)}}/></h5>
