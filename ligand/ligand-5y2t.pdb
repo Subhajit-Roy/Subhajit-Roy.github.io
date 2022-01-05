@@ -1,5 +1,6 @@
 HEADER    
 TITLE     MDANALYSIS FRAME 0: Created by PDBWriter
+REMARK     AtomGroup complex_solvated
 CRYST1    1.000    1.000    1.000  90.00  90.00  90.00 P 1           1
 REMARK     285 UNITARY VALUES FOR THE UNIT CELL AUTOMATICALLY SET
 REMARK     285 BY MDANALYSIS PDBWRITER BECAUSE UNIT CELL INFORMATION
@@ -7,62 +8,62 @@ REMARK     285 WAS MISSING.
 REMARK     285 PROTEIN DATA BANK CONVENTIONS REQUIRE THAT
 REMARK     285 CRYST1 RECORD IS INCLUDED, BUT THE VALUES ON
 REMARK     285 THIS RECORD ARE MEANINGLESS.
-ATOM      1  CAE LIG M 271       1.917   7.900  -2.917  0.00  0.00      SYST C
-ATOM      2  CAF LIG M 271       2.604   6.547  -2.586  0.00  0.00      SYST C
-ATOM      3  CAG LIG M 271       2.571   5.612  -3.647  0.00  0.00      SYST C
-ATOM      4  CAH LIG M 271       1.837   8.709  -1.752  0.00  0.00      SYST C
-ATOM      5  CAI LIG M 271       3.719   5.407  -4.401  0.00  0.00      SYST C
-ATOM      6  CAJ LIG M 271       1.419   4.883  -3.942  0.00  0.00      SYST C
-ATOM      7  CAK LIG M 271       1.535   1.869  -8.651  0.00  0.00      SYST C
-ATOM      8  CAL LIG M 271       2.579   3.791  -5.757  0.00  0.00      SYSTCA
-ATOM      9  CAM LIG M 271       1.361   2.570  -7.288  0.00  0.00      SYST C
-ATOM     10  CAN LIG M 271       3.723   4.493  -5.439  0.00  0.00      SYST C
-ATOM     11  CAO LIG M 271       1.422   3.967  -4.995  0.00  0.00      SYST C
-ATOM     12  CAP LIG M 271       3.137  10.144  -2.910  0.00  0.00      SYST C
-ATOM     13  CAR LIG M 271       3.323   3.082 -10.038  0.00  0.00      SYST C
-ATOM     14  CAV LIG M 271      -0.453   5.931 -14.145  0.00  0.00      SYST C
-ATOM     15  CAW LIG M 271      -1.035   7.182 -14.339  0.00  0.00      SYST C
-ATOM     16  CAX LIG M 271      -0.832   4.858 -14.943  0.00  0.00      SYST C
-ATOM     17  CAY LIG M 271      -2.426   6.276 -16.074  0.00  0.00      SYST C
-ATOM     18  CAZ LIG M 271      -2.027   7.359 -15.294  0.00  0.00      SYST C
-ATOM     19  NAA LIG M 271       1.909   2.851  -9.698  0.00  0.00      SYSTNA
-ATOM     20  NAB LIG M 271       2.506   9.879  -1.756  0.00  0.00      SYSTNA
-ATOM     21  CBA LIG M 271      -1.825   5.030 -15.903  0.00  0.00      SYST C
-ATOM     22  CBB LIG M 271      -3.714   5.217 -17.683  0.00  0.00      SYST C
-ATOM     23  OBC LIG M 271       2.640   2.908  -6.793  0.00  0.00      SYST O
-ATOM     24  OBD LIG M 271       1.238   8.354  -0.733  0.00  0.00      SYST O
-ATOM     25  OBE LIG M 271       3.797  11.160  -3.118  0.00  0.00      SYSTBE
-ATOM     26  OBF LIG M 271       0.551   5.769 -13.229  0.00  0.00      SYST O
-ATOM     27  OBG LIG M 271      -3.400   6.450 -17.018  0.00  0.00      SYST O
-ATOM     28  SBH LIG M 271       2.884   8.926  -4.046  0.00  0.00      SYST S
-ATOM     29  N1  LIG M 271      -0.289   3.456  -9.939  0.00  0.00      SYST N
-ATOM     30  C2  LIG M 271      -1.318   4.138 -10.586  0.00  0.00      SYST C
-ATOM     31  N3  LIG M 271      -1.004   4.927 -11.706  0.00  0.00      SYST N
-ATOM     32  C4  LIG M 271       0.260   4.998 -12.138  0.00  0.00      SYST C
-ATOM     33  C5  LIG M 271       1.287   4.325 -11.486  0.00  0.00      SYST C
-ATOM     34  C6  LIG M 271       0.977   3.538 -10.362  0.00  0.00      SYST C
-ATOM     35  HAF LIG M 271       3.626   6.737  -2.332  0.00  0.00      SYST H
-ATOM     36  HAI LIG M 271       4.607   5.960  -4.177  0.00  0.00      SYST H
-ATOM     37  HAJ LIG M 271       0.532   5.026  -3.361  0.00  0.00      SYST H
-ATOM     38 HAK1 LIG M 271       2.366   1.203  -8.547  0.00  0.00      SYST H
-ATOM     39 HAK2 LIG M 271       0.573   1.486  -8.922  0.00  0.00      SYST H
-ATOM     40 HAM1 LIG M 271       0.946   1.848  -6.616  0.00  0.00      SYST H
-ATOM     41 HAM2 LIG M 271       0.844   3.489  -7.472  0.00  0.00      SYST H
-ATOM     42  HAN LIG M 271       4.620   4.329  -5.999  0.00  0.00      SYST H
-ATOM     43  HAO LIG M 271       0.541   3.402  -5.218  0.00  0.00      SYST H
-ATOM     44 HAR1 LIG M 271       3.943   2.456  -9.431  0.00  0.00      SYST H
-ATOM     45 HAR2 LIG M 271       3.570   4.108  -9.860  0.00  0.00      SYST H
-ATOM     46 HAR3 LIG M 271       3.484   2.850 -11.070  0.00  0.00      SYST H
-ATOM     47  HAW LIG M 271      -0.715   8.014 -13.747  0.00  0.00      SYST H
-ATOM     48  HAX LIG M 271      -0.363   3.904 -14.820  0.00  0.00      SYST H
-ATOM     49  HAZ LIG M 271      -2.481   8.318 -15.430  0.00  0.00      SYST H
-ATOM     50  HAB LIG M 271       2.530  10.495  -0.969  0.00  0.00      SYST H
-ATOM     51  HBA LIG M 271      -2.128   4.204 -16.511  0.00  0.00      SYST H
-ATOM     52 HBB1 LIG M 271      -3.107   4.432 -17.284  0.00  0.00      SYST H
-ATOM     53 HBB2 LIG M 271      -4.747   4.982 -17.530  0.00  0.00      SYST H
-ATOM     54 HBB3 LIG M 271      -3.523   5.318 -18.731  0.00  0.00      SYST H
-ATOM     55  H22 LIG M 271      -1.959   3.369 -10.965  0.00  0.00      SYST H
-ATOM     56  H5  LIG M 271       2.296   4.404 -11.833  0.00  0.00      SYST H
-ATOM     57  H   LIG M 271       2.116   6.116  -1.737  0.00  0.00      SYST H
-ATOM     58  H1  LIG M 271       0.939   7.731  -3.317  0.00  0.00      SYST H
+ATOM      1  CAE LIG X 271       1.917   7.900  -2.917  0.00  0.00      SYST  
+ATOM      2  CAF LIG X 271       2.604   6.547  -2.586  0.00  0.00      SYST  
+ATOM      3  CAG LIG X 271       2.571   5.612  -3.647  0.00  0.00      SYST  
+ATOM      4  CAH LIG X 271       1.837   8.709  -1.752  0.00  0.00      SYST  
+ATOM      5  CAI LIG X 271       3.719   5.407  -4.401  0.00  0.00      SYST  
+ATOM      6  CAJ LIG X 271       1.419   4.883  -3.942  0.00  0.00      SYST  
+ATOM      7  CAK LIG X 271       1.535   1.869  -8.651  0.00  0.00      SYST  
+ATOM      8  CAL LIG X 271       2.579   3.791  -5.757  0.00  0.00      SYST  
+ATOM      9  CAM LIG X 271       1.361   2.570  -7.288  0.00  0.00      SYST  
+ATOM     10  CAN LIG X 271       3.723   4.493  -5.439  0.00  0.00      SYST  
+ATOM     11  CAO LIG X 271       1.422   3.967  -4.995  0.00  0.00      SYST  
+ATOM     12  CAP LIG X 271       3.137  10.144  -2.910  0.00  0.00      SYST  
+ATOM     13  CAR LIG X 271       3.323   3.082 -10.038  0.00  0.00      SYST  
+ATOM     14  CAV LIG X 271      -0.453   5.931 -14.145  0.00  0.00      SYST  
+ATOM     15  CAW LIG X 271      -1.035   7.182 -14.339  0.00  0.00      SYST  
+ATOM     16  CAX LIG X 271      -0.832   4.858 -14.943  0.00  0.00      SYST  
+ATOM     17  CAY LIG X 271      -2.426   6.276 -16.074  0.00  0.00      SYST  
+ATOM     18  CAZ LIG X 271      -2.027   7.359 -15.294  0.00  0.00      SYST  
+ATOM     19  NAA LIG X 271       1.909   2.851  -9.698  0.00  0.00      SYST  
+ATOM     20  NAB LIG X 271       2.506   9.879  -1.756  0.00  0.00      SYST  
+ATOM     21  CBA LIG X 271      -1.825   5.030 -15.903  0.00  0.00      SYST  
+ATOM     22  CBB LIG X 271      -3.714   5.217 -17.683  0.00  0.00      SYST  
+ATOM     23  OBC LIG X 271       2.640   2.908  -6.793  0.00  0.00      SYST  
+ATOM     24  OBD LIG X 271       1.238   8.354  -0.733  0.00  0.00      SYST  
+ATOM     25  OBE LIG X 271       3.797  11.160  -3.118  0.00  0.00      SYST  
+ATOM     26  OBF LIG X 271       0.551   5.769 -13.229  0.00  0.00      SYST  
+ATOM     27  OBG LIG X 271      -3.400   6.450 -17.018  0.00  0.00      SYST  
+ATOM     28  SBH LIG X 271       2.884   8.926  -4.046  0.00  0.00      SYST  
+ATOM     29  N1  LIG X 271      -0.289   3.456  -9.939  0.00  0.00      SYST  
+ATOM     30  C2  LIG X 271      -1.318   4.138 -10.586  0.00  0.00      SYST  
+ATOM     31  N3  LIG X 271      -1.004   4.927 -11.706  0.00  0.00      SYST  
+ATOM     32  C4  LIG X 271       0.260   4.998 -12.138  0.00  0.00      SYST  
+ATOM     33  C5  LIG X 271       1.287   4.325 -11.486  0.00  0.00      SYST  
+ATOM     34  C6  LIG X 271       0.977   3.538 -10.362  0.00  0.00      SYST  
+ATOM     35  HAF LIG X 271       3.626   6.737  -2.332  0.00  0.00      SYST  
+ATOM     36  HAI LIG X 271       4.607   5.960  -4.177  0.00  0.00      SYST  
+ATOM     37  HAJ LIG X 271       0.532   5.026  -3.361  0.00  0.00      SYST  
+ATOM     38 HAK1 LIG X 271       2.366   1.203  -8.547  0.00  0.00      SYST  
+ATOM     39 HAK2 LIG X 271       0.573   1.486  -8.922  0.00  0.00      SYST  
+ATOM     40 HAM1 LIG X 271       0.946   1.848  -6.616  0.00  0.00      SYST  
+ATOM     41 HAM2 LIG X 271       0.844   3.489  -7.472  0.00  0.00      SYST  
+ATOM     42  HAN LIG X 271       4.620   4.329  -5.999  0.00  0.00      SYST  
+ATOM     43  HAO LIG X 271       0.541   3.402  -5.218  0.00  0.00      SYST  
+ATOM     44 HAR1 LIG X 271       3.943   2.456  -9.431  0.00  0.00      SYST  
+ATOM     45 HAR2 LIG X 271       3.570   4.108  -9.860  0.00  0.00      SYST  
+ATOM     46 HAR3 LIG X 271       3.484   2.850 -11.070  0.00  0.00      SYST  
+ATOM     47  HAW LIG X 271      -0.715   8.014 -13.747  0.00  0.00      SYST  
+ATOM     48  HAX LIG X 271      -0.363   3.904 -14.820  0.00  0.00      SYST  
+ATOM     49  HAZ LIG X 271      -2.481   8.318 -15.430  0.00  0.00      SYST  
+ATOM     50  HAB LIG X 271       2.530  10.495  -0.969  0.00  0.00      SYST  
+ATOM     51  HBA LIG X 271      -2.128   4.204 -16.511  0.00  0.00      SYST  
+ATOM     52 HBB1 LIG X 271      -3.107   4.432 -17.284  0.00  0.00      SYST  
+ATOM     53 HBB2 LIG X 271      -4.747   4.982 -17.530  0.00  0.00      SYST  
+ATOM     54 HBB3 LIG X 271      -3.523   5.318 -18.731  0.00  0.00      SYST  
+ATOM     55  H22 LIG X 271      -1.959   3.369 -10.965  0.00  0.00      SYST  
+ATOM     56  H5  LIG X 271       2.296   4.404 -11.833  0.00  0.00      SYST  
+ATOM     57  H   LIG X 271       2.116   6.116  -1.737  0.00  0.00      SYST  
+ATOM     58  H1  LIG X 271       0.939   7.731  -3.317  0.00  0.00      SYST  
 END

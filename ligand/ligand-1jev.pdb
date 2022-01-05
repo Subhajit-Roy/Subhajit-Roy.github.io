@@ -1,5 +1,6 @@
 HEADER    
 TITLE     MDANALYSIS FRAME 0: Created by PDBWriter
+REMARK     AtomGroup complex_solvated
 CRYST1    1.000    1.000    1.000  90.00  90.00  90.00 P 1           1
 REMARK     285 UNITARY VALUES FOR THE UNIT CELL AUTOMATICALLY SET
 REMARK     285 BY MDANALYSIS PDBWRITER BECAUSE UNIT CELL INFORMATION
@@ -7,75 +8,75 @@ REMARK     285 WAS MISSING.
 REMARK     285 PROTEIN DATA BANK CONVENTIONS REQUIRE THAT
 REMARK     285 CRYST1 RECORD IS INCLUDED, BUT THE VALUES ON
 REMARK     285 THIS RECORD ARE MEANINGLESS.
-ATOM      1  N   LYS M 518       1.078  -0.645  -0.636  0.00  0.00      SYST N
-ATOM      2  H1  LYS M 518       0.381  -0.967   0.020  0.00  0.00      SYST H
-ATOM      3  H2  LYS M 518       1.923  -0.424  -0.129  0.00  0.00      SYST H
-ATOM      4  H3  LYS M 518       1.110  -1.286  -1.416  0.00  0.00      SYST H
-ATOM      5  CA  LYS M 518       0.608   0.660  -1.213  0.00  0.00      SYST C
-ATOM      6  HA  LYS M 518       1.333   1.443  -0.988  0.00  0.00      SYST H
-ATOM      7  CB  LYS M 518       0.456   0.559  -2.721  0.00  0.00      SYST C
-ATOM      8  HB2 LYS M 518       0.035   1.505  -3.063  0.00  0.00      SYST H
-ATOM      9  HB3 LYS M 518       1.457   0.436  -3.135  0.00  0.00      SYST H
-ATOM     10  CG  LYS M 518      -0.430  -0.589  -3.187  0.00  0.00      SYST C
-ATOM     11  HG2 LYS M 518      -0.036  -1.520  -2.780  0.00  0.00      SYST H
-ATOM     12  HG3 LYS M 518      -1.439  -0.426  -2.808  0.00  0.00      SYST H
-ATOM     13  CD  LYS M 518      -0.466  -0.674  -4.708  0.00  0.00      SYST C
-ATOM     14  HD2 LYS M 518      -1.317  -1.288  -5.000  0.00  0.00      SYST H
-ATOM     15  HD3 LYS M 518      -0.590   0.332  -5.108  0.00  0.00      SYST H
-ATOM     16  CE  LYS M 518       0.819  -1.288  -5.263  0.00  0.00      SYST C
-ATOM     17  HE2 LYS M 518       0.806  -1.212  -6.350  0.00  0.00      SYST H
-ATOM     18  HE3 LYS M 518       1.673  -0.735  -4.871  0.00  0.00      SYST H
-ATOM     19  NZ  LYS M 518       0.931  -2.719  -4.867  0.00  0.00      SYST N
-ATOM     20  HZ1 LYS M 518       0.141  -3.232  -5.230  0.00  0.00      SYST H
-ATOM     21  HZ2 LYS M 518       1.785  -3.106  -5.242  0.00  0.00      SYST H
-ATOM     22  HZ3 LYS M 518       0.944  -2.789  -3.859  0.00  0.00      SYST H
-ATOM     23  C   LYS M 518      -0.681   1.088  -0.532  0.00  0.00      SYST C
-ATOM     24  O   LYS M 518      -1.447   0.227  -0.110  0.00  0.00      SYST O
-ATOM     25  N   TRP M 519      -0.893   2.386  -0.379  0.00  0.00      SYST N
-ATOM     26  H   TRP M 519      -0.210   3.059  -0.697  0.00  0.00      SYST H
-ATOM     27  CA  TRP M 519      -2.092   2.881   0.294  0.00  0.00      SYST C
-ATOM     28  HA  TRP M 519      -2.310   2.254   1.158  0.00  0.00      SYST H
-ATOM     29  CB  TRP M 519      -1.898   4.326   0.773  0.00  0.00      SYST C
-ATOM     30  HB2 TRP M 519      -1.574   4.946  -0.062  0.00  0.00      SYST H
-ATOM     31  HB3 TRP M 519      -2.806   4.746   1.206  0.00  0.00      SYST H
-ATOM     32  CG  TRP M 519      -0.831   4.431   1.826  0.00  0.00      SYST C
-ATOM     33  CD1 TRP M 519       0.362   5.071   1.732  0.00  0.00      SYST C
-ATOM     34  HD1 TRP M 519       0.571   5.588   0.795  0.00  0.00      SYST H
-ATOM     35  NE1 TRP M 519       1.076   4.917   2.897  0.00  0.00      SYST N
-ATOM     36  HE1 TRP M 519       1.990   5.306   3.082  0.00  0.00      SYST H
-ATOM     37  CE2 TRP M 519       0.343   4.159   3.769  0.00  0.00      SYST C
-ATOM     38  CZ2 TRP M 519       0.633   3.736   5.068  0.00  0.00      SYST C
-ATOM     39  HZ2 TRP M 519       1.584   4.034   5.510  0.00  0.00      SYST H
-ATOM     40  CH2 TRP M 519      -0.301   2.969   5.709  0.00  0.00      SYST C
-ATOM     41  HH2 TRP M 519      -0.102   2.610   6.719  0.00  0.00      SYST H
-ATOM     42  CZ3 TRP M 519      -1.520   2.630   5.092  0.00  0.00      SYST C
-ATOM     43  HZ3 TRP M 519      -2.258   2.018   5.609  0.00  0.00      SYST H
-ATOM     44  CE3 TRP M 519      -1.816   3.062   3.816  0.00  0.00      SYST C
-ATOM     45  HE3 TRP M 519      -2.783   2.794   3.391  0.00  0.00      SYST H
-ATOM     46  CD2 TRP M 519      -0.867   3.834   3.129  0.00  0.00      SYST C
-ATOM     47  C   TRP M 519      -3.322   2.816  -0.608  0.00  0.00      SYST C
-ATOM     48  O   TRP M 519      -3.268   3.106  -1.790  0.00  0.00      SYST O
-ATOM     49  N   LYS M 520      -4.451   2.425   0.008  0.00  0.00      SYST N
-ATOM     50  H   LYS M 520      -4.436   2.194   0.991  0.00  0.00      SYST H
-ATOM     51  CA  LYS M 520      -5.709   2.349  -0.694  0.00  0.00      SYST C
-ATOM     52  HA  LYS M 520      -5.588   2.734  -1.706  0.00  0.00      SYST H
-ATOM     53  CB  LYS M 520      -6.200   0.892  -0.777  0.00  0.00      SYST C
-ATOM     54  HB2 LYS M 520      -5.348   0.246  -0.992  0.00  0.00      SYST H
-ATOM     55  HB3 LYS M 520      -6.634   0.613   0.183  0.00  0.00      SYST H
-ATOM     56  CG  LYS M 520      -7.249   0.733  -1.875  0.00  0.00      SYST C
-ATOM     57  HG2 LYS M 520      -7.848   1.643  -1.899  0.00  0.00      SYST H
-ATOM     58  HG3 LYS M 520      -6.725   0.619  -2.824  0.00  0.00      SYST H
-ATOM     59  CD  LYS M 520      -8.146  -0.451  -1.653  0.00  0.00      SYST C
-ATOM     60  HD2 LYS M 520      -7.560  -1.365  -1.755  0.00  0.00      SYST H
-ATOM     61  HD3 LYS M 520      -8.563  -0.398  -0.647  0.00  0.00      SYST H
-ATOM     62  CE  LYS M 520      -9.275  -0.457  -2.669  0.00  0.00      SYST C
-ATOM     63  HE2 LYS M 520      -9.867  -1.360  -2.521  0.00  0.00      SYST H
-ATOM     64  HE3 LYS M 520      -9.900   0.419  -2.495  0.00  0.00      SYST H
-ATOM     65  NZ  LYS M 520      -8.758  -0.427  -4.062  0.00  0.00      SYST N
-ATOM     66  HZ1 LYS M 520      -8.179  -1.239  -4.224  0.00  0.00      SYST H
-ATOM     67  HZ2 LYS M 520      -9.533  -0.432  -4.709  0.00  0.00      SYST H
-ATOM     68  HZ3 LYS M 520      -8.210   0.410  -4.200  0.00  0.00      SYST H
-ATOM     69  C   LYS M 520      -6.785   3.153   0.049  0.00  0.00      SYST C
-ATOM     70  O   LYS M 520      -7.763   3.527  -0.637  0.00  0.00      SYST O
-ATOM     71  OXT LYS M 520      -6.605   3.378   1.259  0.00  0.00      SYST O
+ATOM      1  N   LYS X 518       1.078  -0.645  -0.636  0.00  0.00      SYST  
+ATOM      2  H1  LYS X 518       0.381  -0.967   0.020  0.00  0.00      SYST  
+ATOM      3  H2  LYS X 518       1.923  -0.424  -0.129  0.00  0.00      SYST  
+ATOM      4  H3  LYS X 518       1.110  -1.286  -1.416  0.00  0.00      SYST  
+ATOM      5  CA  LYS X 518       0.608   0.660  -1.213  0.00  0.00      SYST  
+ATOM      6  HA  LYS X 518       1.333   1.443  -0.988  0.00  0.00      SYST  
+ATOM      7  CB  LYS X 518       0.456   0.559  -2.721  0.00  0.00      SYST  
+ATOM      8  HB2 LYS X 518       0.035   1.505  -3.063  0.00  0.00      SYST  
+ATOM      9  HB3 LYS X 518       1.457   0.436  -3.135  0.00  0.00      SYST  
+ATOM     10  CG  LYS X 518      -0.430  -0.589  -3.187  0.00  0.00      SYST  
+ATOM     11  HG2 LYS X 518      -0.036  -1.520  -2.780  0.00  0.00      SYST  
+ATOM     12  HG3 LYS X 518      -1.439  -0.426  -2.808  0.00  0.00      SYST  
+ATOM     13  CD  LYS X 518      -0.466  -0.674  -4.708  0.00  0.00      SYST  
+ATOM     14  HD2 LYS X 518      -1.317  -1.288  -5.000  0.00  0.00      SYST  
+ATOM     15  HD3 LYS X 518      -0.590   0.332  -5.108  0.00  0.00      SYST  
+ATOM     16  CE  LYS X 518       0.819  -1.288  -5.263  0.00  0.00      SYST  
+ATOM     17  HE2 LYS X 518       0.806  -1.212  -6.350  0.00  0.00      SYST  
+ATOM     18  HE3 LYS X 518       1.673  -0.735  -4.871  0.00  0.00      SYST  
+ATOM     19  NZ  LYS X 518       0.931  -2.719  -4.867  0.00  0.00      SYST  
+ATOM     20  HZ1 LYS X 518       0.141  -3.232  -5.230  0.00  0.00      SYST  
+ATOM     21  HZ2 LYS X 518       1.785  -3.106  -5.242  0.00  0.00      SYST  
+ATOM     22  HZ3 LYS X 518       0.944  -2.789  -3.859  0.00  0.00      SYST  
+ATOM     23  C   LYS X 518      -0.681   1.088  -0.532  0.00  0.00      SYST  
+ATOM     24  O   LYS X 518      -1.447   0.227  -0.110  0.00  0.00      SYST  
+ATOM     25  N   TRP X 519      -0.893   2.386  -0.379  0.00  0.00      SYST  
+ATOM     26  H   TRP X 519      -0.210   3.059  -0.697  0.00  0.00      SYST  
+ATOM     27  CA  TRP X 519      -2.092   2.881   0.294  0.00  0.00      SYST  
+ATOM     28  HA  TRP X 519      -2.310   2.254   1.158  0.00  0.00      SYST  
+ATOM     29  CB  TRP X 519      -1.898   4.326   0.773  0.00  0.00      SYST  
+ATOM     30  HB2 TRP X 519      -1.574   4.946  -0.062  0.00  0.00      SYST  
+ATOM     31  HB3 TRP X 519      -2.806   4.746   1.206  0.00  0.00      SYST  
+ATOM     32  CG  TRP X 519      -0.831   4.431   1.826  0.00  0.00      SYST  
+ATOM     33  CD1 TRP X 519       0.362   5.071   1.732  0.00  0.00      SYST  
+ATOM     34  HD1 TRP X 519       0.571   5.588   0.795  0.00  0.00      SYST  
+ATOM     35  NE1 TRP X 519       1.076   4.917   2.897  0.00  0.00      SYST  
+ATOM     36  HE1 TRP X 519       1.990   5.306   3.082  0.00  0.00      SYST  
+ATOM     37  CE2 TRP X 519       0.343   4.159   3.769  0.00  0.00      SYST  
+ATOM     38  CZ2 TRP X 519       0.633   3.736   5.068  0.00  0.00      SYST  
+ATOM     39  HZ2 TRP X 519       1.584   4.034   5.510  0.00  0.00      SYST  
+ATOM     40  CH2 TRP X 519      -0.301   2.969   5.709  0.00  0.00      SYST  
+ATOM     41  HH2 TRP X 519      -0.102   2.610   6.719  0.00  0.00      SYST  
+ATOM     42  CZ3 TRP X 519      -1.520   2.630   5.092  0.00  0.00      SYST  
+ATOM     43  HZ3 TRP X 519      -2.258   2.018   5.609  0.00  0.00      SYST  
+ATOM     44  CE3 TRP X 519      -1.816   3.062   3.816  0.00  0.00      SYST  
+ATOM     45  HE3 TRP X 519      -2.783   2.794   3.391  0.00  0.00      SYST  
+ATOM     46  CD2 TRP X 519      -0.867   3.834   3.129  0.00  0.00      SYST  
+ATOM     47  C   TRP X 519      -3.322   2.816  -0.608  0.00  0.00      SYST  
+ATOM     48  O   TRP X 519      -3.268   3.106  -1.790  0.00  0.00      SYST  
+ATOM     49  N   LYS X 520      -4.451   2.425   0.008  0.00  0.00      SYST  
+ATOM     50  H   LYS X 520      -4.436   2.194   0.991  0.00  0.00      SYST  
+ATOM     51  CA  LYS X 520      -5.709   2.349  -0.694  0.00  0.00      SYST  
+ATOM     52  HA  LYS X 520      -5.588   2.734  -1.706  0.00  0.00      SYST  
+ATOM     53  CB  LYS X 520      -6.200   0.892  -0.777  0.00  0.00      SYST  
+ATOM     54  HB2 LYS X 520      -5.348   0.246  -0.992  0.00  0.00      SYST  
+ATOM     55  HB3 LYS X 520      -6.634   0.613   0.183  0.00  0.00      SYST  
+ATOM     56  CG  LYS X 520      -7.249   0.733  -1.875  0.00  0.00      SYST  
+ATOM     57  HG2 LYS X 520      -7.848   1.643  -1.899  0.00  0.00      SYST  
+ATOM     58  HG3 LYS X 520      -6.725   0.619  -2.824  0.00  0.00      SYST  
+ATOM     59  CD  LYS X 520      -8.146  -0.451  -1.653  0.00  0.00      SYST  
+ATOM     60  HD2 LYS X 520      -7.560  -1.365  -1.755  0.00  0.00      SYST  
+ATOM     61  HD3 LYS X 520      -8.563  -0.398  -0.647  0.00  0.00      SYST  
+ATOM     62  CE  LYS X 520      -9.275  -0.457  -2.669  0.00  0.00      SYST  
+ATOM     63  HE2 LYS X 520      -9.867  -1.360  -2.521  0.00  0.00      SYST  
+ATOM     64  HE3 LYS X 520      -9.900   0.419  -2.495  0.00  0.00      SYST  
+ATOM     65  NZ  LYS X 520      -8.758  -0.427  -4.062  0.00  0.00      SYST  
+ATOM     66  HZ1 LYS X 520      -8.179  -1.239  -4.224  0.00  0.00      SYST  
+ATOM     67  HZ2 LYS X 520      -9.533  -0.432  -4.709  0.00  0.00      SYST  
+ATOM     68  HZ3 LYS X 520      -8.210   0.410  -4.200  0.00  0.00      SYST  
+ATOM     69  C   LYS X 520      -6.785   3.153   0.049  0.00  0.00      SYST  
+ATOM     70  O   LYS X 520      -7.763   3.527  -0.637  0.00  0.00      SYST  
+ATOM     71  OXT LYS X 520      -6.605   3.378   1.259  0.00  0.00      SYST  
 END

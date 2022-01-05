@@ -1,25 +1,32 @@
 HEADER    
 TITLE     MDANALYSIS FRAME 0: Created by PDBWriter
-CRYST1   85.235   94.119   77.076  90.00  90.00  90.00 P 1           1
-ATOM      1  C1  LIG M 395       0.626   6.044  -7.885  1.00  0.00      SYST C
-ATOM      2  N1  LIG M 395       0.128   6.189  -6.499  1.00  0.00      SYST N
-ATOM      3  C2  LIG M 395       0.982   6.647  -5.487  1.00  0.00      SYST C
-ATOM      4  O2  LIG M 395       2.155   6.922  -5.737  1.00  0.00      SYST O
-ATOM      5  N3  LIG M 395       0.500   6.757  -4.175  1.00  0.00      SYST N
-ATOM      6  C3  LIG M 395       1.399   7.228  -3.097  1.00  0.00      SYST C
-ATOM      7  C4  LIG M 395      -0.825   6.405  -3.886  1.00  0.00      SYST C
-ATOM      8  C5  LIG M 395      -1.669   5.951  -4.893  1.00  0.00      SYST C
-ATOM      9  C6  LIG M 395      -1.197   5.845  -6.197  1.00  0.00      SYST C
-ATOM     10  O6  LIG M 395      -1.946   5.452  -7.090  1.00  0.00      SYST O
-ATOM     11  C8  LIG M 395      -2.746   5.930  -3.027  1.00  0.00      SYST C
-ATOM     12  N9  LIG M 395      -1.523   6.380  -2.753  1.00  0.00      SYST N
-ATOM     13  H8  LIG M 395      -3.538   5.797  -2.305  1.00  0.00      SYST H
-ATOM     14  H31 LIG M 395       0.852   7.258  -2.154  1.00  0.00      SYST H
-ATOM     15  H32 LIG M 395       2.244   6.546  -3.005  1.00  0.00      SYST H
-ATOM     16  H33 LIG M 395       1.763   8.227  -3.338  1.00  0.00      SYST H
-ATOM     17  H11 LIG M 395       1.673   6.344  -7.929  1.00  0.00      SYST H
-ATOM     18  H12 LIG M 395       0.533   5.004  -8.197  1.00  0.00      SYST H
-ATOM     19  H13 LIG M 395       0.039   6.677  -8.550  1.00  0.00      SYST H
-ATOM     20  N   LIG M 395      -2.841   5.669  -4.329  1.00  0.00      SYST N
-ATOM     21  H   LIG M 395      -3.768   5.337  -4.503  1.00  0.00      SYST H
+REMARK     AtomGroup complex_solvated
+CRYST1    1.000    1.000    1.000  90.00  90.00  90.00 P 1           1
+REMARK     285 UNITARY VALUES FOR THE UNIT CELL AUTOMATICALLY SET
+REMARK     285 BY MDANALYSIS PDBWRITER BECAUSE UNIT CELL INFORMATION
+REMARK     285 WAS MISSING.
+REMARK     285 PROTEIN DATA BANK CONVENTIONS REQUIRE THAT
+REMARK     285 CRYST1 RECORD IS INCLUDED, BUT THE VALUES ON
+REMARK     285 THIS RECORD ARE MEANINGLESS.
+ATOM      1  C1  LIG X 395       0.626   6.044  -7.885  0.00  0.00      SYST  
+ATOM      2  N1  LIG X 395       0.128   6.189  -6.499  0.00  0.00      SYST  
+ATOM      3  C2  LIG X 395       0.982   6.647  -5.487  0.00  0.00      SYST  
+ATOM      4  O2  LIG X 395       2.155   6.922  -5.737  0.00  0.00      SYST  
+ATOM      5  N3  LIG X 395       0.500   6.757  -4.175  0.00  0.00      SYST  
+ATOM      6  C3  LIG X 395       1.399   7.228  -3.097  0.00  0.00      SYST  
+ATOM      7  C4  LIG X 395      -0.825   6.405  -3.886  0.00  0.00      SYST  
+ATOM      8  C5  LIG X 395      -1.669   5.951  -4.893  0.00  0.00      SYST  
+ATOM      9  C6  LIG X 395      -1.197   5.845  -6.197  0.00  0.00      SYST  
+ATOM     10  O6  LIG X 395      -1.946   5.452  -7.090  0.00  0.00      SYST  
+ATOM     11  N7  LIG X 395      -2.841   5.669  -4.329  0.00  0.00      SYST  
+ATOM     12  C8  LIG X 395      -2.746   5.930  -3.027  0.00  0.00      SYST  
+ATOM     13  N9  LIG X 395      -1.523   6.380  -2.753  0.00  0.00      SYST  
+ATOM     14  H8  LIG X 395      -3.538   5.797  -2.305  0.00  0.00      SYST  
+ATOM     15  H9  LIG X 395      -1.184   6.655  -1.842  0.00  0.00      SYST  
+ATOM     16  H31 LIG X 395       0.852   7.258  -2.154  0.00  0.00      SYST  
+ATOM     17  H32 LIG X 395       2.244   6.546  -3.005  0.00  0.00      SYST  
+ATOM     18  H33 LIG X 395       1.763   8.227  -3.338  0.00  0.00      SYST  
+ATOM     19  H11 LIG X 395       1.673   6.344  -7.929  0.00  0.00      SYST  
+ATOM     20  H12 LIG X 395       0.039   6.677  -8.550  0.00  0.00      SYST  
+ATOM     21  H13 LIG X 395       0.533   5.004  -8.198  0.00  0.00      SYST  
 END

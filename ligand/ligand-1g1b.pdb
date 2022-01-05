@@ -1,5 +1,6 @@
 HEADER    
 TITLE     MDANALYSIS FRAME 0: Created by PDBWriter
+REMARK     AtomGroup complex_solvated
 CRYST1    1.000    1.000    1.000  90.00  90.00  90.00 P 1           1
 REMARK     285 UNITARY VALUES FOR THE UNIT CELL AUTOMATICALLY SET
 REMARK     285 BY MDANALYSIS PDBWRITER BECAUSE UNIT CELL INFORMATION
@@ -7,20 +8,20 @@ REMARK     285 WAS MISSING.
 REMARK     285 PROTEIN DATA BANK CONVENTIONS REQUIRE THAT
 REMARK     285 CRYST1 RECORD IS INCLUDED, BUT THE VALUES ON
 REMARK     285 THIS RECORD ARE MEANINGLESS.
-ATOM      1  C1' LIG M 165      -5.763   4.382   1.982  0.00  0.00      SYST C
-ATOM      2  O1' LIG M 165      -4.799   5.157   1.694  0.00  0.00      SYST O
-ATOM      3  O2' LIG M 165      -6.914   4.797   2.270  0.00  0.00      SYST O
-ATOM      4  C1  LIG M 165      -5.515   2.844   2.029  0.00  0.00      SYST C
-ATOM      5  C2  LIG M 165      -4.216   2.294   1.684  0.00  0.00      SYST C
-ATOM      6  C3  LIG M 165      -4.020   0.886   1.733  0.00  0.00      SYST C
-ATOM      7  C4  LIG M 165      -5.154   0.031   2.134  0.00  0.00      SYST C
-ATOM      8  C5  LIG M 165      -6.383   0.606   2.461  0.00  0.00      SYST C
-ATOM      9  C6  LIG M 165      -6.558   1.980   2.404  0.00  0.00      SYST C
-ATOM     10  O4  LIG M 165      -5.026  -1.316   2.141  0.00  0.00      SYST O
-ATOM     11  H2  LIG M 165      -3.414   2.941   1.396  0.00  0.00      SYST H
-ATOM     12  H3  LIG M 165      -3.072   0.457   1.485  0.00  0.00      SYST H
-ATOM     13  H5  LIG M 165      -7.198  -0.020   2.759  0.00  0.00      SYST H
-ATOM     14  H6  LIG M 165      -7.513   2.394   2.652  0.00  0.00      SYST H
-ATOM     15  H4  LIG M 165      -5.825  -1.711   2.498  0.00  0.00      SYST H
-ATOM     16  H   LIG M 165      -6.843   5.584   2.816  0.00  0.00      SYST H
+ATOM      1  C1' LIG X 165      -5.763   4.382   1.982  0.00  0.00      SYST  
+ATOM      2  O1' LIG X 165      -4.799   5.157   1.694  0.00  0.00      SYST  
+ATOM      3  O2' LIG X 165      -6.914   4.797   2.270  0.00  0.00      SYST  
+ATOM      4  C1  LIG X 165      -5.515   2.844   2.029  0.00  0.00      SYST  
+ATOM      5  C2  LIG X 165      -4.216   2.294   1.684  0.00  0.00      SYST  
+ATOM      6  C3  LIG X 165      -4.020   0.886   1.733  0.00  0.00      SYST  
+ATOM      7  C4  LIG X 165      -5.154   0.031   2.134  0.00  0.00      SYST  
+ATOM      8  C5  LIG X 165      -6.383   0.606   2.461  0.00  0.00      SYST  
+ATOM      9  C6  LIG X 165      -6.558   1.980   2.404  0.00  0.00      SYST  
+ATOM     10  O4  LIG X 165      -5.026  -1.316   2.141  0.00  0.00      SYST  
+ATOM     11  H2  LIG X 165      -3.414   2.941   1.396  0.00  0.00      SYST  
+ATOM     12  H3  LIG X 165      -3.072   0.457   1.485  0.00  0.00      SYST  
+ATOM     13  H5  LIG X 165      -7.198  -0.020   2.759  0.00  0.00      SYST  
+ATOM     14  H6  LIG X 165      -7.513   2.394   2.652  0.00  0.00      SYST  
+ATOM     15  H4  LIG X 165      -5.825  -1.711   2.498  0.00  0.00      SYST  
+ATOM     16  H   LIG X 165      -6.843   5.584   2.816  0.00  0.00      SYST  
 END

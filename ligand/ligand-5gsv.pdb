@@ -1,5 +1,6 @@
 HEADER    
 TITLE     MDANALYSIS FRAME 0: Created by PDBWriter
+REMARK     AtomGroup complex_solvated
 CRYST1    1.000    1.000    1.000  90.00  90.00  90.00 P 1           1
 REMARK     285 UNITARY VALUES FOR THE UNIT CELL AUTOMATICALLY SET
 REMARK     285 BY MDANALYSIS PDBWRITER BECAUSE UNIT CELL INFORMATION
@@ -7,164 +8,164 @@ REMARK     285 WAS MISSING.
 REMARK     285 PROTEIN DATA BANK CONVENTIONS REQUIRE THAT
 REMARK     285 CRYST1 RECORD IS INCLUDED, BUT THE VALUES ON
 REMARK     285 THIS RECORD ARE MEANINGLESS.
-ATOM      1  N   PHE M 275     -18.079  10.929   0.460  0.00  0.00      SYST N
-ATOM      2  H1  PHE M 275     -17.251  10.459   0.122  0.00  0.00      SYST H
-ATOM      3  H2  PHE M 275     -18.311  10.562   1.372  0.00  0.00      SYST H
-ATOM      4  H3  PHE M 275     -17.963  11.924   0.330  0.00  0.00      SYST H
-ATOM      5  CA  PHE M 275     -19.195  10.556  -0.400  0.00  0.00      SYST C
-ATOM      6  HA  PHE M 275     -19.969  10.067   0.192  0.00  0.00      SYST H
-ATOM      7  CB  PHE M 275     -19.797  11.795  -1.065  0.00  0.00      SYST C
-ATOM      8  HB2 PHE M 275     -19.594  12.680  -0.461  0.00  0.00      SYST H
-ATOM      9  HB3 PHE M 275     -19.372  11.929  -2.060  0.00  0.00      SYST H
-ATOM     10  CG  PHE M 275     -21.286  11.726  -1.239  0.00  0.00      SYST C
-ATOM     11  CD1 PHE M 275     -22.133  12.005  -0.179  0.00  0.00      SYST C
-ATOM     12  HD1 PHE M 275     -21.703  12.274   0.786  0.00  0.00      SYST H
-ATOM     13  CE1 PHE M 275     -23.506  11.946  -0.332  0.00  0.00      SYST C
-ATOM     14  HE1 PHE M 275     -24.160  12.170   0.511  0.00  0.00      SYST H
-ATOM     15  CZ  PHE M 275     -24.048  11.603  -1.553  0.00  0.00      SYST C
-ATOM     16  HZ  PHE M 275     -25.129  11.553  -1.678  0.00  0.00      SYST H
-ATOM     17  CE2 PHE M 275     -23.215  11.322  -2.619  0.00  0.00      SYST C
-ATOM     18  HE2 PHE M 275     -23.640  11.052  -3.585  0.00  0.00      SYST H
-ATOM     19  CD2 PHE M 275     -21.841  11.383  -2.460  0.00  0.00      SYST C
-ATOM     20  HD2 PHE M 275     -21.184  11.160  -3.301  0.00  0.00      SYST H
-ATOM     21  C   PHE M 275     -18.739   9.554  -1.457  0.00  0.00      SYST C
-ATOM     22  O   PHE M 275     -17.828   9.835  -2.237  0.00  0.00      SYST O
-ATOM     23  N   TYR M 276     -19.374   8.388  -1.477  0.00  0.00      SYST N
-ATOM     24  H   TYR M 276     -20.120   8.203  -0.821  0.00  0.00      SYST H
-ATOM     25  CA  TYR M 276     -18.983   7.328  -2.395  0.00  0.00      SYST C
-ATOM     26  HA  TYR M 276     -17.925   7.099  -2.263  0.00  0.00      SYST H
-ATOM     27  CB  TYR M 276     -19.793   6.060  -2.131  0.00  0.00      SYST C
-ATOM     28  HB2 TYR M 276     -20.044   6.051  -1.070  0.00  0.00      SYST H
-ATOM     29  HB3 TYR M 276     -20.707   6.128  -2.720  0.00  0.00      SYST H
-ATOM     30  CG  TYR M 276     -19.059   4.786  -2.485  0.00  0.00      SYST C
-ATOM     31  CD1 TYR M 276     -18.227   4.167  -1.562  0.00  0.00      SYST C
-ATOM     32  HD1 TYR M 276     -18.110   4.616  -0.575  0.00  0.00      SYST H
-ATOM     33  CE1 TYR M 276     -17.552   3.001  -1.875  0.00  0.00      SYST C
-ATOM     34  HE1 TYR M 276     -16.903   2.525  -1.140  0.00  0.00      SYST H
-ATOM     35  CZ  TYR M 276     -17.703   2.441  -3.127  0.00  0.00      SYST C
-ATOM     36  OH  TYR M 276     -17.029   1.279  -3.436  0.00  0.00      SYST O
-ATOM     37  HH  TYR M 276     -16.490   0.954  -2.711  0.00  0.00      SYST H
-ATOM     38  CE2 TYR M 276     -18.523   3.038  -4.063  0.00  0.00      SYST C
-ATOM     39  HE2 TYR M 276     -18.642   2.596  -5.052  0.00  0.00      SYST H
-ATOM     40  CD2 TYR M 276     -19.195   4.203  -3.740  0.00  0.00      SYST C
-ATOM     41  HD2 TYR M 276     -19.844   4.679  -4.474  0.00  0.00      SYST H
-ATOM     42  C   TYR M 276     -19.155   7.767  -3.842  0.00  0.00      SYST C
-ATOM     43  O   TYR M 276     -20.018   8.590  -4.154  0.00  0.00      SYST O
-ATOM     44  N   ALA M 277     -18.315   7.225  -4.719  0.00  0.00      SYST N
-ATOM     45  H   ALA M 277     -17.589   6.600  -4.398  0.00  0.00      SYST H
-ATOM     46  CA  ALA M 277     -18.369   7.551  -6.139  0.00  0.00      SYST C
-ATOM     47  HA  ALA M 277     -18.317   8.632  -6.265  0.00  0.00      SYST H
-ATOM     48  CB  ALA M 277     -17.192   6.919  -6.870  0.00  0.00      SYST C
-ATOM     49  HB1 ALA M 277     -17.235   5.835  -6.760  0.00  0.00      SYST H
-ATOM     50  HB2 ALA M 277     -17.238   7.179  -7.927  0.00  0.00      SYST H
-ATOM     51  HB3 ALA M 277     -16.259   7.290  -6.446  0.00  0.00      SYST H
-ATOM     52  C   ALA M 277     -19.693   7.088  -6.742  0.00  0.00      SYST C
-ATOM     53  O   ALA M 277     -20.303   6.140  -6.245  0.00  0.00      SYST O
-ATOM     54  N   PRO M 278     -20.152   7.765  -7.809  0.00  0.00      SYST N
-ATOM     55  CD  PRO M 278     -19.564   8.944  -8.467  0.00  0.00      SYST C
-ATOM     56  HD2 PRO M 278     -18.482   8.827  -8.532  0.00  0.00      SYST H
-ATOM     57  HD3 PRO M 278     -19.798   9.840  -7.893  0.00  0.00      SYST H
-ATOM     58  CG  PRO M 278     -20.225   8.937  -9.811  0.00  0.00      SYST C
-ATOM     59  HG2 PRO M 278     -19.661   8.309 -10.501  0.00  0.00      SYST H
-ATOM     60  HG3 PRO M 278     -20.279   9.951 -10.205  0.00  0.00      SYST H
-ATOM     61  CB  PRO M 278     -21.591   8.387  -9.565  0.00  0.00      SYST C
-ATOM     62  HB2 PRO M 278     -21.941   7.896 -10.473  0.00  0.00      SYST H
-ATOM     63  HB3 PRO M 278     -22.317   9.139  -9.256  0.00  0.00      SYST H
-ATOM     64  CA  PRO M 278     -21.405   7.351  -8.451  0.00  0.00      SYST C
-ATOM     65  HA  PRO M 278     -22.198   7.389  -7.705  0.00  0.00      SYST H
-ATOM     66  C   PRO M 278     -21.316   5.940  -9.026  0.00  0.00      SYST C
-ATOM     67  O   PRO M 278     -20.214   5.447  -9.272  0.00  0.00      SYST O
-ATOM     68  N   GLU M 279     -22.471   5.312  -9.227  0.00  0.00      SYST N
-ATOM     69  H   GLU M 279     -23.330   5.782  -8.980  0.00  0.00      SYST H
-ATOM     70  CA  GLU M 279     -22.552   3.946  -9.737  0.00  0.00      SYST C
-ATOM     71  HA  GLU M 279     -22.102   3.254  -9.025  0.00  0.00      SYST H
-ATOM     72  CB  GLU M 279     -24.018   3.551  -9.944  0.00  0.00      SYST C
-ATOM     73  HB2 GLU M 279     -24.451   4.290 -10.617  0.00  0.00      SYST H
-ATOM     74  HB3 GLU M 279     -24.016   2.575 -10.430  0.00  0.00      SYST H
-ATOM     75  CG  GLU M 279     -24.850   3.480  -8.661  0.00  0.00      SYST C
-ATOM     76  HG2 GLU M 279     -25.672   2.790  -8.848  0.00  0.00      SYST H
-ATOM     77  HG3 GLU M 279     -24.207   3.075  -7.879  0.00  0.00      SYST H
-ATOM     78  CD  GLU M 279     -25.407   4.822  -8.214  0.00  0.00      SYST C
-ATOM     79  OE1 GLU M 279     -25.117   5.850  -8.867  0.00  0.00      SYST O
-ATOM     80  OE2 GLU M 279     -26.139   4.846  -7.200  0.00  0.00      SYST O
-ATOM     81  C   GLU M 279     -21.775   3.769 -11.042  0.00  0.00      SYST C
-ATOM     82  O   GLU M 279     -21.866   4.609 -11.939  0.00  0.00      SYST O
-ATOM     83  N   PRO M 280     -20.995   2.680 -11.146  0.00  0.00      SYST N
-ATOM     84  CD  PRO M 280     -20.770   1.658 -10.109  0.00  0.00      SYST C
-ATOM     85  HD2 PRO M 280     -21.617   0.973 -10.079  0.00  0.00      SYST H
-ATOM     86  HD3 PRO M 280     -20.659   2.140  -9.137  0.00  0.00      SYST H
-ATOM     87  CG  PRO M 280     -19.506   0.991 -10.564  0.00  0.00      SYST C
-ATOM     88  HG2 PRO M 280     -19.492  -0.044 -10.223  0.00  0.00      SYST H
-ATOM     89  HG3 PRO M 280     -18.643   1.519 -10.157  0.00  0.00      SYST H
-ATOM     90  CB  PRO M 280     -19.527   1.074 -12.052  0.00  0.00      SYST C
-ATOM     91  HB2 PRO M 280     -20.125   0.247 -12.434  0.00  0.00      SYST H
-ATOM     92  HB3 PRO M 280     -18.540   1.052 -12.513  0.00  0.00      SYST H
-ATOM     93  CA  PRO M 280     -20.220   2.405 -12.363  0.00  0.00      SYST C
-ATOM     94  HA  PRO M 280     -19.515   3.222 -12.514  0.00  0.00      SYST H
-ATOM     95  C   PRO M 280     -21.121   2.279 -13.586  0.00  0.00      SYST C
-ATOM     96  O   PRO M 280     -22.261   1.831 -13.462  0.00  0.00      SYST O
-ATOM     97  N   ILE M 281     -20.617   2.673 -14.750  0.00  0.00      SYST N
-ATOM     98  H   ILE M 281     -19.670   3.020 -14.807  0.00  0.00      SYST H
-ATOM     99  CA  ILE M 281     -21.425   2.666 -15.964  0.00  0.00      SYST C
-ATOM    100  HA  ILE M 281     -22.420   2.270 -15.759  0.00  0.00      SYST H
-ATOM    101  CB  ILE M 281     -21.548   4.081 -16.555  0.00  0.00      SYST C
-ATOM    102  HB  ILE M 281     -22.025   4.018 -17.533  0.00  0.00      SYST H
-ATOM    103  CG2 ILE M 281     -22.382   4.966 -15.639  0.00  0.00      SYST C
-ATOM    104 HG21 ILE M 281     -21.905   5.029 -14.661  0.00  0.00      SYST H
-ATOM    105 HG22 ILE M 281     -22.460   5.964 -16.070  0.00  0.00      SYST H
-ATOM    106 HG23 ILE M 281     -23.379   4.539 -15.529  0.00  0.00      SYST H
-ATOM    107  CG1 ILE M 281     -20.160   4.690 -16.769  0.00  0.00      SYST C
-ATOM    108 HG12 ILE M 281     -19.697   4.790 -15.787  0.00  0.00      SYST H
-ATOM    109 HG13 ILE M 281     -19.587   3.984 -17.370  0.00  0.00      SYST H
-ATOM    110  CD1 ILE M 281     -20.180   6.036 -17.456  0.00  0.00      SYST C
-ATOM    111 HD11 ILE M 281     -20.752   6.743 -16.855  0.00  0.00      SYST H
-ATOM    112 HD12 ILE M 281     -19.159   6.401 -17.571  0.00  0.00      SYST H
-ATOM    113 HD13 ILE M 281     -20.642   5.936 -18.438  0.00  0.00      SYST H
-ATOM    114  C   ILE M 281     -20.866   1.731 -17.033  0.00  0.00      SYST C
-ATOM    115  O   ILE M 281     -21.545   1.419 -18.012  0.00  0.00      SYST O
-ATOM    116  N   THR M 282     -19.629   1.284 -16.845  0.00  0.00      SYST N
-ATOM    117  H   THR M 282     -19.100   1.568 -16.033  0.00  0.00      SYST H
-ATOM    118  CA  THR M 282     -18.985   0.408 -17.818  0.00  0.00      SYST C
-ATOM    119  HA  THR M 282     -19.725   0.024 -18.520  0.00  0.00      SYST H
-ATOM    120  CB  THR M 282     -17.892   1.151 -18.612  0.00  0.00      SYST C
-ATOM    121  HB  THR M 282     -17.031   1.313 -17.963  0.00  0.00      SYST H
-ATOM    122  CG2 THR M 282     -17.467   0.336 -19.824  0.00  0.00      SYST C
-ATOM    123 HG21 THR M 282     -18.327   0.174 -20.473  0.00  0.00      SYST H
-ATOM    124 HG22 THR M 282     -16.695   0.875 -20.373  0.00  0.00      SYST H
-ATOM    125 HG23 THR M 282     -17.073  -0.626 -19.496  0.00  0.00      SYST H
-ATOM    126  OG1 THR M 282     -18.389   2.425 -19.042  0.00  0.00      SYST O
-ATOM    127  HG1 THR M 282     -17.706   2.885 -19.536  0.00  0.00      SYST H
-ATOM    128  C   THR M 282     -18.366  -0.806 -17.137  0.00  0.00      SYST C
-ATOM    129  O   THR M 282     -17.691  -0.678 -16.117  0.00  0.00      SYST O
-ATOM    130  N   SER M 283     -18.593  -1.984 -17.705  0.00  0.00      SYST N
-ATOM    131  H   SER M 283     -19.184  -2.054 -18.521  0.00  0.00      SYST H
-ATOM    132  CA  SER M 283     -18.051  -3.210 -17.138  0.00  0.00      SYST C
-ATOM    133  HA  SER M 283     -18.243  -3.239 -16.065  0.00  0.00      SYST H
-ATOM    134  CB  SER M 283     -18.706  -4.432 -17.785  0.00  0.00      SYST C
-ATOM    135  HB2 SER M 283     -18.727  -5.243 -17.056  0.00  0.00      SYST H
-ATOM    136  HB3 SER M 283     -19.726  -4.172 -18.067  0.00  0.00      SYST H
-ATOM    137  OG  SER M 283     -17.989  -4.849 -18.935  0.00  0.00      SYST O
-ATOM    138  HG  SER M 283     -18.420  -5.615 -19.320  0.00  0.00      SYST H
-ATOM    139  C   SER M 283     -16.534  -3.283 -17.299  0.00  0.00      SYST C
-ATOM    140  O   SER M 283     -15.935  -2.496 -18.033  0.00  0.00      SYST O
-ATOM    141  N   LEU M 284     -15.925  -4.232 -16.596  0.00  0.00      SYST N
-ATOM    142  H   LEU M 284     -16.460  -4.774 -15.932  0.00  0.00      SYST H
-ATOM    143  CA  LEU M 284     -14.496  -4.497 -16.713  0.00  0.00      SYST C
-ATOM    144  HA  LEU M 284     -13.937  -3.563 -16.652  0.00  0.00      SYST H
-ATOM    145  CB  LEU M 284     -14.037  -5.417 -15.578  0.00  0.00      SYST C
-ATOM    146  HB2 LEU M 284     -14.718  -5.076 -14.798  0.00  0.00      SYST H
-ATOM    147  HB3 LEU M 284     -14.295  -6.437 -15.865  0.00  0.00      SYST H
-ATOM    148  CG  LEU M 284     -12.597  -5.384 -15.049  0.00  0.00      SYST C
-ATOM    149  HG  LEU M 284     -12.565  -5.922 -14.101  0.00  0.00      SYST H
-ATOM    150  CD1 LEU M 284     -11.629  -6.025 -16.026  0.00  0.00      SYST C
-ATOM    151 HD11 LEU M 284     -11.659  -5.488 -16.974  0.00  0.00      SYST H
-ATOM    152 HD12 LEU M 284     -10.619  -5.984 -15.618  0.00  0.00      SYST H
-ATOM    153 HD13 LEU M 284     -11.912  -7.065 -16.189  0.00  0.00      SYST H
-ATOM    154  CD2 LEU M 284     -12.154  -3.972 -14.670  0.00  0.00      SYST C
-ATOM    155 HD21 LEU M 284     -12.809  -3.582 -13.891  0.00  0.00      SYST H
-ATOM    156 HD22 LEU M 284     -11.128  -3.999 -14.301  0.00  0.00      SYST H
-ATOM    157 HD23 LEU M 284     -12.207  -3.326 -15.546  0.00  0.00      SYST H
-ATOM    158  C   LEU M 284     -14.203  -5.128 -18.073  0.00  0.00      SYST C
-ATOM    159  O   LEU M 284     -13.128  -4.966 -18.659  0.00  0.00      SYST O
-ATOM    160  OXT LEU M 284     -15.060  -5.825 -18.620  0.00  0.00      SYST O
+ATOM      1  N   PHE X 275     -18.079  10.929   0.460  0.00  0.00      SYST  
+ATOM      2  H1  PHE X 275     -17.251  10.459   0.122  0.00  0.00      SYST  
+ATOM      3  H2  PHE X 275     -18.311  10.562   1.372  0.00  0.00      SYST  
+ATOM      4  H3  PHE X 275     -17.963  11.924   0.330  0.00  0.00      SYST  
+ATOM      5  CA  PHE X 275     -19.195  10.556  -0.400  0.00  0.00      SYST  
+ATOM      6  HA  PHE X 275     -19.969  10.067   0.192  0.00  0.00      SYST  
+ATOM      7  CB  PHE X 275     -19.797  11.795  -1.065  0.00  0.00      SYST  
+ATOM      8  HB2 PHE X 275     -19.594  12.680  -0.461  0.00  0.00      SYST  
+ATOM      9  HB3 PHE X 275     -19.372  11.929  -2.060  0.00  0.00      SYST  
+ATOM     10  CG  PHE X 275     -21.286  11.726  -1.239  0.00  0.00      SYST  
+ATOM     11  CD1 PHE X 275     -22.133  12.005  -0.179  0.00  0.00      SYST  
+ATOM     12  HD1 PHE X 275     -21.703  12.274   0.786  0.00  0.00      SYST  
+ATOM     13  CE1 PHE X 275     -23.506  11.946  -0.332  0.00  0.00      SYST  
+ATOM     14  HE1 PHE X 275     -24.160  12.170   0.511  0.00  0.00      SYST  
+ATOM     15  CZ  PHE X 275     -24.048  11.603  -1.553  0.00  0.00      SYST  
+ATOM     16  HZ  PHE X 275     -25.129  11.553  -1.678  0.00  0.00      SYST  
+ATOM     17  CE2 PHE X 275     -23.215  11.322  -2.619  0.00  0.00      SYST  
+ATOM     18  HE2 PHE X 275     -23.640  11.052  -3.585  0.00  0.00      SYST  
+ATOM     19  CD2 PHE X 275     -21.841  11.383  -2.460  0.00  0.00      SYST  
+ATOM     20  HD2 PHE X 275     -21.184  11.160  -3.301  0.00  0.00      SYST  
+ATOM     21  C   PHE X 275     -18.739   9.554  -1.457  0.00  0.00      SYST  
+ATOM     22  O   PHE X 275     -17.828   9.835  -2.237  0.00  0.00      SYST  
+ATOM     23  N   TYR X 276     -19.374   8.388  -1.477  0.00  0.00      SYST  
+ATOM     24  H   TYR X 276     -20.120   8.203  -0.821  0.00  0.00      SYST  
+ATOM     25  CA  TYR X 276     -18.983   7.328  -2.395  0.00  0.00      SYST  
+ATOM     26  HA  TYR X 276     -17.925   7.099  -2.263  0.00  0.00      SYST  
+ATOM     27  CB  TYR X 276     -19.793   6.060  -2.131  0.00  0.00      SYST  
+ATOM     28  HB2 TYR X 276     -20.044   6.051  -1.070  0.00  0.00      SYST  
+ATOM     29  HB3 TYR X 276     -20.707   6.128  -2.720  0.00  0.00      SYST  
+ATOM     30  CG  TYR X 276     -19.059   4.786  -2.485  0.00  0.00      SYST  
+ATOM     31  CD1 TYR X 276     -18.227   4.167  -1.562  0.00  0.00      SYST  
+ATOM     32  HD1 TYR X 276     -18.110   4.616  -0.575  0.00  0.00      SYST  
+ATOM     33  CE1 TYR X 276     -17.552   3.001  -1.875  0.00  0.00      SYST  
+ATOM     34  HE1 TYR X 276     -16.903   2.525  -1.140  0.00  0.00      SYST  
+ATOM     35  CZ  TYR X 276     -17.703   2.441  -3.127  0.00  0.00      SYST  
+ATOM     36  OH  TYR X 276     -17.029   1.279  -3.436  0.00  0.00      SYST  
+ATOM     37  HH  TYR X 276     -16.490   0.954  -2.711  0.00  0.00      SYST  
+ATOM     38  CE2 TYR X 276     -18.523   3.038  -4.063  0.00  0.00      SYST  
+ATOM     39  HE2 TYR X 276     -18.642   2.596  -5.052  0.00  0.00      SYST  
+ATOM     40  CD2 TYR X 276     -19.195   4.203  -3.740  0.00  0.00      SYST  
+ATOM     41  HD2 TYR X 276     -19.844   4.679  -4.474  0.00  0.00      SYST  
+ATOM     42  C   TYR X 276     -19.155   7.767  -3.842  0.00  0.00      SYST  
+ATOM     43  O   TYR X 276     -20.018   8.590  -4.154  0.00  0.00      SYST  
+ATOM     44  N   ALA X 277     -18.315   7.225  -4.719  0.00  0.00      SYST  
+ATOM     45  H   ALA X 277     -17.589   6.600  -4.398  0.00  0.00      SYST  
+ATOM     46  CA  ALA X 277     -18.369   7.551  -6.139  0.00  0.00      SYST  
+ATOM     47  HA  ALA X 277     -18.317   8.632  -6.265  0.00  0.00      SYST  
+ATOM     48  CB  ALA X 277     -17.192   6.919  -6.870  0.00  0.00      SYST  
+ATOM     49  HB1 ALA X 277     -17.235   5.835  -6.760  0.00  0.00      SYST  
+ATOM     50  HB2 ALA X 277     -17.238   7.179  -7.927  0.00  0.00      SYST  
+ATOM     51  HB3 ALA X 277     -16.259   7.290  -6.446  0.00  0.00      SYST  
+ATOM     52  C   ALA X 277     -19.693   7.088  -6.742  0.00  0.00      SYST  
+ATOM     53  O   ALA X 277     -20.303   6.140  -6.245  0.00  0.00      SYST  
+ATOM     54  N   PRO X 278     -20.152   7.765  -7.809  0.00  0.00      SYST  
+ATOM     55  CD  PRO X 278     -19.564   8.944  -8.467  0.00  0.00      SYST  
+ATOM     56  HD2 PRO X 278     -18.482   8.827  -8.532  0.00  0.00      SYST  
+ATOM     57  HD3 PRO X 278     -19.798   9.840  -7.893  0.00  0.00      SYST  
+ATOM     58  CG  PRO X 278     -20.225   8.937  -9.811  0.00  0.00      SYST  
+ATOM     59  HG2 PRO X 278     -19.661   8.309 -10.501  0.00  0.00      SYST  
+ATOM     60  HG3 PRO X 278     -20.279   9.951 -10.205  0.00  0.00      SYST  
+ATOM     61  CB  PRO X 278     -21.591   8.387  -9.565  0.00  0.00      SYST  
+ATOM     62  HB2 PRO X 278     -21.941   7.896 -10.473  0.00  0.00      SYST  
+ATOM     63  HB3 PRO X 278     -22.317   9.139  -9.256  0.00  0.00      SYST  
+ATOM     64  CA  PRO X 278     -21.405   7.351  -8.451  0.00  0.00      SYST  
+ATOM     65  HA  PRO X 278     -22.198   7.389  -7.705  0.00  0.00      SYST  
+ATOM     66  C   PRO X 278     -21.316   5.940  -9.026  0.00  0.00      SYST  
+ATOM     67  O   PRO X 278     -20.214   5.447  -9.272  0.00  0.00      SYST  
+ATOM     68  N   GLU X 279     -22.471   5.312  -9.227  0.00  0.00      SYST  
+ATOM     69  H   GLU X 279     -23.330   5.782  -8.980  0.00  0.00      SYST  
+ATOM     70  CA  GLU X 279     -22.552   3.946  -9.737  0.00  0.00      SYST  
+ATOM     71  HA  GLU X 279     -22.102   3.254  -9.025  0.00  0.00      SYST  
+ATOM     72  CB  GLU X 279     -24.018   3.551  -9.944  0.00  0.00      SYST  
+ATOM     73  HB2 GLU X 279     -24.451   4.290 -10.617  0.00  0.00      SYST  
+ATOM     74  HB3 GLU X 279     -24.016   2.575 -10.430  0.00  0.00      SYST  
+ATOM     75  CG  GLU X 279     -24.850   3.480  -8.661  0.00  0.00      SYST  
+ATOM     76  HG2 GLU X 279     -25.672   2.790  -8.848  0.00  0.00      SYST  
+ATOM     77  HG3 GLU X 279     -24.207   3.075  -7.879  0.00  0.00      SYST  
+ATOM     78  CD  GLU X 279     -25.407   4.822  -8.214  0.00  0.00      SYST  
+ATOM     79  OE1 GLU X 279     -25.117   5.850  -8.867  0.00  0.00      SYST  
+ATOM     80  OE2 GLU X 279     -26.139   4.846  -7.200  0.00  0.00      SYST  
+ATOM     81  C   GLU X 279     -21.775   3.769 -11.042  0.00  0.00      SYST  
+ATOM     82  O   GLU X 279     -21.866   4.609 -11.939  0.00  0.00      SYST  
+ATOM     83  N   PRO X 280     -20.995   2.680 -11.146  0.00  0.00      SYST  
+ATOM     84  CD  PRO X 280     -20.770   1.658 -10.109  0.00  0.00      SYST  
+ATOM     85  HD2 PRO X 280     -21.617   0.973 -10.079  0.00  0.00      SYST  
+ATOM     86  HD3 PRO X 280     -20.659   2.140  -9.137  0.00  0.00      SYST  
+ATOM     87  CG  PRO X 280     -19.506   0.991 -10.564  0.00  0.00      SYST  
+ATOM     88  HG2 PRO X 280     -19.492  -0.044 -10.223  0.00  0.00      SYST  
+ATOM     89  HG3 PRO X 280     -18.643   1.519 -10.157  0.00  0.00      SYST  
+ATOM     90  CB  PRO X 280     -19.527   1.074 -12.052  0.00  0.00      SYST  
+ATOM     91  HB2 PRO X 280     -20.125   0.247 -12.434  0.00  0.00      SYST  
+ATOM     92  HB3 PRO X 280     -18.540   1.052 -12.513  0.00  0.00      SYST  
+ATOM     93  CA  PRO X 280     -20.220   2.405 -12.363  0.00  0.00      SYST  
+ATOM     94  HA  PRO X 280     -19.515   3.222 -12.514  0.00  0.00      SYST  
+ATOM     95  C   PRO X 280     -21.121   2.279 -13.586  0.00  0.00      SYST  
+ATOM     96  O   PRO X 280     -22.261   1.831 -13.462  0.00  0.00      SYST  
+ATOM     97  N   ILE X 281     -20.617   2.673 -14.750  0.00  0.00      SYST  
+ATOM     98  H   ILE X 281     -19.670   3.020 -14.807  0.00  0.00      SYST  
+ATOM     99  CA  ILE X 281     -21.425   2.666 -15.964  0.00  0.00      SYST  
+ATOM    100  HA  ILE X 281     -22.420   2.270 -15.759  0.00  0.00      SYST  
+ATOM    101  CB  ILE X 281     -21.548   4.081 -16.555  0.00  0.00      SYST  
+ATOM    102  HB  ILE X 281     -22.025   4.018 -17.533  0.00  0.00      SYST  
+ATOM    103  CG2 ILE X 281     -22.382   4.966 -15.639  0.00  0.00      SYST  
+ATOM    104 HG21 ILE X 281     -21.905   5.029 -14.661  0.00  0.00      SYST  
+ATOM    105 HG22 ILE X 281     -22.460   5.964 -16.070  0.00  0.00      SYST  
+ATOM    106 HG23 ILE X 281     -23.379   4.539 -15.529  0.00  0.00      SYST  
+ATOM    107  CG1 ILE X 281     -20.160   4.690 -16.769  0.00  0.00      SYST  
+ATOM    108 HG12 ILE X 281     -19.697   4.790 -15.787  0.00  0.00      SYST  
+ATOM    109 HG13 ILE X 281     -19.587   3.984 -17.370  0.00  0.00      SYST  
+ATOM    110  CD1 ILE X 281     -20.180   6.036 -17.456  0.00  0.00      SYST  
+ATOM    111 HD11 ILE X 281     -20.752   6.743 -16.855  0.00  0.00      SYST  
+ATOM    112 HD12 ILE X 281     -19.159   6.401 -17.571  0.00  0.00      SYST  
+ATOM    113 HD13 ILE X 281     -20.642   5.936 -18.438  0.00  0.00      SYST  
+ATOM    114  C   ILE X 281     -20.866   1.731 -17.033  0.00  0.00      SYST  
+ATOM    115  O   ILE X 281     -21.545   1.419 -18.012  0.00  0.00      SYST  
+ATOM    116  N   THR X 282     -19.629   1.284 -16.845  0.00  0.00      SYST  
+ATOM    117  H   THR X 282     -19.100   1.568 -16.033  0.00  0.00      SYST  
+ATOM    118  CA  THR X 282     -18.985   0.408 -17.818  0.00  0.00      SYST  
+ATOM    119  HA  THR X 282     -19.725   0.024 -18.520  0.00  0.00      SYST  
+ATOM    120  CB  THR X 282     -17.892   1.151 -18.612  0.00  0.00      SYST  
+ATOM    121  HB  THR X 282     -17.031   1.313 -17.963  0.00  0.00      SYST  
+ATOM    122  CG2 THR X 282     -17.467   0.336 -19.824  0.00  0.00      SYST  
+ATOM    123 HG21 THR X 282     -18.327   0.174 -20.473  0.00  0.00      SYST  
+ATOM    124 HG22 THR X 282     -16.695   0.875 -20.373  0.00  0.00      SYST  
+ATOM    125 HG23 THR X 282     -17.073  -0.626 -19.496  0.00  0.00      SYST  
+ATOM    126  OG1 THR X 282     -18.389   2.425 -19.042  0.00  0.00      SYST  
+ATOM    127  HG1 THR X 282     -17.706   2.885 -19.536  0.00  0.00      SYST  
+ATOM    128  C   THR X 282     -18.366  -0.806 -17.137  0.00  0.00      SYST  
+ATOM    129  O   THR X 282     -17.691  -0.678 -16.117  0.00  0.00      SYST  
+ATOM    130  N   SER X 283     -18.593  -1.984 -17.705  0.00  0.00      SYST  
+ATOM    131  H   SER X 283     -19.184  -2.054 -18.521  0.00  0.00      SYST  
+ATOM    132  CA  SER X 283     -18.051  -3.210 -17.138  0.00  0.00      SYST  
+ATOM    133  HA  SER X 283     -18.243  -3.239 -16.065  0.00  0.00      SYST  
+ATOM    134  CB  SER X 283     -18.706  -4.432 -17.785  0.00  0.00      SYST  
+ATOM    135  HB2 SER X 283     -18.727  -5.243 -17.056  0.00  0.00      SYST  
+ATOM    136  HB3 SER X 283     -19.726  -4.172 -18.067  0.00  0.00      SYST  
+ATOM    137  OG  SER X 283     -17.989  -4.849 -18.935  0.00  0.00      SYST  
+ATOM    138  HG  SER X 283     -18.420  -5.615 -19.320  0.00  0.00      SYST  
+ATOM    139  C   SER X 283     -16.534  -3.283 -17.299  0.00  0.00      SYST  
+ATOM    140  O   SER X 283     -15.935  -2.496 -18.033  0.00  0.00      SYST  
+ATOM    141  N   LEU X 284     -15.925  -4.232 -16.596  0.00  0.00      SYST  
+ATOM    142  H   LEU X 284     -16.460  -4.774 -15.932  0.00  0.00      SYST  
+ATOM    143  CA  LEU X 284     -14.496  -4.497 -16.713  0.00  0.00      SYST  
+ATOM    144  HA  LEU X 284     -13.937  -3.563 -16.652  0.00  0.00      SYST  
+ATOM    145  CB  LEU X 284     -14.037  -5.417 -15.578  0.00  0.00      SYST  
+ATOM    146  HB2 LEU X 284     -14.718  -5.076 -14.798  0.00  0.00      SYST  
+ATOM    147  HB3 LEU X 284     -14.295  -6.437 -15.865  0.00  0.00      SYST  
+ATOM    148  CG  LEU X 284     -12.597  -5.384 -15.049  0.00  0.00      SYST  
+ATOM    149  HG  LEU X 284     -12.565  -5.922 -14.101  0.00  0.00      SYST  
+ATOM    150  CD1 LEU X 284     -11.629  -6.025 -16.026  0.00  0.00      SYST  
+ATOM    151 HD11 LEU X 284     -11.659  -5.488 -16.974  0.00  0.00      SYST  
+ATOM    152 HD12 LEU X 284     -10.619  -5.984 -15.618  0.00  0.00      SYST  
+ATOM    153 HD13 LEU X 284     -11.912  -7.065 -16.189  0.00  0.00      SYST  
+ATOM    154  CD2 LEU X 284     -12.154  -3.972 -14.670  0.00  0.00      SYST  
+ATOM    155 HD21 LEU X 284     -12.809  -3.582 -13.891  0.00  0.00      SYST  
+ATOM    156 HD22 LEU X 284     -11.128  -3.999 -14.301  0.00  0.00      SYST  
+ATOM    157 HD23 LEU X 284     -12.207  -3.326 -15.546  0.00  0.00      SYST  
+ATOM    158  C   LEU X 284     -14.203  -5.128 -18.073  0.00  0.00      SYST  
+ATOM    159  O   LEU X 284     -13.128  -4.966 -18.659  0.00  0.00      SYST  
+ATOM    160  OXT LEU X 284     -15.060  -5.825 -18.620  0.00  0.00      SYST  
 END

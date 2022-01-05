@@ -1,5 +1,6 @@
 HEADER    
 TITLE     MDANALYSIS FRAME 0: Created by PDBWriter
+REMARK     AtomGroup complex_solvated
 CRYST1    1.000    1.000    1.000  90.00  90.00  90.00 P 1           1
 REMARK     285 UNITARY VALUES FOR THE UNIT CELL AUTOMATICALLY SET
 REMARK     285 BY MDANALYSIS PDBWRITER BECAUSE UNIT CELL INFORMATION
@@ -7,29 +8,29 @@ REMARK     285 WAS MISSING.
 REMARK     285 PROTEIN DATA BANK CONVENTIONS REQUIRE THAT
 REMARK     285 CRYST1 RECORD IS INCLUDED, BUT THE VALUES ON
 REMARK     285 THIS RECORD ARE MEANINGLESS.
-ATOM      1  N   TRP M 516      -5.649  -1.644  17.793  0.00  0.00      SYST N
-ATOM      2  H   TRP M 516      -6.587  -1.996  17.918  0.00  0.00      SYST H
-ATOM      3  CA  TRP M 516      -4.724  -1.652  18.973  0.00  0.00      SYST C
-ATOM      4  HA  TRP M 516      -3.848  -2.261  18.751  0.00  0.00      SYST H
-ATOM      5  CB  TRP M 516      -4.262  -0.233  19.300  0.00  0.00      SYST C
-ATOM      6  HB2 TRP M 516      -3.493  -0.268  20.072  0.00  0.00      SYST H
-ATOM      7  HB3 TRP M 516      -3.845   0.202  18.392  0.00  0.00      SYST H
-ATOM      8  CG  TRP M 516      -5.330   0.730  19.794  0.00  0.00      SYST C
-ATOM      9  CD1 TRP M 516      -6.671   0.534  19.827  0.00  0.00      SYST C
-ATOM     10  HD1 TRP M 516      -7.035  -0.430  19.470  0.00  0.00      SYST H
-ATOM     11  NE1 TRP M 516      -7.307   1.656  20.331  0.00  0.00      SYST N
-ATOM     12  HE1 TRP M 516      -8.305   1.795  20.403  0.00  0.00      SYST H
-ATOM     13  CE2 TRP M 516      -6.355   2.561  20.688  0.00  0.00      SYST C
-ATOM     14  CZ2 TRP M 516      -6.485   3.801  21.257  0.00  0.00      SYST C
-ATOM     15  HZ2 TRP M 516      -7.484   4.162  21.501  0.00  0.00      SYST H
-ATOM     16  CH2 TRP M 516      -5.336   4.512  21.484  0.00  0.00      SYST C
-ATOM     17  HH2 TRP M 516      -5.403   5.499  21.940  0.00  0.00      SYST H
-ATOM     18  CZ3 TRP M 516      -4.076   4.005  21.146  0.00  0.00      SYST C
-ATOM     19  HZ3 TRP M 516      -3.169   4.586  21.313  0.00  0.00      SYST H
-ATOM     20  CE3 TRP M 516      -3.949   2.765  20.596  0.00  0.00      SYST C
-ATOM     21  HE3 TRP M 516      -2.943   2.388  20.413  0.00  0.00      SYST H
-ATOM     22  CD2 TRP M 516      -5.097   2.020  20.336  0.00  0.00      SYST C
-ATOM     23  C   TRP M 516      -5.414  -2.303  20.158  0.00  0.00      SYST C
-ATOM     24  O   TRP M 516      -4.851  -2.326  21.273  0.00  0.00      SYST O
-ATOM     25  OXT TRP M 516      -6.531  -2.834  19.971  0.00  0.00      SYST O
+ATOM      1  N   TRP X 512      -5.649  -1.644  -4.892  0.00  0.00      SYST  
+ATOM      2  H   TRP X 512      -6.587  -1.996  -4.767  0.00  0.00      SYST  
+ATOM      3  CA  TRP X 512      -4.724  -1.652  -3.712  0.00  0.00      SYST  
+ATOM      4  HA  TRP X 512      -3.848  -2.261  -3.934  0.00  0.00      SYST  
+ATOM      5  CB  TRP X 512      -4.262  -0.233  -3.385  0.00  0.00      SYST  
+ATOM      6  HB2 TRP X 512      -3.493  -0.268  -2.614  0.00  0.00      SYST  
+ATOM      7  HB3 TRP X 512      -3.845   0.203  -4.293  0.00  0.00      SYST  
+ATOM      8  CG  TRP X 512      -5.330   0.730  -2.891  0.00  0.00      SYST  
+ATOM      9  CD1 TRP X 512      -6.671   0.534  -2.858  0.00  0.00      SYST  
+ATOM     10  HD1 TRP X 512      -7.035  -0.429  -3.215  0.00  0.00      SYST  
+ATOM     11  NE1 TRP X 512      -7.307   1.656  -2.354  0.00  0.00      SYST  
+ATOM     12  HE1 TRP X 512      -8.305   1.796  -2.283  0.00  0.00      SYST  
+ATOM     13  CE2 TRP X 512      -6.355   2.561  -1.997  0.00  0.00      SYST  
+ATOM     14  CZ2 TRP X 512      -6.485   3.801  -1.428  0.00  0.00      SYST  
+ATOM     15  HZ2 TRP X 512      -7.484   4.163  -1.184  0.00  0.00      SYST  
+ATOM     16  CH2 TRP X 512      -5.336   4.512  -1.201  0.00  0.00      SYST  
+ATOM     17  HH2 TRP X 512      -5.403   5.500  -0.745  0.00  0.00      SYST  
+ATOM     18  CZ3 TRP X 512      -4.076   4.005  -1.539  0.00  0.00      SYST  
+ATOM     19  HZ3 TRP X 512      -3.169   4.586  -1.372  0.00  0.00      SYST  
+ATOM     20  CE3 TRP X 512      -3.949   2.765  -2.089  0.00  0.00      SYST  
+ATOM     21  HE3 TRP X 512      -2.943   2.388  -2.272  0.00  0.00      SYST  
+ATOM     22  CD2 TRP X 512      -5.097   2.020  -2.349  0.00  0.00      SYST  
+ATOM     23  C   TRP X 512      -5.414  -2.303  -2.527  0.00  0.00      SYST  
+ATOM     24  O   TRP X 512      -4.851  -2.326  -1.412  0.00  0.00      SYST  
+ATOM     25  OXT TRP X 512      -6.531  -2.834  -2.714  0.00  0.00      SYST  
 END

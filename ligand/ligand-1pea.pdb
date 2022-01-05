@@ -1,5 +1,6 @@
 HEADER    
 TITLE     MDANALYSIS FRAME 0: Created by PDBWriter
+REMARK     AtomGroup complex_solvated
 CRYST1    1.000    1.000    1.000  90.00  90.00  90.00 P 1           1
 REMARK     285 UNITARY VALUES FOR THE UNIT CELL AUTOMATICALLY SET
 REMARK     285 BY MDANALYSIS PDBWRITER BECAUSE UNIT CELL INFORMATION
@@ -7,13 +8,13 @@ REMARK     285 WAS MISSING.
 REMARK     285 PROTEIN DATA BANK CONVENTIONS REQUIRE THAT
 REMARK     285 CRYST1 RECORD IS INCLUDED, BUT THE VALUES ON
 REMARK     285 THIS RECORD ARE MEANINGLESS.
-ATOM      1  C1  LIG M 369       2.529   6.330  -1.910  0.00  0.00      SYST C
-ATOM      2  O   LIG M 369       2.975   7.440  -2.229  0.00  0.00      SYST O
-ATOM      3  N   LIG M 369       1.506   5.715  -2.622  0.00  0.00      SYST N
-ATOM      4  C2  LIG M 369       3.134   5.548  -0.747  0.00  0.00      SYST C
-ATOM      5  H   LIG M 369       1.257   4.767  -2.422  0.00  0.00      SYST H
-ATOM      6  H21 LIG M 369       3.938   6.110  -0.319  0.00  0.00      SYST H
-ATOM      7  H22 LIG M 369       2.384   5.376  -0.004  0.00  0.00      SYST H
-ATOM      8  H23 LIG M 369       3.505   4.610  -1.103  0.00  0.00      SYST H
-ATOM      9  H   LIG M 369       1.018   6.220  -3.333  0.00  0.00      SYST H
+ATOM      1  C1  LIG X 369       2.529   6.330  -1.910  0.00  0.00      SYST  
+ATOM      2  O   LIG X 369       2.975   7.440  -2.229  0.00  0.00      SYST  
+ATOM      3  N   LIG X 369       1.506   5.715  -2.622  0.00  0.00      SYST  
+ATOM      4  C2  LIG X 369       3.134   5.548  -0.747  0.00  0.00      SYST  
+ATOM      5  H   LIG X 369       1.257   4.767  -2.422  0.00  0.00      SYST  
+ATOM      6  H21 LIG X 369       3.938   6.110  -0.319  0.00  0.00      SYST  
+ATOM      7  H22 LIG X 369       2.384   5.376  -0.004  0.00  0.00      SYST  
+ATOM      8  H23 LIG X 369       3.505   4.610  -1.103  0.00  0.00      SYST  
+ATOM      9  H   LIG X 369       1.018   6.220  -3.333  0.00  0.00      SYST  
 END

@@ -1,5 +1,6 @@
 HEADER    
 TITLE     MDANALYSIS FRAME 0: Created by PDBWriter
+REMARK     AtomGroup complex_solvated
 CRYST1    1.000    1.000    1.000  90.00  90.00  90.00 P 1           1
 REMARK     285 UNITARY VALUES FOR THE UNIT CELL AUTOMATICALLY SET
 REMARK     285 BY MDANALYSIS PDBWRITER BECAUSE UNIT CELL INFORMATION
@@ -7,22 +8,22 @@ REMARK     285 WAS MISSING.
 REMARK     285 PROTEIN DATA BANK CONVENTIONS REQUIRE THAT
 REMARK     285 CRYST1 RECORD IS INCLUDED, BUT THE VALUES ON
 REMARK     285 THIS RECORD ARE MEANINGLESS.
-ATOM      1  CAH LIG M 371       3.899  -7.106   1.062  0.00  0.00      SYST C
-ATOM      2  CAI LIG M 371       4.182  -7.792  -0.276  0.00  0.00      SYST C
-ATOM      3  NAJ LIG M 371       5.394  -8.313  -0.516  0.00  0.00      SYSTNA
-ATOM      4  CAK LIG M 371       5.676  -8.919  -1.656  0.00  0.00      SYST C
-ATOM      5  CAE LIG M 371       4.714  -9.034  -2.654  0.00  0.00      SYST C
-ATOM      6  CAF LIG M 371       5.052  -9.720  -3.979  0.00  0.00      SYST C
-ATOM      7  OAA LIG M 371       4.156  -9.782  -4.849  0.00  0.00      SYST O
-ATOM      8  OAG LIG M 371       6.206 -10.179  -4.122  0.00  0.00      SYST O
-ATOM      9  CAD LIG M 371       3.445  -8.507  -2.445  0.00  0.00      SYST C
-ATOM     10  CAC LIG M 371       3.179  -7.877  -1.235  0.00  0.00      SYST C
-ATOM     11  OAB LIG M 371       1.949  -7.349  -0.994  0.00  0.00      SYST O
-ATOM     12 HAH1 LIG M 371       4.779  -7.134   1.670  0.00  0.00      SYST H
-ATOM     13 HAH2 LIG M 371       3.103  -7.616   1.563  0.00  0.00      SYST H
-ATOM     14 HAH3 LIG M 371       3.618  -6.088   0.889  0.00  0.00      SYST H
-ATOM     15  HAK LIG M 371       6.653  -9.325  -1.813  0.00  0.00      SYST H
-ATOM     16  HAD LIG M 371       2.690  -8.585  -3.199  0.00  0.00      SYST H
-ATOM     17  HAB LIG M 371       1.952  -6.906  -0.142  0.00  0.00      SYST H
-ATOM     18  H   LIG M 371       4.558  -9.844  -5.719  0.00  0.00      SYST H
+ATOM      1  CAH LIG X 371       3.899  -7.106   1.062  0.00  0.00      SYST  
+ATOM      2  CAI LIG X 371       4.182  -7.792  -0.276  0.00  0.00      SYST  
+ATOM      3  NAJ LIG X 371       5.394  -8.313  -0.516  0.00  0.00      SYST  
+ATOM      4  CAK LIG X 371       5.676  -8.919  -1.656  0.00  0.00      SYST  
+ATOM      5  CAE LIG X 371       4.714  -9.034  -2.654  0.00  0.00      SYST  
+ATOM      6  CAF LIG X 371       5.052  -9.720  -3.979  0.00  0.00      SYST  
+ATOM      7  OAA LIG X 371       4.156  -9.782  -4.849  0.00  0.00      SYST  
+ATOM      8  OAG LIG X 371       6.206 -10.179  -4.122  0.00  0.00      SYST  
+ATOM      9  CAD LIG X 371       3.445  -8.507  -2.445  0.00  0.00      SYST  
+ATOM     10  CAC LIG X 371       3.179  -7.877  -1.235  0.00  0.00      SYST  
+ATOM     11  OAB LIG X 371       1.949  -7.349  -0.994  0.00  0.00      SYST  
+ATOM     12 HAH1 LIG X 371       4.779  -7.134   1.670  0.00  0.00      SYST  
+ATOM     13 HAH2 LIG X 371       3.103  -7.616   1.563  0.00  0.00      SYST  
+ATOM     14 HAH3 LIG X 371       3.618  -6.088   0.889  0.00  0.00      SYST  
+ATOM     15  HAK LIG X 371       6.653  -9.325  -1.813  0.00  0.00      SYST  
+ATOM     16  HAD LIG X 371       2.690  -8.585  -3.199  0.00  0.00      SYST  
+ATOM     17  HAB LIG X 371       1.952  -6.906  -0.142  0.00  0.00      SYST  
+ATOM     18  H   LIG X 371       4.558  -9.844  -5.719  0.00  0.00      SYST  
 END

@@ -1,5 +1,6 @@
 HEADER    
 TITLE     MDANALYSIS FRAME 0: Created by PDBWriter
+REMARK     AtomGroup complex_solvated
 CRYST1    1.000    1.000    1.000  90.00  90.00  90.00 P 1           1
 REMARK     285 UNITARY VALUES FOR THE UNIT CELL AUTOMATICALLY SET
 REMARK     285 BY MDANALYSIS PDBWRITER BECAUSE UNIT CELL INFORMATION
@@ -7,17 +8,17 @@ REMARK     285 WAS MISSING.
 REMARK     285 PROTEIN DATA BANK CONVENTIONS REQUIRE THAT
 REMARK     285 CRYST1 RECORD IS INCLUDED, BUT THE VALUES ON
 REMARK     285 THIS RECORD ARE MEANINGLESS.
-ATOM      1  O11 LIG M 148      -9.711  -1.916   1.063  0.00  0.00      SYST O
-ATOM      2  P1  LIG M 148      -8.679  -0.954   0.530  0.00  0.00      SYST P
-ATOM      3  O21 LIG M 148      -9.127  -0.114  -0.643  0.00  0.00      SYST O
-ATOM      4  O31 LIG M 148      -8.070  -0.179   1.674  0.00  0.00      SYST O
-ATOM      5  OPP LIG M 148      -7.491  -1.927  -0.038  0.00  0.00      SYST O
-ATOM      6  P2  LIG M 148      -6.776  -2.003  -1.505  0.00  0.00      SYST P
-ATOM      7  O12 LIG M 148      -6.869  -0.644  -2.150  0.00  0.00      SYST O
-ATOM      8  O22 LIG M 148      -7.459  -3.083  -2.288  0.00  0.00      SYST O
-ATOM      9  O32 LIG M 148      -5.370  -2.410  -1.154  0.00  0.00      SYST O
-ATOM     10  H   LIG M 148      -8.358   0.220  -1.110  0.00  0.00      SYST H
-ATOM     11  H1  LIG M 148      -9.270  -2.662   1.476  0.00  0.00      SYST H
-ATOM     12  H2  LIG M 148      -6.799  -3.648  -2.697  0.00  0.00      SYST H
-ATOM     13  H3  LIG M 148      -4.748  -1.856  -1.632  0.00  0.00      SYST H
+ATOM      1  O11 LIG X 148      -9.711  -1.916   1.063  0.00  0.00      SYST  
+ATOM      2  P1  LIG X 148      -8.679  -0.954   0.530  0.00  0.00      SYST  
+ATOM      3  O21 LIG X 148      -9.127  -0.114  -0.643  0.00  0.00      SYST  
+ATOM      4  O31 LIG X 148      -8.070  -0.179   1.674  0.00  0.00      SYST  
+ATOM      5  OPP LIG X 148      -7.491  -1.927  -0.038  0.00  0.00      SYST  
+ATOM      6  P2  LIG X 148      -6.776  -2.003  -1.505  0.00  0.00      SYST  
+ATOM      7  O12 LIG X 148      -6.869  -0.644  -2.150  0.00  0.00      SYST  
+ATOM      8  O22 LIG X 148      -7.459  -3.083  -2.288  0.00  0.00      SYST  
+ATOM      9  O32 LIG X 148      -5.370  -2.410  -1.154  0.00  0.00      SYST  
+ATOM     10  H   LIG X 148      -8.358   0.220  -1.110  0.00  0.00      SYST  
+ATOM     11  H1  LIG X 148      -9.270  -2.662   1.476  0.00  0.00      SYST  
+ATOM     12  H2  LIG X 148      -6.799  -3.648  -2.697  0.00  0.00      SYST  
+ATOM     13  H3  LIG X 148      -4.748  -1.856  -1.632  0.00  0.00      SYST  
 END

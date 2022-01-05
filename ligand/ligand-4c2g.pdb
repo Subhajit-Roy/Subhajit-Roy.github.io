@@ -1,5 +1,6 @@
 HEADER    
 TITLE     MDANALYSIS FRAME 0: Created by PDBWriter
+REMARK     AtomGroup complex_solvated
 CRYST1    1.000    1.000    1.000  90.00  90.00  90.00 P 1           1
 REMARK     285 UNITARY VALUES FOR THE UNIT CELL AUTOMATICALLY SET
 REMARK     285 BY MDANALYSIS PDBWRITER BECAUSE UNIT CELL INFORMATION
@@ -7,47 +8,47 @@ REMARK     285 WAS MISSING.
 REMARK     285 PROTEIN DATA BANK CONVENTIONS REQUIRE THAT
 REMARK     285 CRYST1 RECORD IS INCLUDED, BUT THE VALUES ON
 REMARK     285 THIS RECORD ARE MEANINGLESS.
-ATOM      1  N   ALA M 434     -17.711  11.820   5.203  0.00  0.00      SYST N
-ATOM      2  H1  ALA M 434     -17.007  12.544   5.198  0.00  0.00      SYST H
-ATOM      3  H2  ALA M 434     -18.251  11.899   6.053  0.00  0.00      SYST H
-ATOM      4  H3  ALA M 434     -18.177  11.813   4.307  0.00  0.00      SYST H
-ATOM      5  CA  ALA M 434     -17.021  10.507   5.297  0.00  0.00      SYST C
-ATOM      6  HA  ALA M 434     -17.356   9.988   6.195  0.00  0.00      SYST H
-ATOM      7  CB  ALA M 434     -17.358   9.642   4.077  0.00  0.00      SYST C
-ATOM      8  HB1 ALA M 434     -17.021  10.144   3.171  0.00  0.00      SYST H
-ATOM      9  HB2 ALA M 434     -16.857   8.678   4.165  0.00  0.00      SYST H
-ATOM     10  HB3 ALA M 434     -18.436   9.487   4.027  0.00  0.00      SYST H
-ATOM     11  C   ALA M 434     -15.511  10.691   5.407  0.00  0.00      SYST C
-ATOM     12  O   ALA M 434     -14.889  11.341   4.567  0.00  0.00      SYST O
-ATOM     13  N   ALA M 435     -14.930  10.115   6.455  0.00  0.00      SYST N
-ATOM     14  H   ALA M 435     -15.501   9.615   7.122  0.00  0.00      SYST H
-ATOM     15  CA  ALA M 435     -13.494  10.187   6.692  0.00  0.00      SYST C
-ATOM     16  HA  ALA M 435     -12.998  10.905   6.040  0.00  0.00      SYST H
-ATOM     17  CB  ALA M 435     -13.214  10.572   8.145  0.00  0.00      SYST C
-ATOM     18  HB1 ALA M 435     -13.696   9.856   8.811  0.00  0.00      SYST H
-ATOM     19  HB2 ALA M 435     -12.139  10.564   8.323  0.00  0.00      SYST H
-ATOM     20  HB3 ALA M 435     -13.607  11.570   8.339  0.00  0.00      SYST H
-ATOM     21  C   ALA M 435     -12.914   8.816   6.377  0.00  0.00      SYST C
-ATOM     22  O   ALA M 435     -13.524   7.786   6.676  0.00  0.00      SYST O
-ATOM     23  N   ALA M 436     -11.730   8.807   5.777  0.00  0.00      SYST N
-ATOM     24  H   ALA M 436     -11.275   9.671   5.521  0.00  0.00      SYST H
-ATOM     25  CA  ALA M 436     -11.093   7.556   5.403  0.00  0.00      SYST C
-ATOM     26  HA  ALA M 436     -11.817   6.765   5.602  0.00  0.00      SYST H
-ATOM     27  CB  ALA M 436     -10.780   7.566   3.916  0.00  0.00      SYST C
-ATOM     28  HB1 ALA M 436     -10.050   8.346   3.703  0.00  0.00      SYST H
-ATOM     29  HB2 ALA M 436     -10.372   6.598   3.624  0.00  0.00      SYST H
-ATOM     30  HB3 ALA M 436     -11.693   7.760   3.354  0.00  0.00      SYST H
-ATOM     31  C   ALA M 436      -9.827   7.237   6.189  0.00  0.00      SYST C
-ATOM     32  O   ALA M 436      -8.971   8.092   6.416  0.00  0.00      SYST O
-ATOM     33  N   ALA M 437      -9.723   5.980   6.597  0.00  0.00      SYST N
-ATOM     34  H   ALA M 437     -10.472   5.336   6.384  0.00  0.00      SYST H
-ATOM     35  CA  ALA M 437      -8.578   5.482   7.340  0.00  0.00      SYST C
-ATOM     36  HA  ALA M 437      -7.737   6.174   7.369  0.00  0.00      SYST H
-ATOM     37  CB  ALA M 437      -8.979   5.140   8.778  0.00  0.00      SYST C
-ATOM     38  HB1 ALA M 437      -9.814   4.440   8.766  0.00  0.00      SYST H
-ATOM     39  HB2 ALA M 437      -8.133   4.686   9.294  0.00  0.00      SYST H
-ATOM     40  HB3 ALA M 437      -9.276   6.050   9.299  0.00  0.00      SYST H
-ATOM     41  C   ALA M 437      -8.112   4.238   6.598  0.00  0.00      SYST C
-ATOM     42  O   ALA M 437      -8.631   3.143   6.914  0.00  0.00      SYST O
-ATOM     43  OXT ALA M 437      -7.262   4.400   5.688  0.00  0.00      SYST O
+ATOM      1  N   ALA X 434     -17.711  11.820   5.203  0.00  0.00      SYST  
+ATOM      2  H1  ALA X 434     -17.007  12.544   5.198  0.00  0.00      SYST  
+ATOM      3  H2  ALA X 434     -18.251  11.899   6.053  0.00  0.00      SYST  
+ATOM      4  H3  ALA X 434     -18.177  11.813   4.307  0.00  0.00      SYST  
+ATOM      5  CA  ALA X 434     -17.021  10.507   5.297  0.00  0.00      SYST  
+ATOM      6  HA  ALA X 434     -17.356   9.988   6.195  0.00  0.00      SYST  
+ATOM      7  CB  ALA X 434     -17.358   9.642   4.077  0.00  0.00      SYST  
+ATOM      8  HB1 ALA X 434     -17.021  10.144   3.171  0.00  0.00      SYST  
+ATOM      9  HB2 ALA X 434     -16.857   8.678   4.165  0.00  0.00      SYST  
+ATOM     10  HB3 ALA X 434     -18.436   9.487   4.027  0.00  0.00      SYST  
+ATOM     11  C   ALA X 434     -15.511  10.691   5.407  0.00  0.00      SYST  
+ATOM     12  O   ALA X 434     -14.889  11.341   4.567  0.00  0.00      SYST  
+ATOM     13  N   ALA X 435     -14.930  10.115   6.455  0.00  0.00      SYST  
+ATOM     14  H   ALA X 435     -15.501   9.615   7.122  0.00  0.00      SYST  
+ATOM     15  CA  ALA X 435     -13.494  10.187   6.692  0.00  0.00      SYST  
+ATOM     16  HA  ALA X 435     -12.998  10.905   6.040  0.00  0.00      SYST  
+ATOM     17  CB  ALA X 435     -13.214  10.572   8.145  0.00  0.00      SYST  
+ATOM     18  HB1 ALA X 435     -13.696   9.856   8.811  0.00  0.00      SYST  
+ATOM     19  HB2 ALA X 435     -12.139  10.564   8.323  0.00  0.00      SYST  
+ATOM     20  HB3 ALA X 435     -13.607  11.570   8.339  0.00  0.00      SYST  
+ATOM     21  C   ALA X 435     -12.914   8.816   6.377  0.00  0.00      SYST  
+ATOM     22  O   ALA X 435     -13.524   7.786   6.676  0.00  0.00      SYST  
+ATOM     23  N   ALA X 436     -11.730   8.807   5.777  0.00  0.00      SYST  
+ATOM     24  H   ALA X 436     -11.275   9.671   5.521  0.00  0.00      SYST  
+ATOM     25  CA  ALA X 436     -11.093   7.556   5.403  0.00  0.00      SYST  
+ATOM     26  HA  ALA X 436     -11.817   6.765   5.602  0.00  0.00      SYST  
+ATOM     27  CB  ALA X 436     -10.780   7.566   3.916  0.00  0.00      SYST  
+ATOM     28  HB1 ALA X 436     -10.050   8.346   3.703  0.00  0.00      SYST  
+ATOM     29  HB2 ALA X 436     -10.372   6.598   3.624  0.00  0.00      SYST  
+ATOM     30  HB3 ALA X 436     -11.693   7.760   3.354  0.00  0.00      SYST  
+ATOM     31  C   ALA X 436      -9.827   7.237   6.189  0.00  0.00      SYST  
+ATOM     32  O   ALA X 436      -8.971   8.092   6.416  0.00  0.00      SYST  
+ATOM     33  N   ALA X 437      -9.723   5.980   6.597  0.00  0.00      SYST  
+ATOM     34  H   ALA X 437     -10.472   5.336   6.384  0.00  0.00      SYST  
+ATOM     35  CA  ALA X 437      -8.578   5.482   7.340  0.00  0.00      SYST  
+ATOM     36  HA  ALA X 437      -7.737   6.174   7.369  0.00  0.00      SYST  
+ATOM     37  CB  ALA X 437      -8.979   5.140   8.778  0.00  0.00      SYST  
+ATOM     38  HB1 ALA X 437      -9.814   4.440   8.766  0.00  0.00      SYST  
+ATOM     39  HB2 ALA X 437      -8.133   4.686   9.294  0.00  0.00      SYST  
+ATOM     40  HB3 ALA X 437      -9.276   6.050   9.299  0.00  0.00      SYST  
+ATOM     41  C   ALA X 437      -8.112   4.238   6.598  0.00  0.00      SYST  
+ATOM     42  O   ALA X 437      -8.631   3.143   6.914  0.00  0.00      SYST  
+ATOM     43  OXT ALA X 437      -7.262   4.400   5.688  0.00  0.00      SYST  
 END

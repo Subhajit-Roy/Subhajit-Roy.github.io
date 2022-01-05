@@ -1,5 +1,6 @@
 HEADER    
 TITLE     MDANALYSIS FRAME 0: Created by PDBWriter
+REMARK     AtomGroup complex_solvated
 CRYST1    1.000    1.000    1.000  90.00  90.00  90.00 P 1           1
 REMARK     285 UNITARY VALUES FOR THE UNIT CELL AUTOMATICALLY SET
 REMARK     285 BY MDANALYSIS PDBWRITER BECAUSE UNIT CELL INFORMATION
@@ -7,68 +8,68 @@ REMARK     285 WAS MISSING.
 REMARK     285 PROTEIN DATA BANK CONVENTIONS REQUIRE THAT
 REMARK     285 CRYST1 RECORD IS INCLUDED, BUT THE VALUES ON
 REMARK     285 THIS RECORD ARE MEANINGLESS.
-ATOM      1  N   ILE M  69      -7.683  14.329 -15.408  0.00  0.00      SYST N
-ATOM      2  H1  ILE M  69      -7.237  13.751 -16.107  0.00  0.00      SYST H
-ATOM      3  H2  ILE M  69      -7.112  15.148 -15.252  0.00  0.00      SYST H
-ATOM      4  H3  ILE M  69      -8.659  14.432 -15.646  0.00  0.00      SYST H
-ATOM      5  CA  ILE M  69      -7.669  13.595 -14.129  0.00  0.00      SYST C
-ATOM      6  HA  ILE M  69      -7.106  14.156 -13.383  0.00  0.00      SYST H
-ATOM      7  CB  ILE M  69      -9.180  13.356 -13.597  0.00  0.00      SYST C
-ATOM      8  HB  ILE M  69      -9.198  13.180 -12.522  0.00  0.00      SYST H
-ATOM      9  CG2 ILE M  69      -9.945  14.649 -13.917  0.00  0.00      SYST C
-ATOM     10 HG21 ILE M  69      -9.927  14.826 -14.993  0.00  0.00      SYST H
-ATOM     11 HG22 ILE M  69     -10.977  14.554 -13.582  0.00  0.00      SYST H
-ATOM     12 HG23 ILE M  69      -9.473  15.488 -13.405  0.00  0.00      SYST H
-ATOM     13  CG1 ILE M  69      -9.922  12.141 -14.227  0.00  0.00      SYST C
-ATOM     14 HG12 ILE M  69      -9.494  12.004 -15.221  0.00  0.00      SYST H
-ATOM     15 HG13 ILE M  69     -10.967  12.436 -14.320  0.00  0.00      SYST H
-ATOM     16  CD1 ILE M  69      -9.829  10.815 -13.439  0.00  0.00      SYST C
-ATOM     17 HD11 ILE M  69     -10.256  10.952 -12.446  0.00  0.00      SYST H
-ATOM     18 HD12 ILE M  69     -10.380  10.038 -13.968  0.00  0.00      SYST H
-ATOM     19 HD13 ILE M  69      -8.784  10.519 -13.347  0.00  0.00      SYST H
-ATOM     20  C   ILE M  69      -6.929  12.257 -14.345  0.00  0.00      SYST C
-ATOM     21  O   ILE M  69      -6.730  11.852 -15.510  0.00  0.00      SYST O
-ATOM     22  N   SER M  70      -6.541  11.568 -13.260  0.00  0.00      SYST N
-ATOM     23  H   SER M  70      -6.625  11.976 -12.340  0.00  0.00      SYST H
-ATOM     24  CA  SER M  70      -5.922  10.251 -13.379  0.00  0.00      SYST C
-ATOM     25  HA  SER M  70      -6.280   9.742 -14.274  0.00  0.00      SYST H
-ATOM     26  CB  SER M  70      -4.359  10.419 -13.487  0.00  0.00      SYST C
-ATOM     27  HB2 SER M  70      -3.955   9.415 -13.619  0.00  0.00      SYST H
-ATOM     28  HB3 SER M  70      -4.179  11.004 -14.389  0.00  0.00      SYST H
-ATOM     29  OG  SER M  70      -3.717  11.047 -12.378  0.00  0.00      SYST O
-ATOM     30  HG  SER M  70      -2.772  11.100 -12.543  0.00  0.00      SYST H
-ATOM     31  C   SER M  70      -6.320   9.365 -12.191  0.00  0.00      SYST C
-ATOM     32  O   SER M  70      -5.861   9.562 -11.055  0.00  0.00      SYST O
-ATOM     33  N   GLU M  71      -7.290   8.469 -12.433  0.00  0.00      SYST N
-ATOM     34  H   GLU M  71      -7.796   8.514 -13.306  0.00  0.00      SYST H
-ATOM     35  CA  GLU M  71      -7.685   7.449 -11.449  0.00  0.00      SYST C
-ATOM     36  HA  GLU M  71      -7.856   7.909 -10.476  0.00  0.00      SYST H
-ATOM     37  CB  GLU M  71      -9.016   6.756 -11.919  0.00  0.00      SYST C
-ATOM     38  HB2 GLU M  71      -9.755   7.520 -11.677  0.00  0.00      SYST H
-ATOM     39  HB3 GLU M  71      -8.872   6.720 -12.999  0.00  0.00      SYST H
-ATOM     40  CG  GLU M  71      -9.529   5.337 -11.404  0.00  0.00      SYST C
-ATOM     41  HG2 GLU M  71     -10.460   5.300 -11.969  0.00  0.00      SYST H
-ATOM     42  HG3 GLU M  71      -8.809   4.646 -11.844  0.00  0.00      SYST H
-ATOM     43  CD  GLU M  71      -9.801   4.932  -9.933  0.00  0.00      SYST C
-ATOM     44  OE1 GLU M  71      -8.880   4.473  -9.273  0.00  0.00      SYST O
-ATOM     45  OE2 GLU M  71     -10.939   5.008  -9.461  0.00  0.00      SYST O
-ATOM     46  C   GLU M  71      -6.516   6.453 -11.318  0.00  0.00      SYST C
-ATOM     47  O   GLU M  71      -5.789   6.242 -12.314  0.00  0.00      SYST O
-ATOM     48  N   VAL M  72      -6.319   5.951 -10.079  0.00  0.00      SYST N
-ATOM     49  H   VAL M  72      -6.887   6.304  -9.323  0.00  0.00      SYST H
-ATOM     50  CA  VAL M  72      -5.263   4.989  -9.763  0.00  0.00      SYST C
-ATOM     51  HA  VAL M  72      -4.876   4.559 -10.687  0.00  0.00      SYST H
-ATOM     52  CB  VAL M  72      -4.046   5.720  -8.983  0.00  0.00      SYST C
-ATOM     53  HB  VAL M  72      -3.204   5.039  -8.854  0.00  0.00      SYST H
-ATOM     54  CG1 VAL M  72      -3.614   6.905  -9.847  0.00  0.00      SYST C
-ATOM     55 HG11 VAL M  72      -4.454   7.587  -9.976  0.00  0.00      SYST H
-ATOM     56 HG12 VAL M  72      -2.792   7.431  -9.360  0.00  0.00      SYST H
-ATOM     57 HG13 VAL M  72      -3.286   6.544 -10.822  0.00  0.00      SYST H
-ATOM     58  CG2 VAL M  72      -4.398   6.262  -7.587  0.00  0.00      SYST C
-ATOM     59 HG21 VAL M  72      -4.726   5.441  -6.950  0.00  0.00      SYST H
-ATOM     60 HG22 VAL M  72      -3.518   6.733  -7.147  0.00  0.00      SYST H
-ATOM     61 HG23 VAL M  72      -5.198   6.997  -7.673  0.00  0.00      SYST H
-ATOM     62  C   VAL M  72      -5.866   3.815  -8.953  0.00  0.00      SYST C
-ATOM     63  O   VAL M  72      -6.413   3.995  -7.841  0.00  0.00      SYST O
-ATOM     64  OXT VAL M  72      -5.838   2.671  -9.400  0.00  0.00      SYST O
+ATOM      1  N   ILE X  69      -7.683  14.329 -15.408  0.00  0.00      SYST  
+ATOM      2  H1  ILE X  69      -7.237  13.751 -16.107  0.00  0.00      SYST  
+ATOM      3  H2  ILE X  69      -7.112  15.148 -15.252  0.00  0.00      SYST  
+ATOM      4  H3  ILE X  69      -8.659  14.432 -15.646  0.00  0.00      SYST  
+ATOM      5  CA  ILE X  69      -7.669  13.595 -14.129  0.00  0.00      SYST  
+ATOM      6  HA  ILE X  69      -7.106  14.156 -13.383  0.00  0.00      SYST  
+ATOM      7  CB  ILE X  69      -9.180  13.356 -13.597  0.00  0.00      SYST  
+ATOM      8  HB  ILE X  69      -9.198  13.180 -12.522  0.00  0.00      SYST  
+ATOM      9  CG2 ILE X  69      -9.945  14.649 -13.917  0.00  0.00      SYST  
+ATOM     10 HG21 ILE X  69      -9.927  14.826 -14.993  0.00  0.00      SYST  
+ATOM     11 HG22 ILE X  69     -10.977  14.554 -13.582  0.00  0.00      SYST  
+ATOM     12 HG23 ILE X  69      -9.473  15.488 -13.405  0.00  0.00      SYST  
+ATOM     13  CG1 ILE X  69      -9.922  12.141 -14.227  0.00  0.00      SYST  
+ATOM     14 HG12 ILE X  69      -9.494  12.004 -15.221  0.00  0.00      SYST  
+ATOM     15 HG13 ILE X  69     -10.967  12.436 -14.320  0.00  0.00      SYST  
+ATOM     16  CD1 ILE X  69      -9.829  10.815 -13.439  0.00  0.00      SYST  
+ATOM     17 HD11 ILE X  69     -10.256  10.952 -12.446  0.00  0.00      SYST  
+ATOM     18 HD12 ILE X  69     -10.380  10.038 -13.968  0.00  0.00      SYST  
+ATOM     19 HD13 ILE X  69      -8.784  10.519 -13.347  0.00  0.00      SYST  
+ATOM     20  C   ILE X  69      -6.929  12.257 -14.345  0.00  0.00      SYST  
+ATOM     21  O   ILE X  69      -6.730  11.852 -15.510  0.00  0.00      SYST  
+ATOM     22  N   SER X  70      -6.541  11.568 -13.260  0.00  0.00      SYST  
+ATOM     23  H   SER X  70      -6.625  11.976 -12.340  0.00  0.00      SYST  
+ATOM     24  CA  SER X  70      -5.922  10.251 -13.379  0.00  0.00      SYST  
+ATOM     25  HA  SER X  70      -6.280   9.742 -14.274  0.00  0.00      SYST  
+ATOM     26  CB  SER X  70      -4.359  10.419 -13.487  0.00  0.00      SYST  
+ATOM     27  HB2 SER X  70      -3.955   9.415 -13.619  0.00  0.00      SYST  
+ATOM     28  HB3 SER X  70      -4.179  11.004 -14.389  0.00  0.00      SYST  
+ATOM     29  OG  SER X  70      -3.717  11.047 -12.378  0.00  0.00      SYST  
+ATOM     30  HG  SER X  70      -2.772  11.100 -12.543  0.00  0.00      SYST  
+ATOM     31  C   SER X  70      -6.320   9.365 -12.191  0.00  0.00      SYST  
+ATOM     32  O   SER X  70      -5.861   9.562 -11.055  0.00  0.00      SYST  
+ATOM     33  N   GLU X  71      -7.290   8.469 -12.433  0.00  0.00      SYST  
+ATOM     34  H   GLU X  71      -7.796   8.514 -13.306  0.00  0.00      SYST  
+ATOM     35  CA  GLU X  71      -7.685   7.449 -11.449  0.00  0.00      SYST  
+ATOM     36  HA  GLU X  71      -7.856   7.909 -10.476  0.00  0.00      SYST  
+ATOM     37  CB  GLU X  71      -9.016   6.756 -11.919  0.00  0.00      SYST  
+ATOM     38  HB2 GLU X  71      -9.755   7.520 -11.677  0.00  0.00      SYST  
+ATOM     39  HB3 GLU X  71      -8.872   6.720 -12.999  0.00  0.00      SYST  
+ATOM     40  CG  GLU X  71      -9.529   5.337 -11.404  0.00  0.00      SYST  
+ATOM     41  HG2 GLU X  71     -10.460   5.300 -11.969  0.00  0.00      SYST  
+ATOM     42  HG3 GLU X  71      -8.809   4.646 -11.844  0.00  0.00      SYST  
+ATOM     43  CD  GLU X  71      -9.801   4.932  -9.933  0.00  0.00      SYST  
+ATOM     44  OE1 GLU X  71      -8.880   4.473  -9.273  0.00  0.00      SYST  
+ATOM     45  OE2 GLU X  71     -10.939   5.008  -9.461  0.00  0.00      SYST  
+ATOM     46  C   GLU X  71      -6.516   6.453 -11.318  0.00  0.00      SYST  
+ATOM     47  O   GLU X  71      -5.789   6.242 -12.314  0.00  0.00      SYST  
+ATOM     48  N   VAL X  72      -6.319   5.951 -10.079  0.00  0.00      SYST  
+ATOM     49  H   VAL X  72      -6.887   6.304  -9.323  0.00  0.00      SYST  
+ATOM     50  CA  VAL X  72      -5.263   4.989  -9.763  0.00  0.00      SYST  
+ATOM     51  HA  VAL X  72      -4.876   4.559 -10.687  0.00  0.00      SYST  
+ATOM     52  CB  VAL X  72      -4.046   5.720  -8.983  0.00  0.00      SYST  
+ATOM     53  HB  VAL X  72      -3.204   5.039  -8.854  0.00  0.00      SYST  
+ATOM     54  CG1 VAL X  72      -3.614   6.905  -9.847  0.00  0.00      SYST  
+ATOM     55 HG11 VAL X  72      -4.454   7.587  -9.976  0.00  0.00      SYST  
+ATOM     56 HG12 VAL X  72      -2.792   7.431  -9.360  0.00  0.00      SYST  
+ATOM     57 HG13 VAL X  72      -3.286   6.544 -10.822  0.00  0.00      SYST  
+ATOM     58  CG2 VAL X  72      -4.398   6.262  -7.587  0.00  0.00      SYST  
+ATOM     59 HG21 VAL X  72      -4.726   5.441  -6.950  0.00  0.00      SYST  
+ATOM     60 HG22 VAL X  72      -3.518   6.733  -7.147  0.00  0.00      SYST  
+ATOM     61 HG23 VAL X  72      -5.198   6.997  -7.673  0.00  0.00      SYST  
+ATOM     62  C   VAL X  72      -5.866   3.815  -8.953  0.00  0.00      SYST  
+ATOM     63  O   VAL X  72      -6.413   3.995  -7.841  0.00  0.00      SYST  
+ATOM     64  OXT VAL X  72      -5.838   2.671  -9.400  0.00  0.00      SYST  
 END

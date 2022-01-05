@@ -1,5 +1,6 @@
 HEADER    
 TITLE     MDANALYSIS FRAME 0: Created by PDBWriter
+REMARK     AtomGroup complex_solvated
 CRYST1    1.000    1.000    1.000  90.00  90.00  90.00 P 1           1
 REMARK     285 UNITARY VALUES FOR THE UNIT CELL AUTOMATICALLY SET
 REMARK     285 BY MDANALYSIS PDBWRITER BECAUSE UNIT CELL INFORMATION
@@ -7,48 +8,48 @@ REMARK     285 WAS MISSING.
 REMARK     285 PROTEIN DATA BANK CONVENTIONS REQUIRE THAT
 REMARK     285 CRYST1 RECORD IS INCLUDED, BUT THE VALUES ON
 REMARK     285 THIS RECORD ARE MEANINGLESS.
-ATOM      1  CA  LIG M 199      -8.870  -5.531   0.351  0.00  0.00      SYST C
-ATOM      2  CA2 LIG M 199     -10.038  -6.104   0.936  0.00  0.00      SYST C
-ATOM      3  OA2 LIG M 199     -10.250  -7.263   0.844  0.00  0.00      SYST O
-ATOM      4  OA3 LIG M 199     -10.981  -5.376   1.583  0.00  0.00      SYST O
-ATOM      5  CA4 LIG M 199     -10.739  -3.996   1.652  0.00  0.00      SYST C
-ATOM      6  CA5 LIG M 199      -9.610  -3.350   1.105  0.00  0.00      SYST C
-ATOM      7  CA6 LIG M 199      -8.665  -4.165   0.445  0.00  0.00      SYST C
-ATOM      8  OA6 LIG M 199      -7.505  -3.660  -0.109  0.00  0.00      SYST O
-ATOM      9  CB1 LIG M 199      -8.457  -7.125  -1.657  0.00  0.00      SYST C
-ATOM     10  CB2 LIG M 199      -8.804  -6.405  -2.833  0.00  0.00      SYST C
-ATOM     11  CB3 LIG M 199      -9.326  -7.099  -3.943  0.00  0.00      SYST C
-ATOM     12  CB4 LIG M 199      -9.526  -8.493  -3.892  0.00  0.00      SYST C
-ATOM     13  CB5 LIG M 199      -9.190  -9.199  -2.732  0.00  0.00      SYST C
-ATOM     14  CB6 LIG M 199      -8.665  -8.535  -1.610  0.00  0.00      SYST C
-ATOM     15  CG1 LIG M 199      -7.854  -6.374  -0.455  0.00  0.00      SYST C
-ATOM     16  CG2 LIG M 199      -6.831  -7.162   0.376  0.00  0.00      SYST C
-ATOM     17  CG3 LIG M 199      -7.366  -8.325   1.210  0.00  0.00      SYST C
-ATOM     18  CD1 LIG M 199     -11.841  -3.221   2.394  0.00  0.00      SYST C
-ATOM     19  CD2 LIG M 199     -12.475  -2.012   1.706  0.00  0.00      SYST C
-ATOM     20  CD3 LIG M 199     -11.891  -1.629   0.336  0.00  0.00      SYST C
-ATOM     21  CD4 LIG M 199     -10.454  -1.061   0.360  0.00  0.00      SYST C
-ATOM     22  CD5 LIG M 199      -9.435  -1.850   1.207  0.00  0.00      SYST C
-ATOM     23  HB2 LIG M 199      -8.669  -5.334  -2.875  0.00  0.00      SYST H
-ATOM     24  HB3 LIG M 199      -9.576  -6.556  -4.843  0.00  0.00      SYST H
-ATOM     25  HB4 LIG M 199      -9.937  -9.014  -4.744  0.00  0.00      SYST H
-ATOM     26  HB5 LIG M 199      -9.336 -10.269  -2.698  0.00  0.00      SYST H
-ATOM     27  HB6 LIG M 199      -8.420  -9.090  -0.716  0.00  0.00      SYST H
-ATOM     28  HG1 LIG M 199      -7.238  -5.613  -0.933  0.00  0.00      SYST H
-ATOM     29 HG22 LIG M 199      -6.088  -7.565  -0.312  0.00  0.00      SYST H
-ATOM     30 HG23 LIG M 199      -6.329  -6.465   1.047  0.00  0.00      SYST H
-ATOM     31 HD12 LIG M 199     -12.644  -3.927   2.606  0.00  0.00      SYST H
-ATOM     32 HD13 LIG M 199     -11.430  -2.886   3.347  0.00  0.00      SYST H
-ATOM     33 HD22 LIG M 199     -12.360  -1.154   2.368  0.00  0.00      SYST H
-ATOM     34 HD23 LIG M 199     -13.540  -2.208   1.582  0.00  0.00      SYST H
-ATOM     35 HD32 LIG M 199     -12.542  -0.876  -0.108  0.00  0.00      SYST H
-ATOM     36 HD33 LIG M 199     -11.902  -2.513  -0.302  0.00  0.00      SYST H
-ATOM     37 HD42 LIG M 199     -10.087  -1.035  -0.666  0.00  0.00      SYST H
-ATOM     38 HD43 LIG M 199     -10.495  -0.039   0.736  0.00  0.00      SYST H
-ATOM     39 HD52 LIG M 199      -8.431  -1.595   0.868  0.00  0.00      SYST H
-ATOM     40 HD53 LIG M 199      -9.540  -1.553   2.251  0.00  0.00      SYST H
-ATOM     41  HA6 LIG M 199      -7.505  -3.822  -1.055  0.00  0.00      SYST H
-ATOM     42 HG31 LIG M 199      -7.012  -8.230   2.236  0.00  0.00      SYST H
-ATOM     43 HG32 LIG M 199      -7.012  -9.266   0.789  0.00  0.00      SYST H
-ATOM     44 HG33 LIG M 199      -8.456  -8.309   1.199  0.00  0.00      SYST H
+ATOM      1  CA  LIG X 199      -8.870  -5.531   0.351  0.00  0.00      SYST  
+ATOM      2  CA2 LIG X 199     -10.038  -6.104   0.936  0.00  0.00      SYST  
+ATOM      3  OA2 LIG X 199     -10.250  -7.263   0.844  0.00  0.00      SYST  
+ATOM      4  OA3 LIG X 199     -10.981  -5.376   1.583  0.00  0.00      SYST  
+ATOM      5  CA4 LIG X 199     -10.739  -3.996   1.652  0.00  0.00      SYST  
+ATOM      6  CA5 LIG X 199      -9.610  -3.350   1.105  0.00  0.00      SYST  
+ATOM      7  CA6 LIG X 199      -8.665  -4.165   0.445  0.00  0.00      SYST  
+ATOM      8  OA6 LIG X 199      -7.505  -3.660  -0.109  0.00  0.00      SYST  
+ATOM      9  CB1 LIG X 199      -8.457  -7.125  -1.657  0.00  0.00      SYST  
+ATOM     10  CB2 LIG X 199      -8.804  -6.405  -2.833  0.00  0.00      SYST  
+ATOM     11  CB3 LIG X 199      -9.326  -7.099  -3.943  0.00  0.00      SYST  
+ATOM     12  CB4 LIG X 199      -9.526  -8.493  -3.892  0.00  0.00      SYST  
+ATOM     13  CB5 LIG X 199      -9.190  -9.199  -2.732  0.00  0.00      SYST  
+ATOM     14  CB6 LIG X 199      -8.665  -8.535  -1.610  0.00  0.00      SYST  
+ATOM     15  CG1 LIG X 199      -7.854  -6.374  -0.455  0.00  0.00      SYST  
+ATOM     16  CG2 LIG X 199      -6.831  -7.162   0.376  0.00  0.00      SYST  
+ATOM     17  CG3 LIG X 199      -7.366  -8.325   1.210  0.00  0.00      SYST  
+ATOM     18  CD1 LIG X 199     -11.841  -3.221   2.394  0.00  0.00      SYST  
+ATOM     19  CD2 LIG X 199     -12.475  -2.012   1.706  0.00  0.00      SYST  
+ATOM     20  CD3 LIG X 199     -11.891  -1.629   0.336  0.00  0.00      SYST  
+ATOM     21  CD4 LIG X 199     -10.454  -1.061   0.360  0.00  0.00      SYST  
+ATOM     22  CD5 LIG X 199      -9.435  -1.850   1.207  0.00  0.00      SYST  
+ATOM     23  HB2 LIG X 199      -8.669  -5.334  -2.875  0.00  0.00      SYST  
+ATOM     24  HB3 LIG X 199      -9.576  -6.556  -4.843  0.00  0.00      SYST  
+ATOM     25  HB4 LIG X 199      -9.937  -9.014  -4.744  0.00  0.00      SYST  
+ATOM     26  HB5 LIG X 199      -9.336 -10.269  -2.698  0.00  0.00      SYST  
+ATOM     27  HB6 LIG X 199      -8.420  -9.090  -0.716  0.00  0.00      SYST  
+ATOM     28  HG1 LIG X 199      -7.238  -5.613  -0.933  0.00  0.00      SYST  
+ATOM     29 HG22 LIG X 199      -6.088  -7.565  -0.312  0.00  0.00      SYST  
+ATOM     30 HG23 LIG X 199      -6.329  -6.465   1.047  0.00  0.00      SYST  
+ATOM     31 HD12 LIG X 199     -12.644  -3.927   2.606  0.00  0.00      SYST  
+ATOM     32 HD13 LIG X 199     -11.430  -2.886   3.347  0.00  0.00      SYST  
+ATOM     33 HD22 LIG X 199     -12.360  -1.154   2.368  0.00  0.00      SYST  
+ATOM     34 HD23 LIG X 199     -13.540  -2.208   1.582  0.00  0.00      SYST  
+ATOM     35 HD32 LIG X 199     -12.542  -0.876  -0.108  0.00  0.00      SYST  
+ATOM     36 HD33 LIG X 199     -11.902  -2.513  -0.302  0.00  0.00      SYST  
+ATOM     37 HD42 LIG X 199     -10.087  -1.035  -0.666  0.00  0.00      SYST  
+ATOM     38 HD43 LIG X 199     -10.495  -0.039   0.736  0.00  0.00      SYST  
+ATOM     39 HD52 LIG X 199      -8.431  -1.595   0.868  0.00  0.00      SYST  
+ATOM     40 HD53 LIG X 199      -9.540  -1.553   2.251  0.00  0.00      SYST  
+ATOM     41  HA6 LIG X 199      -7.505  -3.822  -1.055  0.00  0.00      SYST  
+ATOM     42 HG31 LIG X 199      -7.012  -8.230   2.236  0.00  0.00      SYST  
+ATOM     43 HG32 LIG X 199      -7.012  -9.266   0.789  0.00  0.00      SYST  
+ATOM     44 HG33 LIG X 199      -8.456  -8.309   1.199  0.00  0.00      SYST  
 END
