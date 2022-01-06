@@ -8,19 +8,34 @@ REMARK     285 WAS MISSING.
 REMARK     285 PROTEIN DATA BANK CONVENTIONS REQUIRE THAT
 REMARK     285 CRYST1 RECORD IS INCLUDED, BUT THE VALUES ON
 REMARK     285 THIS RECORD ARE MEANINGLESS.
-ATOM      1  C1  LIG X 328       2.054  10.673  12.165  0.00  0.00      SYST  
-ATOM      2  C2  LIG X 328       2.997   9.908  11.490  0.00  0.00      SYST  
-ATOM      3  C3  LIG X 328       3.580   8.816  12.116  0.00  0.00      SYST  
-ATOM      4  C4  LIG X 328       3.220   8.489  13.418  0.00  0.00      SYST  
-ATOM      5  C5  LIG X 328       2.280   9.254  14.087  0.00  0.00      SYST  
-ATOM      6  C6  LIG X 328       1.698  10.344  13.461  0.00  0.00      SYST  
-ATOM      7  I13 LIG X 328       1.173  12.319  11.223  0.00  0.00      SYST  
-ATOM      8  I15 LIG X 328       0.279  11.494  14.477  0.00  0.00      SYST  
-ATOM      9  I17 LIG X 328       1.738   8.763  16.044  0.00  0.00      SYST  
-ATOM     10  I19 LIG X 328       4.097   6.845  14.365  0.00  0.00      SYST  
-ATOM     11  N21 LIG X 328       3.523   9.993  10.251  0.00  0.00      SYST  
-ATOM     12  C23 LIG X 328       4.410   8.983  10.106  0.00  0.00      SYST  
-ATOM     13  N25 LIG X 328       4.442   8.265  11.251  0.00  0.00      SYST  
-ATOM     14  H23 LIG X 328       4.996   8.783   9.221  0.00  0.00      SYST  
-ATOM     15  H21 LIG X 328       3.295  10.688   9.555  0.00  0.00      SYST  
+ATOM      1  C1  LIG X 328       2.054  10.673  12.165  1.00  0.00      SYST C
+ATOM      2  C2  LIG X 328       2.997   9.908  11.490  1.00  0.00      SYST C
+ATOM      3  C3  LIG X 328       3.580   8.816  12.116  1.00  0.00      SYST C
+ATOM      4  C4  LIG X 328       3.220   8.489  13.418  1.00  0.00      SYST C
+ATOM      5  C5  LIG X 328       2.280   9.254  14.087  1.00  0.00      SYST C
+ATOM      6  C6  LIG X 328       1.698  10.344  13.461  1.00  0.00      SYST C
+ATOM      7  I13 LIG X 328       1.173  12.319  11.223  1.00  0.00      SYST I
+ATOM      8  I15 LIG X 328       0.279  11.494  14.477  1.00  0.00      SYST I
+ATOM      9  I17 LIG X 328       1.738   8.763  16.044  1.00  0.00      SYST I
+ATOM     10  I19 LIG X 328       4.097   6.845  14.365  1.00  0.00      SYST I
+ATOM     11  N21 LIG X 328       3.523   9.993  10.251  1.00  0.00      SYST N
+ATOM     12  C23 LIG X 328       4.410   8.983  10.106  1.00  0.00      SYST C
+ATOM     13  N25 LIG X 328       4.442   8.265  11.251  1.00  0.00      SYST N
+ATOM     14  H23 LIG X 328       4.996   8.783   9.221  1.00  0.00      SYST H
+ATOM     15  H21 LIG X 328       3.295  10.688   9.555  1.00  0.00      SYST H
+CONECT    1    2    6    7
+CONECT    2    1    3   11
+CONECT    3    2    4   13
+CONECT    4    3    5   10
+CONECT    5    4    6    9
+CONECT    6    1    5    8
+CONECT    7    1
+CONECT    8    6
+CONECT    9    5
+CONECT   10    4
+CONECT   11    2   12   15
+CONECT   12   11   13   14
+CONECT   13    3   12
+CONECT   14   12
+CONECT   15   11
 END

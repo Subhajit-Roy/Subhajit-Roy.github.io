@@ -8,40 +8,76 @@ REMARK     285 WAS MISSING.
 REMARK     285 PROTEIN DATA BANK CONVENTIONS REQUIRE THAT
 REMARK     285 CRYST1 RECORD IS INCLUDED, BUT THE VALUES ON
 REMARK     285 THIS RECORD ARE MEANINGLESS.
-ATOM      1  N   ALA X 161       7.987   5.950  12.511  0.00  0.00      SYST  
-ATOM      2  H1  ALA X 161       7.135   5.434  12.348  0.00  0.00      SYST  
-ATOM      3  H2  ALA X 161       8.133   6.031  13.507  0.00  0.00      SYST  
-ATOM      4  H3  ALA X 161       8.715   5.567  11.924  0.00  0.00      SYST  
-ATOM      5  CA  ALA X 161       7.788   7.314  12.038  0.00  0.00      SYST  
-ATOM      6  HA  ALA X 161       7.919   8.021  12.857  0.00  0.00      SYST  
-ATOM      7  CB  ALA X 161       8.792   7.645  10.946  0.00  0.00      SYST  
-ATOM      8  HB1 ALA X 161       8.668   6.951  10.115  0.00  0.00      SYST  
-ATOM      9  HB2 ALA X 161       8.627   8.664  10.596  0.00  0.00      SYST  
-ATOM     10  HB3 ALA X 161       9.804   7.558  11.343  0.00  0.00      SYST  
-ATOM     11  C   ALA X 161       6.368   7.476  11.519  0.00  0.00      SYST  
-ATOM     12  O   ALA X 161       5.817   6.553  10.917  0.00  0.00      SYST  
-ATOM     13  N   ASP X 162       5.764   8.637  11.756  0.00  0.00      SYST  
-ATOM     14  H   ASP X 162       6.185   9.333  12.355  0.00  0.00      SYST  
-ATOM     15  CA  ASP X 162       4.414   8.890  11.235  0.00  0.00      SYST  
-ATOM     16  HA  ASP X 162       3.922   7.938  11.034  0.00  0.00      SYST  
-ATOM     17  CB  ASP X 162       3.562   9.681  12.238  0.00  0.00      SYST  
-ATOM     18  HB2 ASP X 162       2.562   9.793  11.821  0.00  0.00      SYST  
-ATOM     19  HB3 ASP X 162       3.511   9.085  13.149  0.00  0.00      SYST  
-ATOM     20  CG  ASP X 162       4.132  11.051  12.561  0.00  0.00      SYST  
-ATOM     21  OD1 ASP X 162       4.932  11.597  11.770  0.00  0.00      SYST  
-ATOM     22  OD2 ASP X 162       3.757  11.596  13.622  0.00  0.00      SYST  
-ATOM     23  C   ASP X 162       4.435   9.592   9.879  0.00  0.00      SYST  
-ATOM     24  O   ASP X 162       3.384   9.828   9.286  0.00  0.00      SYST  
-ATOM     25  N   SER X 163       5.636   9.961   9.426  0.00  0.00      SYST  
-ATOM     26  H   SER X 163       6.443   9.809  10.014  0.00  0.00      SYST  
-ATOM     27  CA  SER X 163       5.836  10.607   8.125  0.00  0.00      SYST  
-ATOM     28  HA  SER X 163       5.185  10.140   7.386  0.00  0.00      SYST  
-ATOM     29  CB  SER X 163       5.512  12.099   8.189  0.00  0.00      SYST  
-ATOM     30  HB2 SER X 163       5.536  12.499   7.175  0.00  0.00      SYST  
-ATOM     31  HB3 SER X 163       4.511  12.215   8.602  0.00  0.00      SYST  
-ATOM     32  OG  SER X 163       6.439  12.802   8.995  0.00  0.00      SYST  
-ATOM     33  HG  SER X 163       6.206  13.733   9.013  0.00  0.00      SYST  
-ATOM     34  C   SER X 163       7.284  10.407   7.688  0.00  0.00      SYST  
-ATOM     35  O   SER X 163       8.108   9.941   8.472  0.00  0.00      SYST  
-ATOM     36  OXT SER X 163       7.639  10.702   6.549  0.00  0.00      SYST  
+ATOM      1  N   ALA X 161       7.987   5.950  12.511  1.00  0.00      SYST N
+ATOM      2  H1  ALA X 161       7.135   5.434  12.348  1.00  0.00      SYST H
+ATOM      3  H2  ALA X 161       8.133   6.031  13.507  1.00  0.00      SYST H
+ATOM      4  H3  ALA X 161       8.715   5.567  11.924  1.00  0.00      SYST H
+ATOM      5  CA  ALA X 161       7.788   7.314  12.038  1.00  0.00      SYST C
+ATOM      6  HA  ALA X 161       7.919   8.021  12.857  1.00  0.00      SYST H
+ATOM      7  CB  ALA X 161       8.792   7.645  10.946  1.00  0.00      SYST C
+ATOM      8  HB1 ALA X 161       8.668   6.951  10.115  1.00  0.00      SYST H
+ATOM      9  HB2 ALA X 161       8.627   8.664  10.596  1.00  0.00      SYST H
+ATOM     10  HB3 ALA X 161       9.804   7.558  11.343  1.00  0.00      SYST H
+ATOM     11  C   ALA X 161       6.368   7.476  11.519  1.00  0.00      SYST C
+ATOM     12  O   ALA X 161       5.817   6.553  10.917  1.00  0.00      SYST O
+ATOM     13  N   ASP X 162       5.764   8.637  11.756  1.00  0.00      SYST N
+ATOM     14  H   ASP X 162       6.185   9.333  12.355  1.00  0.00      SYST H
+ATOM     15  CA  ASP X 162       4.414   8.890  11.235  1.00  0.00      SYST C
+ATOM     16  HA  ASP X 162       3.922   7.938  11.034  1.00  0.00      SYST H
+ATOM     17  CB  ASP X 162       3.562   9.681  12.238  1.00  0.00      SYST C
+ATOM     18  HB2 ASP X 162       2.562   9.793  11.821  1.00  0.00      SYST H
+ATOM     19  HB3 ASP X 162       3.511   9.085  13.149  1.00  0.00      SYST H
+ATOM     20  CG  ASP X 162       4.132  11.051  12.561  1.00  0.00      SYST C
+ATOM     21  OD1 ASP X 162       4.932  11.597  11.770  1.00  0.00      SYST O
+ATOM     22  OD2 ASP X 162       3.757  11.596  13.622  1.00  0.00      SYST O
+ATOM     23  C   ASP X 162       4.435   9.592   9.879  1.00  0.00      SYST C
+ATOM     24  O   ASP X 162       3.384   9.828   9.286  1.00  0.00      SYST O
+ATOM     25  N   SER X 163       5.636   9.961   9.426  1.00  0.00      SYST N
+ATOM     26  H   SER X 163       6.443   9.809  10.014  1.00  0.00      SYST H
+ATOM     27  CA  SER X 163       5.836  10.607   8.125  1.00  0.00      SYST C
+ATOM     28  HA  SER X 163       5.185  10.140   7.386  1.00  0.00      SYST H
+ATOM     29  CB  SER X 163       5.512  12.099   8.189  1.00  0.00      SYST C
+ATOM     30  HB2 SER X 163       5.536  12.499   7.175  1.00  0.00      SYST H
+ATOM     31  HB3 SER X 163       4.511  12.215   8.602  1.00  0.00      SYST H
+ATOM     32  OG  SER X 163       6.439  12.802   8.995  1.00  0.00      SYST O
+ATOM     33  HG  SER X 163       6.206  13.733   9.013  1.00  0.00      SYST H
+ATOM     34  C   SER X 163       7.284  10.407   7.688  1.00  0.00      SYST C
+ATOM     35  O   SER X 163       8.108   9.941   8.472  1.00  0.00      SYST O
+ATOM     36  OXT SER X 163       7.639  10.702   6.549  1.00  0.00      SYST O
+CONECT    1    2    3    4    5
+CONECT    2    1
+CONECT    3    1
+CONECT    4    1
+CONECT    5    1    6    7   11
+CONECT    6    5
+CONECT    7    5    8    9   10
+CONECT    8    7
+CONECT    9    7
+CONECT   10    7
+CONECT   11    5   12   13
+CONECT   12   11
+CONECT   13   11   14   15
+CONECT   14   13
+CONECT   15   13   16   17   23
+CONECT   16   15
+CONECT   17   15   18   19   20
+CONECT   18   17
+CONECT   19   17
+CONECT   20   17   21   22
+CONECT   21   20
+CONECT   22   20
+CONECT   23   15   24   25
+CONECT   24   23
+CONECT   25   23   26   27
+CONECT   26   25
+CONECT   27   25   28   29   34
+CONECT   28   27
+CONECT   29   27   30   31   32
+CONECT   30   29
+CONECT   31   29
+CONECT   32   29   33
+CONECT   33   32
+CONECT   34   27   35   36
+CONECT   35   34
+CONECT   36   34
 END

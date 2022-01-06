@@ -8,18 +8,52 @@ REMARK     285 WAS MISSING.
 REMARK     285 PROTEIN DATA BANK CONVENTIONS REQUIRE THAT
 REMARK     285 CRYST1 RECORD IS INCLUDED, BUT THE VALUES ON
 REMARK     285 THIS RECORD ARE MEANINGLESS.
-ATOM      1  N1  LIG X 289       9.508  -1.576  11.105  0.00  0.00      SYST  
-ATOM      2  C2  LIG X 289       8.260  -1.987  10.507  0.00  0.00      SYST  
-ATOM      3  N3  LIG X 289       7.417  -1.064  10.024  0.00  0.00      SYST  
-ATOM      4  C4  LIG X 289       7.738   0.240  10.096  0.00  0.00      SYST  
-ATOM      5  C5  LIG X 289       8.960   0.639  10.680  0.00  0.00      SYST  
-ATOM      6  C6  LIG X 289       9.827  -0.303  11.166  0.00  0.00      SYST  
-ATOM      7  O6  LIG X 289      11.022   0.082  11.716  0.00  0.00      SYST  
-ATOM      8  N7  LIG X 289       9.047   2.080  10.626  0.00  0.00      SYST  
-ATOM      9  C8  LIG X 289       7.848   2.579   9.948  0.00  0.00      SYST  
-ATOM     10  N9  LIG X 289       7.017   1.445   9.686  0.00  0.00      SYST  
-ATOM     11  H2  LIG X 289       8.009  -3.025  10.449  0.00  0.00      SYST  
-ATOM     12  H7  LIG X 289       9.012   2.412  11.569  0.00  0.00      SYST  
-ATOM     13  H   LIG X 289      10.133  -2.263  11.474  0.00  0.00      SYST  
-ATOM     14  H1  LIG X 289       7.634   3.597   9.696  0.00  0.00      SYST  
+ATOM      1  S   DMS X 288      -6.442 -12.965  -4.625  1.00  0.00      SYST S
+ATOM      2  O   DMS X 288      -7.436 -13.000  -5.639  1.00  0.00      SYST O
+ATOM      3  C1  DMS X 288      -6.706 -11.467  -3.638  1.00  0.00      SYST C
+ATOM      4  C2  DMS X 288      -6.692 -14.363  -3.491  1.00  0.00      SYST C
+ATOM      5  H11 DMS X 288      -5.968 -11.415  -2.865  1.00  0.00      SYST H
+ATOM      6  H12 DMS X 288      -7.681 -11.496  -3.199  1.00  0.00      SYST H
+ATOM      7  H13 DMS X 288      -6.624 -10.606  -4.268  1.00  0.00      SYST H
+ATOM      8  H21 DMS X 288      -5.944 -14.339  -2.726  1.00  0.00      SYST H
+ATOM      9  H22 DMS X 288      -7.662 -14.291  -3.045  1.00  0.00      SYST H
+ATOM     10  H23 DMS X 288      -6.617 -15.281  -4.035  1.00  0.00      SYST H
+ATOM     11  N1  LIG X 289       9.508  -1.576  11.105  1.00  0.00      SYST N
+ATOM     12  C2  LIG X 289       8.260  -1.987  10.507  1.00  0.00      SYST C
+ATOM     13  N3  LIG X 289       7.417  -1.064  10.024  1.00  0.00      SYST N
+ATOM     14  C4  LIG X 289       7.738   0.240  10.096  1.00  0.00      SYST C
+ATOM     15  C5  LIG X 289       8.960   0.639  10.680  1.00  0.00      SYST C
+ATOM     16  C6  LIG X 289       9.827  -0.303  11.166  1.00  0.00      SYST C
+ATOM     17  O6  LIG X 289      11.022   0.082  11.716  1.00  0.00      SYST O
+ATOM     18  N7  LIG X 289       9.047   2.080  10.626  1.00  0.00      SYST N
+ATOM     19  C8  LIG X 289       7.848   2.579   9.948  1.00  0.00      SYST C
+ATOM     20  N9  LIG X 289       7.017   1.445   9.686  1.00  0.00      SYST N
+ATOM     21  H2  LIG X 289       8.009  -3.025  10.449  1.00  0.00      SYST H
+ATOM     22  H7  LIG X 289       9.012   2.412  11.569  1.00  0.00      SYST H
+ATOM     23  H   LIG X 289      10.133  -2.263  11.474  1.00  0.00      SYST H
+ATOM     24  H1  LIG X 289       7.634   3.597   9.696  1.00  0.00      SYST H
+CONECT    1    2    3    4
+CONECT    2    1
+CONECT    3    1    5    6    7
+CONECT    4    1    8    9   10
+CONECT    5    3
+CONECT    6    3
+CONECT    7    3
+CONECT    8    4
+CONECT    9    4
+CONECT   10    4
+CONECT   11   12   16   23
+CONECT   12   11   13   21
+CONECT   13   12   14
+CONECT   14   13   15   20
+CONECT   15   14   16   18
+CONECT   16   11   15   17
+CONECT   17   16
+CONECT   18   15   19   22
+CONECT   19   18   20   24
+CONECT   20   14   19
+CONECT   21   12
+CONECT   22   18
+CONECT   23   11
+CONECT   24   19
 END

@@ -8,13 +8,22 @@ REMARK     285 WAS MISSING.
 REMARK     285 PROTEIN DATA BANK CONVENTIONS REQUIRE THAT
 REMARK     285 CRYST1 RECORD IS INCLUDED, BUT THE VALUES ON
 REMARK     285 THIS RECORD ARE MEANINGLESS.
-ATOM      1  C1  LIG X 122     -10.568   2.215   3.509  0.00  0.00      SYST  
-ATOM      2  C2  LIG X 122     -10.711   3.182   2.331  0.00  0.00      SYST  
-ATOM      3  C3  LIG X 122      -9.600   2.634   4.537  0.00  0.00      SYST  
-ATOM      4  O6  LIG X 122     -11.065   4.399   2.393  0.00  0.00      SYST  
-ATOM      5  O7  LIG X 122     -10.437   2.677   1.208  0.00  0.00      SYST  
-ATOM      6  O8  LIG X 122     -10.027   2.624   5.731  0.00  0.00      SYST  
-ATOM      7  O9  LIG X 122      -8.495   2.797   4.042  0.00  0.00      SYST  
-ATOM      8  H11 LIG X 122     -11.521   2.210   3.995  0.00  0.00      SYST  
-ATOM      9  H12 LIG X 122     -10.174   1.311   3.094  0.00  0.00      SYST  
+ATOM      1  C1  LIG X 122     -10.568   2.215   3.509  1.00  0.00      SYST C
+ATOM      2  C2  LIG X 122     -10.711   3.182   2.331  1.00  0.00      SYST C
+ATOM      3  C3  LIG X 122      -9.600   2.634   4.537  1.00  0.00      SYST C
+ATOM      4  O6  LIG X 122     -11.065   4.399   2.393  1.00  0.00      SYST O
+ATOM      5  O7  LIG X 122     -10.437   2.677   1.208  1.00  0.00      SYST O
+ATOM      6  O8  LIG X 122     -10.027   2.624   5.731  1.00  0.00      SYST O
+ATOM      7  O9  LIG X 122      -8.495   2.797   4.042  1.00  0.00      SYST O
+ATOM      8  H11 LIG X 122     -11.521   2.210   3.995  1.00  0.00      SYST H
+ATOM      9  H12 LIG X 122     -10.174   1.311   3.094  1.00  0.00      SYST H
+CONECT    1    2    3    8    9
+CONECT    2    1    4    5
+CONECT    3    1    6    7
+CONECT    4    2
+CONECT    5    2
+CONECT    6    3
+CONECT    7    3
+CONECT    8    1
+CONECT    9    1
 END

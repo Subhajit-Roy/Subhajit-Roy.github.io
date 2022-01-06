@@ -1,22 +1,40 @@
 HEADER    
 TITLE     MDANALYSIS FRAME 0: Created by PDBWriter
 CRYST1   63.118   68.409   75.927  90.00  90.00  90.00 P 1           1
-ATOM      1  CB  LIG X 163      -4.227  -5.845  -8.787  1.00  0.00      SYST  
-ATOM      2  CX  LIG X 163      -5.141  -4.927  -9.556  1.00  0.00      SYST  
-ATOM      3  CG  LIG X 163      -5.012  -6.575  -7.734  1.00  0.00      SYST  
-ATOM      4  CD1 LIG X 163      -5.108  -6.042  -6.483  1.00  0.00      SYST  
-ATOM      5  CD2 LIG X 163      -5.593  -7.800  -8.007  1.00  0.00      SYST  
-ATOM      6  CE1 LIG X 163      -5.832  -6.725  -5.486  1.00  0.00      SYST  
-ATOM      7  CE2 LIG X 163      -6.356  -8.450  -7.030  1.00  0.00      SYST  
-ATOM      8  CZ  LIG X 163      -6.490  -7.899  -5.788  1.00  0.00      SYST  
-ATOM      9  HB1 LIG X 163      -3.526  -5.222  -8.272  1.00  0.00      SYST  
-ATOM     10  HB2 LIG X 163      -3.879  -6.583  -9.479  1.00  0.00      SYST  
-ATOM     11  HX1 LIG X 163      -6.136  -5.010  -9.171  1.00  0.00      SYST  
-ATOM     12  HX2 LIG X 163      -4.802  -3.917  -9.453  1.00  0.00      SYST  
-ATOM     13  HX3 LIG X 163      -5.134  -5.201 -10.590  1.00  0.00      SYST  
-ATOM     14  HD1 LIG X 163      -4.635  -5.109  -6.259  1.00  0.00      SYST  
-ATOM     15  HD2 LIG X 163      -5.459  -8.252  -8.968  1.00  0.00      SYST  
-ATOM     16  HE1 LIG X 163      -5.872  -6.332  -4.492  1.00  0.00      SYST  
-ATOM     17  HE2 LIG X 163      -6.835  -9.380  -7.257  1.00  0.00      SYST  
-ATOM     18  HZ  LIG X 163      -7.103  -8.376  -5.052  1.00  0.00      SYST  
+ATOM      1  CB  LIG X 163      -4.227  -5.845  -8.787  1.00  0.00      SYST C
+ATOM      2  CX  LIG X 163      -5.141  -4.927  -9.556  1.00  0.00      SYST C
+ATOM      3  CG  LIG X 163      -5.012  -6.575  -7.734  1.00  0.00      SYST C
+ATOM      4  CD1 LIG X 163      -5.108  -6.042  -6.483  1.00  0.00      SYST C
+ATOM      5  CD2 LIG X 163      -5.593  -7.800  -8.007  1.00  0.00      SYST C
+ATOM      6  CE1 LIG X 163      -5.832  -6.725  -5.486  1.00  0.00      SYST C
+ATOM      7  CE2 LIG X 163      -6.356  -8.450  -7.030  1.00  0.00      SYST C
+ATOM      8  CZ  LIG X 163      -6.490  -7.899  -5.788  1.00  0.00      SYST C
+ATOM      9  HB1 LIG X 163      -3.526  -5.222  -8.272  1.00  0.00      SYST H
+ATOM     10  HB2 LIG X 163      -3.879  -6.583  -9.479  1.00  0.00      SYST H
+ATOM     11  HX1 LIG X 163      -6.136  -5.010  -9.171  1.00  0.00      SYST H
+ATOM     12  HX2 LIG X 163      -4.802  -3.917  -9.453  1.00  0.00      SYST H
+ATOM     13  HX3 LIG X 163      -5.134  -5.201 -10.590  1.00  0.00      SYST H
+ATOM     14  HD1 LIG X 163      -4.635  -5.109  -6.259  1.00  0.00      SYST H
+ATOM     15  HD2 LIG X 163      -5.459  -8.252  -8.968  1.00  0.00      SYST H
+ATOM     16  HE1 LIG X 163      -5.872  -6.332  -4.492  1.00  0.00      SYST H
+ATOM     17  HE2 LIG X 163      -6.835  -9.380  -7.257  1.00  0.00      SYST H
+ATOM     18  HZ  LIG X 163      -7.103  -8.376  -5.052  1.00  0.00      SYST H
+CONECT    1    2    3    9   10
+CONECT    2    1   11   12   13
+CONECT    3    1    4    5
+CONECT    4    3    6   14
+CONECT    5    3    7   15
+CONECT    6    4    8   16
+CONECT    7    5    8   17
+CONECT    8    6    7   18
+CONECT    9    1
+CONECT   10    1
+CONECT   11    2
+CONECT   12    2
+CONECT   13    2
+CONECT   14    4
+CONECT   15    5
+CONECT   16    6
+CONECT   17    7
+CONECT   18    8
 END

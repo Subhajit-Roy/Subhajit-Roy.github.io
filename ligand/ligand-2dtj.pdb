@@ -8,19 +8,34 @@ REMARK     285 WAS MISSING.
 REMARK     285 PROTEIN DATA BANK CONVENTIONS REQUIRE THAT
 REMARK     285 CRYST1 RECORD IS INCLUDED, BUT THE VALUES ON
 REMARK     285 THIS RECORD ARE MEANINGLESS.
-ATOM      1  N   THR X 165     -12.527 -13.218   2.849  0.00  0.00      SYST  
-ATOM      2  H   THR X 165     -12.386 -14.020   2.253  0.00  0.00      SYST  
-ATOM      3  CA  THR X 165     -13.483 -12.082   2.352  0.00  0.00      SYST  
-ATOM      4  HA  THR X 165     -14.300 -11.958   3.063  0.00  0.00      SYST  
-ATOM      5  CB  THR X 165     -12.709 -10.735   2.244  0.00  0.00      SYST  
-ATOM      6  HB  THR X 165     -13.383  -9.956   1.888  0.00  0.00      SYST  
-ATOM      7  CG2 THR X 165     -12.131 -10.323   3.704  0.00  0.00      SYST  
-ATOM      8 HG21 THR X 165     -11.457 -11.101   4.062  0.00  0.00      SYST  
-ATOM      9 HG22 THR X 165     -11.590  -9.380   3.628  0.00  0.00      SYST  
-ATOM     10 HG23 THR X 165     -12.959 -10.210   4.405  0.00  0.00      SYST  
-ATOM     11  OG1 THR X 165     -11.593 -10.913   1.309  0.00  0.00      SYST  
-ATOM     12  HG1 THR X 165     -11.106 -10.089   1.232  0.00  0.00      SYST  
-ATOM     13  C   THR X 165     -14.074 -12.422   0.947  0.00  0.00      SYST  
-ATOM     14  O   THR X 165     -14.839 -11.613   0.397  0.00  0.00      SYST  
-ATOM     15  OXT THR X 165     -13.713 -13.498   0.422  0.00  0.00      SYST  
+ATOM      1  N   THR X 165     -12.527 -13.218   2.849  1.00  0.00      SYST N
+ATOM      2  H   THR X 165     -12.386 -14.020   2.253  1.00  0.00      SYST H
+ATOM      3  CA  THR X 165     -13.483 -12.082   2.352  1.00  0.00      SYST C
+ATOM      4  HA  THR X 165     -14.300 -11.958   3.063  1.00  0.00      SYST H
+ATOM      5  CB  THR X 165     -12.709 -10.735   2.244  1.00  0.00      SYST C
+ATOM      6  HB  THR X 165     -13.383  -9.956   1.888  1.00  0.00      SYST H
+ATOM      7  CG2 THR X 165     -12.131 -10.323   3.704  1.00  0.00      SYST C
+ATOM      8 HG21 THR X 165     -11.457 -11.101   4.062  1.00  0.00      SYST H
+ATOM      9 HG22 THR X 165     -11.590  -9.380   3.628  1.00  0.00      SYST H
+ATOM     10 HG23 THR X 165     -12.959 -10.210   4.405  1.00  0.00      SYST H
+ATOM     11  OG1 THR X 165     -11.593 -10.913   1.309  1.00  0.00      SYST O
+ATOM     12  HG1 THR X 165     -11.106 -10.089   1.232  1.00  0.00      SYST H
+ATOM     13  C   THR X 165     -14.074 -12.422   0.947  1.00  0.00      SYST C
+ATOM     14  O   THR X 165     -14.839 -11.613   0.397  1.00  0.00      SYST O
+ATOM     15  OXT THR X 165     -13.713 -13.498   0.422  1.00  0.00      SYST O
+CONECT    1    2    3
+CONECT    2    1
+CONECT    3    1    4    5   13
+CONECT    4    3
+CONECT    5    3    6    7   11
+CONECT    6    5
+CONECT    7    5    8    9   10
+CONECT    8    7
+CONECT    9    7
+CONECT   10    7
+CONECT   11    5   12
+CONECT   12   11
+CONECT   13    3   14   15
+CONECT   14   13
+CONECT   15   13
 END

@@ -8,28 +8,52 @@ REMARK     285 WAS MISSING.
 REMARK     285 PROTEIN DATA BANK CONVENTIONS REQUIRE THAT
 REMARK     285 CRYST1 RECORD IS INCLUDED, BUT THE VALUES ON
 REMARK     285 THIS RECORD ARE MEANINGLESS.
-ATOM      1  OAA LIG X 194      -3.647   8.146   2.879  0.00  0.00      SYST  
-ATOM      2  CAB LIG X 194      -5.787  11.409  -1.416  0.00  0.00      SYST  
-ATOM      3  CAC LIG X 194      -0.043  10.239   2.450  0.00  0.00      SYST  
-ATOM      4  CAD LIG X 194      -4.649  12.177  -1.640  0.00  0.00      SYST  
-ATOM      5  CAE LIG X 194       0.014  11.244   1.501  0.00  0.00      SYST  
-ATOM      6  CAF LIG X 194      -5.755  10.442  -0.423  0.00  0.00      SYST  
-ATOM      7  CAG LIG X 194      -1.214   9.517   2.628  0.00  0.00      SYST  
-ATOM      8  CAH LIG X 194      -3.477  11.981  -0.922  0.00  0.00      SYST  
-ATOM      9  CAI LIG X 194      -1.102  11.509   0.709  0.00  0.00      SYST  
-ATOM     10  NAJ LIG X 194      -4.581   9.306   1.256  0.00  0.00      SYST  
-ATOM     11  CAK LIG X 194      -3.517   9.046   2.020  0.00  0.00      SYST  
-ATOM     12  CAL LIG X 194      -4.580  10.246   0.313  0.00  0.00      SYST  
-ATOM     13  CAM LIG X 194      -2.336   9.773   1.838  0.00  0.00      SYST  
-ATOM     14  CAN LIG X 194      -3.430  11.011   0.086  0.00  0.00      SYST  
-ATOM     15  CAO LIG X 194      -2.287  10.780   0.871  0.00  0.00      SYST  
-ATOM     16  HAB LIG X 194      -6.671  11.562  -1.999  0.00  0.00      SYST  
-ATOM     17  HAC LIG X 194       0.817  10.018   3.047  0.00  0.00      SYST  
-ATOM     18  HAD LIG X 194      -4.678  12.942  -2.388  0.00  0.00      SYST  
-ATOM     19  HAE LIG X 194       0.910  11.815   1.376  0.00  0.00      SYST  
-ATOM     20  HAF LIG X 194      -6.623   9.849  -0.220  0.00  0.00      SYST  
-ATOM     21  HAG LIG X 194      -1.258   8.756   3.379  0.00  0.00      SYST  
-ATOM     22  HAH LIG X 194      -2.611  12.571  -1.139  0.00  0.00      SYST  
-ATOM     23  HAI LIG X 194      -1.053  12.279  -0.032  0.00  0.00      SYST  
-ATOM     24  H   LIG X 194      -5.414   8.772   1.398  0.00  0.00      SYST  
+ATOM      1  OAA LIG X 194      -3.647   8.146   2.879  1.00  0.00      SYST O
+ATOM      2  CAB LIG X 194      -5.787  11.409  -1.416  1.00  0.00      SYST C
+ATOM      3  CAC LIG X 194      -0.043  10.239   2.450  1.00  0.00      SYST C
+ATOM      4  CAD LIG X 194      -4.649  12.177  -1.640  1.00  0.00      SYST C
+ATOM      5  CAE LIG X 194       0.014  11.244   1.501  1.00  0.00      SYST C
+ATOM      6  CAF LIG X 194      -5.755  10.442  -0.423  1.00  0.00      SYST C
+ATOM      7  CAG LIG X 194      -1.214   9.517   2.628  1.00  0.00      SYST C
+ATOM      8  CAH LIG X 194      -3.477  11.981  -0.922  1.00  0.00      SYST C
+ATOM      9  CAI LIG X 194      -1.102  11.509   0.709  1.00  0.00      SYST C
+ATOM     10  NAJ LIG X 194      -4.581   9.306   1.256  1.00  0.00      SYST N
+ATOM     11  CAK LIG X 194      -3.517   9.046   2.020  1.00  0.00      SYST C
+ATOM     12  CAL LIG X 194      -4.580  10.246   0.313  1.00  0.00      SYST C
+ATOM     13  CAM LIG X 194      -2.336   9.773   1.838  1.00  0.00      SYST C
+ATOM     14  CAN LIG X 194      -3.430  11.011   0.086  1.00  0.00      SYST C
+ATOM     15  CAO LIG X 194      -2.287  10.780   0.871  1.00  0.00      SYST C
+ATOM     16  HAB LIG X 194      -6.671  11.562  -1.999  1.00  0.00      SYST H
+ATOM     17  HAC LIG X 194       0.817  10.018   3.047  1.00  0.00      SYST H
+ATOM     18  HAD LIG X 194      -4.678  12.942  -2.388  1.00  0.00      SYST H
+ATOM     19  HAE LIG X 194       0.910  11.815   1.376  1.00  0.00      SYST H
+ATOM     20  HAF LIG X 194      -6.623   9.849  -0.220  1.00  0.00      SYST H
+ATOM     21  HAG LIG X 194      -1.258   8.756   3.379  1.00  0.00      SYST H
+ATOM     22  HAH LIG X 194      -2.611  12.571  -1.139  1.00  0.00      SYST H
+ATOM     23  HAI LIG X 194      -1.053  12.279  -0.032  1.00  0.00      SYST H
+ATOM     24  H   LIG X 194      -5.414   8.772   1.398  1.00  0.00      SYST H
+CONECT    1   11
+CONECT    2    4    6   16
+CONECT    3    5    7   17
+CONECT    4    2    8   18
+CONECT    5    3    9   19
+CONECT    6    2   12   20
+CONECT    7    3   13   21
+CONECT    8    4   14   22
+CONECT    9    5   15   23
+CONECT   10   11   12   24
+CONECT   11    1   10   13
+CONECT   12    6   10   14
+CONECT   13    7   11   15
+CONECT   14    8   12   15
+CONECT   15    9   13   14
+CONECT   16    2
+CONECT   17    3
+CONECT   18    4
+CONECT   19    5
+CONECT   20    6
+CONECT   21    7
+CONECT   22    8
+CONECT   23    9
+CONECT   24   10
 END

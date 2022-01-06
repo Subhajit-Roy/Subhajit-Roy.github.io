@@ -8,12 +8,20 @@ REMARK     285 WAS MISSING.
 REMARK     285 PROTEIN DATA BANK CONVENTIONS REQUIRE THAT
 REMARK     285 CRYST1 RECORD IS INCLUDED, BUT THE VALUES ON
 REMARK     285 THIS RECORD ARE MEANINGLESS.
-ATOM      1  N   GLY X 296       3.659  -0.070  -3.830  0.00  0.00      SYST  
-ATOM      2  H   GLY X 296       4.364  -0.587  -4.337  0.00  0.00      SYST  
-ATOM      3  CA  GLY X 296       3.335   1.299  -4.281  0.00  0.00      SYST  
-ATOM      4  HA2 GLY X 296       2.280   1.349  -4.548  0.00  0.00      SYST  
-ATOM      5  HA3 GLY X 296       3.538   1.998  -3.469  0.00  0.00      SYST  
-ATOM      6  C   GLY X 296       4.168   1.689  -5.486  0.00  0.00      SYST  
-ATOM      7  O   GLY X 296       3.745   2.594  -6.231  0.00  0.00      SYST  
-ATOM      8  OXT GLY X 296       5.248   1.085  -5.678  0.00  0.00      SYST  
+ATOM      1  N   GLY X 296       3.659  -0.070  -3.830  1.00  0.00      SYST N
+ATOM      2  H   GLY X 296       4.364  -0.587  -4.337  1.00  0.00      SYST H
+ATOM      3  CA  GLY X 296       3.335   1.299  -4.281  1.00  0.00      SYST C
+ATOM      4  HA2 GLY X 296       2.280   1.349  -4.548  1.00  0.00      SYST H
+ATOM      5  HA3 GLY X 296       3.538   1.998  -3.469  1.00  0.00      SYST H
+ATOM      6  C   GLY X 296       4.168   1.689  -5.486  1.00  0.00      SYST C
+ATOM      7  O   GLY X 296       3.745   2.594  -6.231  1.00  0.00      SYST O
+ATOM      8  OXT GLY X 296       5.248   1.085  -5.678  1.00  0.00      SYST O
+CONECT    1    2    3
+CONECT    2    1
+CONECT    3    1    4    5    6
+CONECT    4    3
+CONECT    5    3
+CONECT    6    3    7    8
+CONECT    7    6
+CONECT    8    6
 END
