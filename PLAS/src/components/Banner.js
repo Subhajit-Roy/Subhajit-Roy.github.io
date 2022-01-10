@@ -2,7 +2,7 @@ import React from 'react'
 import pic01 from '../assets/images/pic01.jpg'
 import { Link as ScrollLink } from 'react-scroll'
 import './Banner.css'
-import { StaticImage } from 'gatsby-plugin-image'
+// import { StaticImage } from 'gatsby-plugin-image'
 const Banner = props => (
   <div className="ultimate"
     style={{
@@ -27,8 +27,8 @@ const Banner = props => (
         </p>
       </header>
       <span className="image">
-        {/* <img src={pic01} alt="intro"/> */}
-        <StaticImage src="pic01" alt='intro'/>
+        <img src={pic01} alt="intro"/>
+        {/* <StaticImage src="pic01" alt='intro'/> */}
       </span>
     </div>
     <ScrollLink
