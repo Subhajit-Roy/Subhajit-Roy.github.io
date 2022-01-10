@@ -1,48 +1,92 @@
 HEADER    
 TITLE     MDANALYSIS FRAME 0: Created by PDBWriter
 CRYST1   84.291   69.842   92.522  90.00  90.00  90.00 P 1           1
-ATOM      1  C1  LIG X 366      -1.305   3.872  -4.803  1.00  0.00      SYST  
-ATOM      2  C3  LIG X 366      -3.394   2.468  -3.684  1.00  0.00      SYST  
-ATOM      3  C4  LIG X 366      -4.578   1.660  -3.112  1.00  0.00      SYST  
-ATOM      4  C2  LIG X 366      -2.115   3.065  -5.558  1.00  0.00      SYST  
-ATOM      5  C5  LIG X 366      -2.618   3.264  -2.827  1.00  0.00      SYST  
-ATOM      6  C6  LIG X 366      -1.555   3.981  -3.366  1.00  0.00      SYST  
-ATOM      7  O1  LIG X 366       1.703   6.639  -6.489  1.00  0.00      SYST  
-ATOM      8  O2  LIG X 366      -0.170   8.037  -7.247  1.00  0.00      SYST  
-ATOM      9  C11 LIG X 366      -1.976   6.019   1.238  1.00  0.00      SYST  
-ATOM     10  C12 LIG X 366      -3.032   6.660   2.307  1.00  0.00      SYST  
-ATOM     11  O   LIG X 366       0.326   5.824  -8.308  1.00  0.00      SYST  
-ATOM     12  P   LIG X 366       0.343   6.591  -7.008  1.00  0.00      SYST  
-ATOM     13  O3  LIG X 366      -0.583   5.877  -5.980  1.00  0.00      SYST  
-ATOM     14  C   LIG X 366      -0.137   4.630  -5.458  1.00  0.00      SYST  
-ATOM     15  N   LIG X 366      -3.118   2.397  -5.008  1.00  0.00      SYST  
-ATOM     16  O4  LIG X 366      -2.932   3.337  -1.354  1.00  0.00      SYST  
-ATOM     17  C7  LIG X 366      -0.649   4.888  -2.460  1.00  0.00      SYST  
-ATOM     18  N1  LIG X 366      -1.430   5.762  -1.700  1.00  0.00      SYST  
-ATOM     19  C8  LIG X 366      -0.563   6.549  -0.849  1.00  0.00      SYST  
-ATOM     20  C9  LIG X 366       0.482   5.648  -0.253  1.00  0.00      SYST  
-ATOM     21  F1  LIG X 366       1.508   6.425   0.261  1.00  0.00      SYST  
-ATOM     22  C10 LIG X 366      -1.360   7.144   0.235  1.00  0.00      SYST  
-ATOM     23  O5  LIG X 366      -3.799   7.661   1.944  1.00  0.00      SYST  
-ATOM     24  O6  LIG X 366      -3.111   6.168   3.529  1.00  0.00      SYST  
-ATOM     25  H41 LIG X 366      -4.650   1.831  -2.058  1.00  0.00      SYST  
-ATOM     26  H42 LIG X 366      -4.420   0.618  -3.294  1.00  0.00      SYST  
-ATOM     27  H43 LIG X 366      -5.485   1.971  -3.587  1.00  0.00      SYST  
-ATOM     28  H2  LIG X 366      -1.934   2.973  -6.609  1.00  0.00      SYST  
-ATOM     29 H112 LIG X 366      -1.178   5.461   1.681  1.00  0.00      SYST  
-ATOM     30 H113 LIG X 366      -2.610   5.357   0.685  1.00  0.00      SYST  
-ATOM     31  H1  LIG X 366       0.556   4.857  -4.675  1.00  0.00      SYST  
-ATOM     32  H3  LIG X 366       0.176   4.043  -6.296  1.00  0.00      SYST  
-ATOM     33  H4  LIG X 366      -2.248   3.839  -0.905  1.00  0.00      SYST  
-ATOM     34  H71 LIG X 366      -0.161   4.235  -1.767  1.00  0.00      SYST  
-ATOM     35  H72 LIG X 366      -0.068   5.496  -3.122  1.00  0.00      SYST  
-ATOM     36  H5  LIG X 366      -1.994   5.198  -1.097  1.00  0.00      SYST  
-ATOM     37  H8  LIG X 366      -0.096   7.323  -1.421  1.00  0.00      SYST  
-ATOM     38  H91 LIG X 366       0.025   5.149   0.576  1.00  0.00      SYST  
-ATOM     39  H92 LIG X 366       0.897   5.079  -1.058  1.00  0.00      SYST  
-ATOM     40 H101 LIG X 366      -0.679   7.725   0.821  1.00  0.00      SYST  
-ATOM     41 H102 LIG X 366      -2.198   7.615  -0.235  1.00  0.00      SYST  
-ATOM     42  H   LIG X 366       2.326   6.572  -7.217  1.00  0.00      SYST  
-ATOM     43  H6  LIG X 366       1.227   5.656  -8.592  1.00  0.00      SYST  
-ATOM     44  H12 LIG X 366      -2.227   6.028   3.876  1.00  0.00      SYST  
+ATOM      1  C1  LIG X 366      -1.305   3.872  -4.803  1.00  0.00      SYST C
+ATOM      2  C3  LIG X 366      -3.394   2.468  -3.684  1.00  0.00      SYST C
+ATOM      3  C4  LIG X 366      -4.578   1.660  -3.112  1.00  0.00      SYST C
+ATOM      4  C2  LIG X 366      -2.115   3.065  -5.558  1.00  0.00      SYST C
+ATOM      5  C5  LIG X 366      -2.618   3.264  -2.827  1.00  0.00      SYST C
+ATOM      6  C6  LIG X 366      -1.555   3.981  -3.366  1.00  0.00      SYST C
+ATOM      7  O1  LIG X 366       1.703   6.639  -6.489  1.00  0.00      SYST O
+ATOM      8  O2  LIG X 366      -0.170   8.037  -7.247  1.00  0.00      SYST O
+ATOM      9  C11 LIG X 366      -1.976   6.019   1.238  1.00  0.00      SYST C
+ATOM     10  C12 LIG X 366      -3.032   6.660   2.307  1.00  0.00      SYST C
+ATOM     11  O   LIG X 366       0.326   5.824  -8.308  1.00  0.00      SYST O
+ATOM     12  P   LIG X 366       0.343   6.591  -7.008  1.00  0.00      SYST P
+ATOM     13  O3  LIG X 366      -0.583   5.877  -5.980  1.00  0.00      SYST O
+ATOM     14  C   LIG X 366      -0.137   4.630  -5.458  1.00  0.00      SYST C
+ATOM     15  N   LIG X 366      -3.118   2.397  -5.008  1.00  0.00      SYST N
+ATOM     16  O4  LIG X 366      -2.932   3.337  -1.354  1.00  0.00      SYST O
+ATOM     17  C7  LIG X 366      -0.649   4.888  -2.460  1.00  0.00      SYST C
+ATOM     18  N1  LIG X 366      -1.430   5.762  -1.700  1.00  0.00      SYST N
+ATOM     19  C8  LIG X 366      -0.563   6.549  -0.849  1.00  0.00      SYST C
+ATOM     20  C9  LIG X 366       0.482   5.648  -0.253  1.00  0.00      SYST C
+ATOM     21  F1  LIG X 366       1.508   6.425   0.261  1.00  0.00      SYST F
+ATOM     22  C10 LIG X 366      -1.360   7.144   0.235  1.00  0.00      SYST C
+ATOM     23  O5  LIG X 366      -3.799   7.661   1.944  1.00  0.00      SYST O
+ATOM     24  O6  LIG X 366      -3.111   6.168   3.529  1.00  0.00      SYST O
+ATOM     25  H41 LIG X 366      -4.650   1.831  -2.058  1.00  0.00      SYST H
+ATOM     26  H42 LIG X 366      -4.420   0.618  -3.294  1.00  0.00      SYST H
+ATOM     27  H43 LIG X 366      -5.485   1.971  -3.587  1.00  0.00      SYST H
+ATOM     28  H2  LIG X 366      -1.934   2.973  -6.609  1.00  0.00      SYST H
+ATOM     29 H112 LIG X 366      -1.178   5.461   1.681  1.00  0.00      SYST H
+ATOM     30 H113 LIG X 366      -2.610   5.357   0.685  1.00  0.00      SYST H
+ATOM     31  H1  LIG X 366       0.556   4.857  -4.675  1.00  0.00      SYST H
+ATOM     32  H3  LIG X 366       0.176   4.043  -6.296  1.00  0.00      SYST H
+ATOM     33  H4  LIG X 366      -2.248   3.839  -0.905  1.00  0.00      SYST H
+ATOM     34  H71 LIG X 366      -0.161   4.235  -1.767  1.00  0.00      SYST H
+ATOM     35  H72 LIG X 366      -0.068   5.496  -3.122  1.00  0.00      SYST H
+ATOM     36  H5  LIG X 366      -1.994   5.198  -1.097  1.00  0.00      SYST H
+ATOM     37  H8  LIG X 366      -0.096   7.323  -1.421  1.00  0.00      SYST H
+ATOM     38  H91 LIG X 366       0.025   5.149   0.576  1.00  0.00      SYST H
+ATOM     39  H92 LIG X 366       0.897   5.079  -1.058  1.00  0.00      SYST H
+ATOM     40 H101 LIG X 366      -0.679   7.725   0.821  1.00  0.00      SYST H
+ATOM     41 H102 LIG X 366      -2.198   7.615  -0.235  1.00  0.00      SYST H
+ATOM     42  H   LIG X 366       2.326   6.572  -7.217  1.00  0.00      SYST H
+ATOM     43  H6  LIG X 366       1.227   5.656  -8.592  1.00  0.00      SYST H
+ATOM     44  H12 LIG X 366      -2.227   6.028   3.876  1.00  0.00      SYST H
+CONECT    1    4    6   14
+CONECT    2    3    5   15
+CONECT    3    2   25   26   27
+CONECT    4    1   15   28
+CONECT    5    2    6   16
+CONECT    6    1    5   17
+CONECT    7   12   42
+CONECT    8   12
+CONECT    9   10   22   29   30
+CONECT   10    9   23   24
+CONECT   11   12   43
+CONECT   12    7    8   11   13
+CONECT   13   12   14
+CONECT   14    1   13   31   32
+CONECT   15    2    4
+CONECT   16    5   33
+CONECT   17    6   18   34   35
+CONECT   18   17   19   36
+CONECT   19   18   20   22   37
+CONECT   20   19   21   38   39
+CONECT   21   20
+CONECT   22    9   19   40   41
+CONECT   23   10
+CONECT   24   10   44
+CONECT   25    3
+CONECT   26    3
+CONECT   27    3
+CONECT   28    4
+CONECT   29    9
+CONECT   30    9
+CONECT   31   14
+CONECT   32   14
+CONECT   33   16
+CONECT   34   17
+CONECT   35   17
+CONECT   36   18
+CONECT   37   19
+CONECT   38   20
+CONECT   39   20
+CONECT   40   22
+CONECT   41   22
+CONECT   42    7
+CONECT   43   11
+CONECT   44   24
 END

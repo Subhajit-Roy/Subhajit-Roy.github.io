@@ -8,11 +8,11 @@ import { Helmet } from "react-helmet"
 import { Stage, StructureComponent } from "react-ngl"
 import { Autocomplete, Checkbox, Grid, Paper, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, TextField } from "@mui/material"
 import finalData from '../database/plas5k.json'
-import { initializeApp } from 'firebase/app';
-import { getAuth, onAuthStateChanged } from "firebase/auth";
-import { navigate } from "gatsby"
-import { useEffect} from "react";
-import config from "../service/fireconf"
+// import { initializeApp } from 'firebase/app';
+// import { getAuth, onAuthStateChanged } from "firebase/auth";
+// import { navigate } from "gatsby"
+// import { useEffect} from "react";
+// import config from "../service/fireconf"
 import Layout from "../components/layout";
 // import MathJax from "react-mathjax";
 // import { getDownloadURL, getStorage, ref } from "firebase/storage";
@@ -36,20 +36,20 @@ export default function IndexPage(){
   // }
 
 
-  useEffect(()=>{
-    if(typeof window !== 'undefined'){
-        const app =initializeApp(config);
-        const auth = getAuth(app);
-        onAuthStateChanged(auth, (user)=>{
-            if(!user){
-                navigate("/auth")
-            }else{
-                // console.log(user.email);
-                // ObtainJSON();
-            }
-        })
-    }
-})
+//   useEffect(()=>{
+//     if(typeof window !== 'undefined'){
+//         const app =initializeApp(config);
+//         const auth = getAuth(app);
+//         onAuthStateChanged(auth, (user)=>{
+//             if(!user){
+//                 navigate("/auth")
+//             }else{
+//                 // console.log(user.email);
+//                 // ObtainJSON();
+//             }
+//         })
+//     }
+// })
   const reprList = React.useMemo(() => ({
     'backgroundColor':"white",
     'ball+stick': [{

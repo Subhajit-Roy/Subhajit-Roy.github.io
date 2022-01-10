@@ -8,25 +8,46 @@ REMARK     285 WAS MISSING.
 REMARK     285 PROTEIN DATA BANK CONVENTIONS REQUIRE THAT
 REMARK     285 CRYST1 RECORD IS INCLUDED, BUT THE VALUES ON
 REMARK     285 THIS RECORD ARE MEANINGLESS.
-ATOM      1  OAA LIG X 287       3.239   6.882  -0.627  0.00  0.00      SYST  
-ATOM      2  CAJ LIG X 287       3.286   5.750  -0.884  0.00  0.00      SYST  
-ATOM      3  OAB LIG X 287       3.557   5.311  -1.997  0.00  0.00      SYST  
-ATOM      4  CAM LIG X 287       3.059   4.607   0.088  0.00  0.00      SYST  
-ATOM      5  OAI LIG X 287       2.428   5.145   1.226  0.00  0.00      SYST  
-ATOM      6  CAL LIG X 287       1.978   4.189   2.079  0.00  0.00      SYST  
-ATOM      7  CAF LIG X 287       1.566   4.583   3.312  0.00  0.00      SYST  
-ATOM      8  CAD LIG X 287       1.246   3.635   4.248  0.00  0.00      SYST  
-ATOM      9  CAC LIG X 287       1.328   2.315   3.944  0.00  0.00      SYST  
-ATOM     10  CAE LIG X 287       1.726   1.907   2.695  0.00  0.00      SYST  
-ATOM     11  CAK LIG X 287       2.043   2.844   1.762  0.00  0.00      SYST  
-ATOM     12  OAH LIG X 287       2.255   2.411   0.487  0.00  0.00      SYST  
-ATOM     13  CAG LIG X 287       2.324   3.436  -0.479  0.00  0.00      SYST  
-ATOM     14  HAM LIG X 287       4.009   4.185   0.342  0.00  0.00      SYST  
-ATOM     15  HAF LIG X 287       1.492   5.624   3.550  0.00  0.00      SYST  
-ATOM     16  HAD LIG X 287       0.930   3.937   5.224  0.00  0.00      SYST  
-ATOM     17  HAC LIG X 287       1.080   1.585   4.685  0.00  0.00      SYST  
-ATOM     18  HAE LIG X 287       1.786   0.865   2.459  0.00  0.00      SYST  
-ATOM     19 HAG1 LIG X 287       1.320   3.759  -0.659  0.00  0.00      SYST  
-ATOM     20 HAG2 LIG X 287       2.918   3.060  -1.286  0.00  0.00      SYST  
-ATOM     21  H   LIG X 287       4.130   7.230  -0.548  0.00  0.00      SYST  
+ATOM      1  OAA LIG X 287       3.239   6.882  -0.627  1.00  0.00      SYST O
+ATOM      2  CAJ LIG X 287       3.286   5.750  -0.884  1.00  0.00      SYST C
+ATOM      3  OAB LIG X 287       3.557   5.311  -1.997  1.00  0.00      SYST O
+ATOM      4  CAM LIG X 287       3.059   4.607   0.088  1.00  0.00      SYST C
+ATOM      5  OAI LIG X 287       2.428   5.145   1.226  1.00  0.00      SYST O
+ATOM      6  CAL LIG X 287       1.978   4.189   2.079  1.00  0.00      SYST C
+ATOM      7  CAF LIG X 287       1.566   4.583   3.312  1.00  0.00      SYST C
+ATOM      8  CAD LIG X 287       1.246   3.635   4.248  1.00  0.00      SYST C
+ATOM      9  CAC LIG X 287       1.328   2.315   3.944  1.00  0.00      SYST C
+ATOM     10  CAE LIG X 287       1.726   1.907   2.695  1.00  0.00      SYST C
+ATOM     11  CAK LIG X 287       2.043   2.844   1.762  1.00  0.00      SYST C
+ATOM     12  OAH LIG X 287       2.255   2.411   0.487  1.00  0.00      SYST O
+ATOM     13  CAG LIG X 287       2.324   3.436  -0.479  1.00  0.00      SYST C
+ATOM     14  HAM LIG X 287       4.009   4.185   0.342  1.00  0.00      SYST H
+ATOM     15  HAF LIG X 287       1.492   5.624   3.550  1.00  0.00      SYST H
+ATOM     16  HAD LIG X 287       0.930   3.937   5.224  1.00  0.00      SYST H
+ATOM     17  HAC LIG X 287       1.080   1.585   4.685  1.00  0.00      SYST H
+ATOM     18  HAE LIG X 287       1.786   0.865   2.459  1.00  0.00      SYST H
+ATOM     19 HAG1 LIG X 287       1.320   3.759  -0.659  1.00  0.00      SYST H
+ATOM     20 HAG2 LIG X 287       2.918   3.060  -1.286  1.00  0.00      SYST H
+ATOM     21  H   LIG X 287       4.130   7.230  -0.548  1.00  0.00      SYST H
+CONECT    1    2   21
+CONECT    2    1    3    4
+CONECT    3    2
+CONECT    4    2    5   13   14
+CONECT    5    4    6
+CONECT    6    5    7   11
+CONECT    7    6    8   15
+CONECT    8    7    9   16
+CONECT    9    8   10   17
+CONECT   10    9   11   18
+CONECT   11    6   10   12
+CONECT   12   11   13
+CONECT   13    4   12   19   20
+CONECT   14    4
+CONECT   15    7
+CONECT   16    8
+CONECT   17    9
+CONECT   18   10
+CONECT   19   13
+CONECT   20   13
+CONECT   21    1
 END

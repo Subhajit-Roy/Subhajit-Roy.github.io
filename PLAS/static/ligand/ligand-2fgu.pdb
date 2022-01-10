@@ -8,19 +8,34 @@ REMARK     285 WAS MISSING.
 REMARK     285 PROTEIN DATA BANK CONVENTIONS REQUIRE THAT
 REMARK     285 CRYST1 RECORD IS INCLUDED, BUT THE VALUES ON
 REMARK     285 THIS RECORD ARE MEANINGLESS.
-ATOM      1  N   ASN X 199      -1.660  -6.303   0.888  0.00  0.00      SYST  
-ATOM      2  H   ASN X 199      -0.726  -6.441   1.247  0.00  0.00      SYST  
-ATOM      3  CA  ASN X 199      -2.482  -5.293   1.497  0.00  0.00      SYST  
-ATOM      4  HA  ASN X 199      -2.750  -4.553   0.743  0.00  0.00      SYST  
-ATOM      5  CB  ASN X 199      -3.755  -5.868   2.085  0.00  0.00      SYST  
-ATOM      6  HB2 ASN X 199      -3.609  -6.612   2.868  0.00  0.00      SYST  
-ATOM      7  HB3 ASN X 199      -4.436  -5.095   2.442  0.00  0.00      SYST  
-ATOM      8  CG  ASN X 199      -4.378  -6.544   0.888  0.00  0.00      SYST  
-ATOM      9  OD1 ASN X 199      -4.799  -5.878  -0.054  0.00  0.00      SYST  
-ATOM     10  ND2 ASN X 199      -4.406  -7.873   0.916  0.00  0.00      SYST  
-ATOM     11 HD21 ASN X 199      -4.811  -8.383   0.144  0.00  0.00      SYST  
-ATOM     12 HD22 ASN X 199      -4.023  -8.367   1.710  0.00  0.00      SYST  
-ATOM     13  C   ASN X 199      -1.574  -4.413   2.322  0.00  0.00      SYST  
-ATOM     14  O   ASN X 199      -1.654  -4.399   3.529  0.00  0.00      SYST  
-ATOM     15  OXT ASN X 199      -0.638  -3.815   1.796  0.00  0.00      SYST  
+ATOM      1  N   ASN X 199      -1.660  -6.303   0.888  1.00  0.00      SYST N
+ATOM      2  H   ASN X 199      -0.726  -6.441   1.247  1.00  0.00      SYST H
+ATOM      3  CA  ASN X 199      -2.482  -5.293   1.497  1.00  0.00      SYST C
+ATOM      4  HA  ASN X 199      -2.750  -4.553   0.743  1.00  0.00      SYST H
+ATOM      5  CB  ASN X 199      -3.755  -5.868   2.085  1.00  0.00      SYST C
+ATOM      6  HB2 ASN X 199      -3.609  -6.612   2.868  1.00  0.00      SYST H
+ATOM      7  HB3 ASN X 199      -4.436  -5.095   2.442  1.00  0.00      SYST H
+ATOM      8  CG  ASN X 199      -4.378  -6.544   0.888  1.00  0.00      SYST C
+ATOM      9  OD1 ASN X 199      -4.799  -5.878  -0.054  1.00  0.00      SYST O
+ATOM     10  ND2 ASN X 199      -4.406  -7.873   0.916  1.00  0.00      SYST N
+ATOM     11 HD21 ASN X 199      -4.811  -8.383   0.144  1.00  0.00      SYST H
+ATOM     12 HD22 ASN X 199      -4.023  -8.367   1.710  1.00  0.00      SYST H
+ATOM     13  C   ASN X 199      -1.574  -4.413   2.322  1.00  0.00      SYST C
+ATOM     14  O   ASN X 199      -1.654  -4.399   3.529  1.00  0.00      SYST O
+ATOM     15  OXT ASN X 199      -0.638  -3.815   1.796  1.00  0.00      SYST O
+CONECT    1    2    3
+CONECT    2    1
+CONECT    3    1    4    5   13
+CONECT    4    3
+CONECT    5    3    6    7    8
+CONECT    6    5
+CONECT    7    5
+CONECT    8    5    9   10
+CONECT    9    8
+CONECT   10    8   11   12
+CONECT   11   10
+CONECT   12   10
+CONECT   13    3   14   15
+CONECT   14   13
+CONECT   15   13
 END

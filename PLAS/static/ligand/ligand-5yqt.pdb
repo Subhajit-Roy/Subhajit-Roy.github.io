@@ -1,18 +1,32 @@
 HEADER    
 TITLE     MDANALYSIS FRAME 0: Created by PDBWriter
 CRYST1   65.419   66.050   69.404  90.00  90.00  90.00 P 1           1
-ATOM      1  C01 LIG X 145       0.507  -6.570   1.972  1.00  0.00      SYST  
-ATOM      2  C02 LIG X 145       1.500  -6.862   3.096  1.00  0.00      SYST  
-ATOM      3  C03 LIG X 145       1.848  -5.506   3.716  1.00  0.00      SYST  
-ATOM      4  C04 LIG X 145       0.659  -4.593   3.404  1.00  0.00      SYST  
-ATOM      5  C05 LIG X 145      -0.144  -5.235   2.338  1.00  0.00      SYST  
-ATOM      6  O06 LIG X 145       0.746  -4.194   2.063  1.00  0.00      SYST  
-ATOM      7 H012 LIG X 145      -0.245  -7.357   1.914  1.00  0.00      SYST  
-ATOM      8 H013 LIG X 145       1.032  -6.483   1.021  1.00  0.00      SYST  
-ATOM      9 H022 LIG X 145       1.046  -7.514   3.842  1.00  0.00      SYST  
-ATOM     10 H023 LIG X 145       2.398  -7.328   2.690  1.00  0.00      SYST  
-ATOM     11 H032 LIG X 145       2.760  -5.108   3.272  1.00  0.00      SYST  
-ATOM     12 H033 LIG X 145       1.970  -5.607   4.794  1.00  0.00      SYST  
-ATOM     13  H04 LIG X 145       0.204  -3.959   4.165  1.00  0.00      SYST  
-ATOM     14  H05 LIG X 145      -1.223  -5.092   2.275  1.00  0.00      SYST  
+ATOM      1  C01 LIG X 145       0.507  -6.570   1.972  1.00  0.00      SYST C
+ATOM      2  C02 LIG X 145       1.500  -6.862   3.096  1.00  0.00      SYST C
+ATOM      3  C03 LIG X 145       1.848  -5.506   3.716  1.00  0.00      SYST C
+ATOM      4  C04 LIG X 145       0.659  -4.593   3.404  1.00  0.00      SYST C
+ATOM      5  C05 LIG X 145      -0.144  -5.235   2.338  1.00  0.00      SYST C
+ATOM      6  O06 LIG X 145       0.746  -4.194   2.063  1.00  0.00      SYST O
+ATOM      7 H012 LIG X 145      -0.245  -7.357   1.914  1.00  0.00      SYST H
+ATOM      8 H013 LIG X 145       1.032  -6.483   1.021  1.00  0.00      SYST H
+ATOM      9 H022 LIG X 145       1.046  -7.514   3.842  1.00  0.00      SYST H
+ATOM     10 H023 LIG X 145       2.398  -7.328   2.690  1.00  0.00      SYST H
+ATOM     11 H032 LIG X 145       2.760  -5.108   3.272  1.00  0.00      SYST H
+ATOM     12 H033 LIG X 145       1.970  -5.607   4.794  1.00  0.00      SYST H
+ATOM     13  H04 LIG X 145       0.204  -3.959   4.165  1.00  0.00      SYST H
+ATOM     14  H05 LIG X 145      -1.223  -5.092   2.275  1.00  0.00      SYST H
+CONECT    1    2    5    7    8
+CONECT    2    1    3    9   10
+CONECT    3    2    4   11   12
+CONECT    4    3    5    6   13
+CONECT    5    1    4    6   14
+CONECT    6    4    5
+CONECT    7    1
+CONECT    8    1
+CONECT    9    2
+CONECT   10    2
+CONECT   11    3
+CONECT   12    3
+CONECT   13    4
+CONECT   14    5
 END

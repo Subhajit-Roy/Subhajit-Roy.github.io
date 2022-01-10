@@ -8,21 +8,38 @@ REMARK     285 WAS MISSING.
 REMARK     285 PROTEIN DATA BANK CONVENTIONS REQUIRE THAT
 REMARK     285 CRYST1 RECORD IS INCLUDED, BUT THE VALUES ON
 REMARK     285 THIS RECORD ARE MEANINGLESS.
-ATOM      1  N   VAL X 182      -4.984  -5.269  -3.053  0.00  0.00      SYST  
-ATOM      2  H   VAL X 182      -5.590  -4.514  -3.343  0.00  0.00      SYST  
-ATOM      3  CA  VAL X 182      -5.236  -5.910  -1.723  0.00  0.00      SYST  
-ATOM      4  HA  VAL X 182      -5.473  -6.969  -1.818  0.00  0.00      SYST  
-ATOM      5  CB  VAL X 182      -3.982  -5.759  -0.795  0.00  0.00      SYST  
-ATOM      6  HB  VAL X 182      -3.809  -4.698  -0.610  0.00  0.00      SYST  
-ATOM      7  CG1 VAL X 182      -4.194  -6.482   0.541  0.00  0.00      SYST  
-ATOM      8 HG11 VAL X 182      -4.366  -7.542   0.358  0.00  0.00      SYST  
-ATOM      9 HG12 VAL X 182      -3.308  -6.360   1.165  0.00  0.00      SYST  
-ATOM     10 HG13 VAL X 182      -5.058  -6.057   1.052  0.00  0.00      SYST  
-ATOM     11  CG2 VAL X 182      -2.749  -6.297  -1.514  0.00  0.00      SYST  
-ATOM     12 HG21 VAL X 182      -2.589  -5.734  -2.433  0.00  0.00      SYST  
-ATOM     13 HG22 VAL X 182      -1.877  -6.192  -0.868  0.00  0.00      SYST  
-ATOM     14 HG23 VAL X 182      -2.898  -7.349  -1.754  0.00  0.00      SYST  
-ATOM     15  C   VAL X 182      -6.436  -5.186  -1.079  0.00  0.00      SYST  
-ATOM     16  O   VAL X 182      -7.124  -5.807  -0.235  0.00  0.00      SYST  
-ATOM     17  OXT VAL X 182      -6.681  -4.001  -1.433  0.00  0.00      SYST  
+ATOM      1  N   VAL X 182      -4.984  -5.269  -3.053  1.00  0.00      SYST N
+ATOM      2  H   VAL X 182      -5.590  -4.514  -3.343  1.00  0.00      SYST H
+ATOM      3  CA  VAL X 182      -5.236  -5.910  -1.723  1.00  0.00      SYST C
+ATOM      4  HA  VAL X 182      -5.473  -6.969  -1.818  1.00  0.00      SYST H
+ATOM      5  CB  VAL X 182      -3.982  -5.759  -0.795  1.00  0.00      SYST C
+ATOM      6  HB  VAL X 182      -3.809  -4.698  -0.610  1.00  0.00      SYST H
+ATOM      7  CG1 VAL X 182      -4.194  -6.482   0.541  1.00  0.00      SYST C
+ATOM      8 HG11 VAL X 182      -4.366  -7.542   0.358  1.00  0.00      SYST H
+ATOM      9 HG12 VAL X 182      -3.308  -6.360   1.165  1.00  0.00      SYST H
+ATOM     10 HG13 VAL X 182      -5.058  -6.057   1.052  1.00  0.00      SYST H
+ATOM     11  CG2 VAL X 182      -2.749  -6.297  -1.514  1.00  0.00      SYST C
+ATOM     12 HG21 VAL X 182      -2.589  -5.734  -2.433  1.00  0.00      SYST H
+ATOM     13 HG22 VAL X 182      -1.877  -6.192  -0.868  1.00  0.00      SYST H
+ATOM     14 HG23 VAL X 182      -2.898  -7.349  -1.754  1.00  0.00      SYST H
+ATOM     15  C   VAL X 182      -6.436  -5.186  -1.079  1.00  0.00      SYST C
+ATOM     16  O   VAL X 182      -7.124  -5.807  -0.235  1.00  0.00      SYST O
+ATOM     17  OXT VAL X 182      -6.681  -4.001  -1.433  1.00  0.00      SYST O
+CONECT    1    2    3
+CONECT    2    1
+CONECT    3    1    4    5   15
+CONECT    4    3
+CONECT    5    3    6    7   11
+CONECT    6    5
+CONECT    7    5    8    9   10
+CONECT    8    7
+CONECT    9    7
+CONECT   10    7
+CONECT   11    5   12   13   14
+CONECT   12   11
+CONECT   13   11
+CONECT   14   11
+CONECT   15    3   16   17
+CONECT   16   15
+CONECT   17   15
 END

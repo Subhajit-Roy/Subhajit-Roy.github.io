@@ -8,15 +8,26 @@ REMARK     285 WAS MISSING.
 REMARK     285 PROTEIN DATA BANK CONVENTIONS REQUIRE THAT
 REMARK     285 CRYST1 RECORD IS INCLUDED, BUT THE VALUES ON
 REMARK     285 THIS RECORD ARE MEANINGLESS.
-ATOM      1  C1  LIG X 733      -0.271  13.483  -1.893  0.00  0.00      SYST  
-ATOM      2  C2  LIG X 733      -1.010  13.903  -0.863  0.00  0.00      SYST  
-ATOM      3  C3  LIG X 733      -1.756  12.917  -0.007  0.00  0.00      SYST  
-ATOM      4  C4  LIG X 733      -3.072  13.603   0.249  0.00  0.00      SYST  
-ATOM      5  C5  LIG X 733      -4.011  12.655   0.934  0.00  0.00      SYST  
-ATOM      6  C6  LIG X 733      -4.809  13.111   1.911  0.00  0.00      SYST  
-ATOM      7  C7  LIG X 733      -5.764  12.156   2.594  0.00  0.00      SYST  
-ATOM      8  C8  LIG X 733      -4.051  11.203   0.526  0.00  0.00      SYST  
-ATOM      9  C9  LIG X 733       0.437  14.528  -2.714  0.00  0.00      SYST  
-ATOM     10  O   LIG X 733      -6.926  11.984   1.804  0.00  0.00      SYST  
-ATOM     11  C   LIG X 733      -0.143  12.009  -2.215  0.00  0.00      SYST  
+ATOM      1  C1  LIG X 733      -0.271  13.483  -1.893  1.00  0.00      SYST C
+ATOM      2  C2  LIG X 733      -1.010  13.903  -0.863  1.00  0.00      SYST C
+ATOM      3  C3  LIG X 733      -1.756  12.917  -0.007  1.00  0.00      SYST C
+ATOM      4  C4  LIG X 733      -3.072  13.603   0.249  1.00  0.00      SYST C
+ATOM      5  C5  LIG X 733      -4.011  12.655   0.934  1.00  0.00      SYST C
+ATOM      6  C6  LIG X 733      -4.809  13.111   1.911  1.00  0.00      SYST C
+ATOM      7  C7  LIG X 733      -5.764  12.156   2.594  1.00  0.00      SYST C
+ATOM      8  C8  LIG X 733      -4.051  11.203   0.526  1.00  0.00      SYST C
+ATOM      9  C9  LIG X 733       0.437  14.528  -2.714  1.00  0.00      SYST C
+ATOM     10  O   LIG X 733      -6.926  11.984   1.804  1.00  0.00      SYST O
+ATOM     11  C   LIG X 733      -0.143  12.009  -2.215  1.00  0.00      SYST C
+CONECT    1    2    9   11
+CONECT    2    1    3
+CONECT    3    2    4
+CONECT    4    3    5
+CONECT    5    4    6    8
+CONECT    6    5    7
+CONECT    7    6   10
+CONECT    8    5
+CONECT    9    1
+CONECT   10    7
+CONECT   11    1
 END

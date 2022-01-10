@@ -8,16 +8,28 @@ REMARK     285 WAS MISSING.
 REMARK     285 PROTEIN DATA BANK CONVENTIONS REQUIRE THAT
 REMARK     285 CRYST1 RECORD IS INCLUDED, BUT THE VALUES ON
 REMARK     285 THIS RECORD ARE MEANINGLESS.
-ATOM      1  N   SER X 458       3.605 -14.938  -0.389  0.00  0.00      SYST  
-ATOM      2  H   SER X 458       2.916 -14.211  -0.262  0.00  0.00      SYST  
-ATOM      3  CA  SER X 458       4.640 -14.760  -1.468  0.00  0.00      SYST  
-ATOM      4  HA  SER X 458       5.637 -14.765  -1.027  0.00  0.00      SYST  
-ATOM      5  CB  SER X 458       4.552 -15.896  -2.491  0.00  0.00      SYST  
-ATOM      6  HB2 SER X 458       4.684 -16.841  -1.962  0.00  0.00      SYST  
-ATOM      7  HB3 SER X 458       3.561 -15.870  -2.944  0.00  0.00      SYST  
-ATOM      8  OG  SER X 458       5.530 -15.781  -3.496  0.00  0.00      SYST  
-ATOM      9  HG  SER X 458       5.441 -16.510  -4.114  0.00  0.00      SYST  
-ATOM     10  C   SER X 458       4.468 -13.430  -2.177  0.00  0.00      SYST  
-ATOM     11  O   SER X 458       3.510 -12.719  -1.818  0.00  0.00      SYST  
-ATOM     12  OXT SER X 458       5.266 -13.105  -3.088  0.00  0.00      SYST  
+ATOM      1  N   SER X 458       3.605 -14.938  -0.389  1.00  0.00      SYST N
+ATOM      2  H   SER X 458       2.916 -14.211  -0.262  1.00  0.00      SYST H
+ATOM      3  CA  SER X 458       4.640 -14.760  -1.468  1.00  0.00      SYST C
+ATOM      4  HA  SER X 458       5.637 -14.765  -1.027  1.00  0.00      SYST H
+ATOM      5  CB  SER X 458       4.552 -15.896  -2.491  1.00  0.00      SYST C
+ATOM      6  HB2 SER X 458       4.684 -16.841  -1.962  1.00  0.00      SYST H
+ATOM      7  HB3 SER X 458       3.561 -15.870  -2.944  1.00  0.00      SYST H
+ATOM      8  OG  SER X 458       5.530 -15.781  -3.496  1.00  0.00      SYST O
+ATOM      9  HG  SER X 458       5.441 -16.510  -4.114  1.00  0.00      SYST H
+ATOM     10  C   SER X 458       4.468 -13.430  -2.177  1.00  0.00      SYST C
+ATOM     11  O   SER X 458       3.510 -12.719  -1.818  1.00  0.00      SYST O
+ATOM     12  OXT SER X 458       5.266 -13.105  -3.088  1.00  0.00      SYST O
+CONECT    1    2    3
+CONECT    2    1
+CONECT    3    1    4    5   10
+CONECT    4    3
+CONECT    5    3    6    7    8
+CONECT    6    5
+CONECT    7    5
+CONECT    8    5    9
+CONECT    9    8
+CONECT   10    3   11   12
+CONECT   11   10
+CONECT   12   10
 END

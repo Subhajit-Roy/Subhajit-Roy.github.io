@@ -8,24 +8,44 @@ REMARK     285 WAS MISSING.
 REMARK     285 PROTEIN DATA BANK CONVENTIONS REQUIRE THAT
 REMARK     285 CRYST1 RECORD IS INCLUDED, BUT THE VALUES ON
 REMARK     285 THIS RECORD ARE MEANINGLESS.
-ATOM      1  N   ILE X 156      -0.507  15.182   1.579  0.00  0.00      SYST  
-ATOM      2  H   ILE X 156      -0.847  15.953   2.136  0.00  0.00      SYST  
-ATOM      3  CA  ILE X 156      -0.758  15.207   0.112  0.00  0.00      SYST  
-ATOM      4  HA  ILE X 156       0.163  15.252  -0.470  0.00  0.00      SYST  
-ATOM      5  CB  ILE X 156      -1.591  13.981  -0.335  0.00  0.00      SYST  
-ATOM      6  HB  ILE X 156      -1.130  13.086   0.082  0.00  0.00      SYST  
-ATOM      7  CG2 ILE X 156      -3.056  14.072   0.138  0.00  0.00      SYST  
-ATOM      8 HG21 ILE X 156      -3.518  14.967  -0.279  0.00  0.00      SYST  
-ATOM      9 HG22 ILE X 156      -3.602  13.191  -0.199  0.00  0.00      SYST  
-ATOM     10 HG23 ILE X 156      -3.084  14.123   1.226  0.00  0.00      SYST  
-ATOM     11  CG1 ILE X 156      -1.522  13.772  -1.841  0.00  0.00      SYST  
-ATOM     12 HG12 ILE X 156      -2.055  14.594  -2.319  0.00  0.00      SYST  
-ATOM     13 HG13 ILE X 156      -0.473  13.800  -2.136  0.00  0.00      SYST  
-ATOM     14  CD1 ILE X 156      -2.136  12.449  -2.275  0.00  0.00      SYST  
-ATOM     15 HD11 ILE X 156      -3.185  12.421  -1.981  0.00  0.00      SYST  
-ATOM     16 HD12 ILE X 156      -2.060  12.351  -3.358  0.00  0.00      SYST  
-ATOM     17 HD13 ILE X 156      -1.603  11.627  -1.798  0.00  0.00      SYST  
-ATOM     18  C   ILE X 156      -1.435  16.525  -0.246  0.00  0.00      SYST  
-ATOM     19  O   ILE X 156      -1.483  16.936  -1.406  0.00  0.00      SYST  
-ATOM     20  OXT ILE X 156      -1.931  17.229   0.626  0.00  0.00      SYST  
+ATOM      1  N   ILE X 156      -0.507  15.182   1.579  1.00  0.00      SYST N
+ATOM      2  H   ILE X 156      -0.847  15.953   2.136  1.00  0.00      SYST H
+ATOM      3  CA  ILE X 156      -0.758  15.207   0.112  1.00  0.00      SYST C
+ATOM      4  HA  ILE X 156       0.163  15.252  -0.470  1.00  0.00      SYST H
+ATOM      5  CB  ILE X 156      -1.591  13.981  -0.335  1.00  0.00      SYST C
+ATOM      6  HB  ILE X 156      -1.130  13.086   0.082  1.00  0.00      SYST H
+ATOM      7  CG2 ILE X 156      -3.056  14.072   0.138  1.00  0.00      SYST C
+ATOM      8 HG21 ILE X 156      -3.518  14.967  -0.279  1.00  0.00      SYST H
+ATOM      9 HG22 ILE X 156      -3.602  13.191  -0.199  1.00  0.00      SYST H
+ATOM     10 HG23 ILE X 156      -3.084  14.123   1.226  1.00  0.00      SYST H
+ATOM     11  CG1 ILE X 156      -1.522  13.772  -1.841  1.00  0.00      SYST C
+ATOM     12 HG12 ILE X 156      -2.055  14.594  -2.319  1.00  0.00      SYST H
+ATOM     13 HG13 ILE X 156      -0.473  13.800  -2.136  1.00  0.00      SYST H
+ATOM     14  CD1 ILE X 156      -2.136  12.449  -2.275  1.00  0.00      SYST C
+ATOM     15 HD11 ILE X 156      -3.185  12.421  -1.981  1.00  0.00      SYST H
+ATOM     16 HD12 ILE X 156      -2.060  12.351  -3.358  1.00  0.00      SYST H
+ATOM     17 HD13 ILE X 156      -1.603  11.627  -1.798  1.00  0.00      SYST H
+ATOM     18  C   ILE X 156      -1.435  16.525  -0.246  1.00  0.00      SYST C
+ATOM     19  O   ILE X 156      -1.483  16.936  -1.406  1.00  0.00      SYST O
+ATOM     20  OXT ILE X 156      -1.931  17.229   0.626  1.00  0.00      SYST O
+CONECT    1    2    3
+CONECT    2    1
+CONECT    3    1    4    5   18
+CONECT    4    3
+CONECT    5    3    6    7   11
+CONECT    6    5
+CONECT    7    5    8    9   10
+CONECT    8    7
+CONECT    9    7
+CONECT   10    7
+CONECT   11    5   12   13   14
+CONECT   12   11
+CONECT   13   11
+CONECT   14   11   15   16   17
+CONECT   15   14
+CONECT   16   14
+CONECT   17   14
+CONECT   18    3   19   20
+CONECT   19   18
+CONECT   20   18
 END

@@ -8,30 +8,160 @@ REMARK     285 WAS MISSING.
 REMARK     285 PROTEIN DATA BANK CONVENTIONS REQUIRE THAT
 REMARK     285 CRYST1 RECORD IS INCLUDED, BUT THE VALUES ON
 REMARK     285 THIS RECORD ARE MEANINGLESS.
-ATOM      1  N1  LIG X 201       0.713  -6.111  -8.279  0.00  0.00      SYST  
-ATOM      2  C2  LIG X 201      -0.255  -7.076  -7.805  0.00  0.00      SYST  
-ATOM      3  C2A LIG X 201      -1.722  -6.929  -8.190  0.00  0.00      SYST  
-ATOM      4  C3  LIG X 201       0.190  -8.150  -6.980  0.00  0.00      SYST  
-ATOM      5  O3  LIG X 201      -0.711  -9.073  -6.516  0.00  0.00      SYST  
-ATOM      6  C4  LIG X 201       1.550  -8.237  -6.657  0.00  0.00      SYST  
-ATOM      7  C4A LIG X 201       2.099  -9.409  -5.773  0.00  0.00      SYST  
-ATOM      8  O4A LIG X 201       1.357 -10.340  -5.325  0.00  0.00      SYST  
-ATOM      9  C5  LIG X 201       2.495  -7.299  -7.104  0.00  0.00      SYST  
-ATOM     10  C6  LIG X 201       2.067  -6.227  -7.925  0.00  0.00      SYST  
-ATOM     11  C5A LIG X 201       3.952  -7.469  -6.702  0.00  0.00      SYST  
-ATOM     12  O4P LIG X 201       4.788  -6.498  -7.250  0.00  0.00      SYST  
-ATOM     13  P   LIG X 201       5.622  -7.023  -8.495  0.00  0.00      SYST  
-ATOM     14  O1P LIG X 201       6.868  -7.883  -7.940  0.00  0.00      SYST  
-ATOM     15  O2P LIG X 201       6.137  -5.768  -9.312  0.00  0.00      SYST  
-ATOM     16  O3P LIG X 201       4.711  -7.961  -9.430  0.00  0.00      SYST  
-ATOM     17  H   LIG X 201      -1.844  -6.064  -8.808  0.00  0.00      SYST  
-ATOM     18  H1  LIG X 201      -2.314  -6.821  -7.305  0.00  0.00      SYST  
-ATOM     19  H2  LIG X 201      -2.039  -7.799  -8.727  0.00  0.00      SYST  
-ATOM     20  H3  LIG X 201      -1.617  -8.998  -6.743  0.00  0.00      SYST  
-ATOM     21  H4  LIG X 201       3.105  -9.426  -5.545  0.00  0.00      SYST  
-ATOM     22  H5  LIG X 201       2.750  -5.531  -8.263  0.00  0.00      SYST  
-ATOM     23  H6  LIG X 201       4.020  -7.414  -5.636  0.00  0.00      SYST  
-ATOM     24  H7  LIG X 201       4.277  -8.417  -7.076  0.00  0.00      SYST  
-ATOM     25  H8  LIG X 201       7.391  -8.213  -8.687  0.00  0.00      SYST  
-ATOM     26  H9  LIG X 201       6.650  -6.069 -10.078  0.00  0.00      SYST  
+ATOM      1  N1  FMN X 200      -1.597  -5.055  -5.188  1.00  0.00      SYST N
+ATOM      2  C2  FMN X 200      -0.996  -3.978  -5.679  1.00  0.00      SYST C
+ATOM      3  O2  FMN X 200      -1.604  -3.160  -6.288  1.00  0.00      SYST O
+ATOM      4  N3  FMN X 200       0.405  -3.812  -5.459  1.00  0.00      SYST N
+ATOM      5  C4  FMN X 200       1.180  -4.740  -4.755  1.00  0.00      SYST C
+ATOM      6  O4  FMN X 200       2.374  -4.553  -4.587  1.00  0.00      SYST O
+ATOM      7  C4A FMN X 200       0.530  -5.933  -4.235  1.00  0.00      SYST C
+ATOM      8  N5  FMN X 200       1.197  -6.924  -3.561  1.00  0.00      SYST N
+ATOM      9  C5A FMN X 200       0.541  -8.058  -3.016  1.00  0.00      SYST C
+ATOM     10  C6  FMN X 200       1.268  -9.010  -2.300  1.00  0.00      SYST C
+ATOM     11  C7  FMN X 200       0.661 -10.094  -1.665  1.00  0.00      SYST C
+ATOM     12  C7M FMN X 200       1.512 -11.122  -0.868  1.00  0.00      SYST C
+ATOM     13  C8  FMN X 200      -0.798 -10.256  -1.712  1.00  0.00      SYST C
+ATOM     14  C8M FMN X 200      -1.569 -11.343  -0.965  1.00  0.00      SYST C
+ATOM     15  C9  FMN X 200      -1.570  -9.321  -2.494  1.00  0.00      SYST C
+ATOM     16  C9A FMN X 200      -0.958  -8.213  -3.176  1.00  0.00      SYST C
+ATOM     17  N10 FMN X 200      -1.610  -7.154  -3.948  1.00  0.00      SYST N
+ATOM     18  C10 FMN X 200      -0.967  -6.050  -4.478  1.00  0.00      SYST C
+ATOM     19  C1' FMN X 200      -3.118  -7.277  -4.139  1.00  0.00      SYST C
+ATOM     20  C2' FMN X 200      -3.867  -6.368  -3.060  1.00  0.00      SYST C
+ATOM     21  O2' FMN X 200      -3.950  -6.975  -1.769  1.00  0.00      SYST O
+ATOM     22  C3' FMN X 200      -5.253  -5.905  -3.485  1.00  0.00      SYST C
+ATOM     23  O3' FMN X 200      -6.033  -7.018  -3.888  1.00  0.00      SYST O
+ATOM     24  C4' FMN X 200      -5.212  -4.955  -4.672  1.00  0.00      SYST C
+ATOM     25  O4' FMN X 200      -4.153  -4.010  -4.673  1.00  0.00      SYST O
+ATOM     26  C5' FMN X 200      -6.503  -4.156  -4.815  1.00  0.00      SYST C
+ATOM     27  O5' FMN X 200      -6.777  -3.350  -3.473  1.00  0.00      SYST O
+ATOM     28  P   FMN X 200      -7.803  -2.217  -3.585  1.00  0.00      SYST P
+ATOM     29  O1P FMN X 200      -8.020  -1.801  -2.131  1.00  0.00      SYST O
+ATOM     30  O2P FMN X 200      -7.328  -1.108  -4.346  1.00  0.00      SYST O
+ATOM     31  O3P FMN X 200      -9.045  -2.741  -4.253  1.00  0.00      SYST O
+ATOM     32  H   FMN X 200       0.845  -3.008  -5.819  1.00  0.00      SYST H
+ATOM     33  H1  FMN X 200       2.293  -8.908  -2.238  1.00  0.00      SYST H
+ATOM     34  H2  FMN X 200       2.547 -10.858  -0.937  1.00  0.00      SYST H
+ATOM     35  H3  FMN X 200       1.365 -12.100  -1.277  1.00  0.00      SYST H
+ATOM     36  H4  FMN X 200       1.210 -11.116   0.158  1.00  0.00      SYST H
+ATOM     37  H5  FMN X 200      -2.615 -11.241  -1.167  1.00  0.00      SYST H
+ATOM     38  H6  FMN X 200      -1.397 -11.244   0.086  1.00  0.00      SYST H
+ATOM     39  H7  FMN X 200      -1.235 -12.306  -1.292  1.00  0.00      SYST H
+ATOM     40  H8  FMN X 200      -2.591  -9.451  -2.566  1.00  0.00      SYST H
+ATOM     41  H9  FMN X 200      -3.412  -8.298  -4.011  1.00  0.00      SYST H
+ATOM     42  H10 FMN X 200      -3.381  -6.951  -5.124  1.00  0.00      SYST H
+ATOM     43  H11 FMN X 200      -3.240  -5.503  -2.996  1.00  0.00      SYST H
+ATOM     44  H12 FMN X 200      -4.517  -7.761  -1.817  1.00  0.00      SYST H
+ATOM     45  H13 FMN X 200      -5.671  -5.403  -2.637  1.00  0.00      SYST H
+ATOM     46  H14 FMN X 200      -5.619  -7.442  -4.656  1.00  0.00      SYST H
+ATOM     47  H15 FMN X 200      -5.060  -5.628  -5.489  1.00  0.00      SYST H
+ATOM     48  H16 FMN X 200      -4.273  -3.389  -3.937  1.00  0.00      SYST H
+ATOM     49  H17 FMN X 200      -7.317  -4.824  -5.003  1.00  0.00      SYST H
+ATOM     50  H18 FMN X 200      -6.410  -3.470  -5.631  1.00  0.00      SYST H
+ATOM     51  H19 FMN X 200      -8.664  -1.077  -2.095  1.00  0.00      SYST H
+ATOM     52  H20 FMN X 200      -8.841  -2.986  -5.169  1.00  0.00      SYST H
+ATOM     53  N1  LIG X 201       0.713  -6.111  -8.279  1.00  0.00      SYST N
+ATOM     54  C2  LIG X 201      -0.255  -7.076  -7.805  1.00  0.00      SYST C
+ATOM     55  C2A LIG X 201      -1.722  -6.929  -8.190  1.00  0.00      SYST C
+ATOM     56  C3  LIG X 201       0.190  -8.150  -6.980  1.00  0.00      SYST C
+ATOM     57  O3  LIG X 201      -0.711  -9.073  -6.516  1.00  0.00      SYST O
+ATOM     58  C4  LIG X 201       1.550  -8.237  -6.657  1.00  0.00      SYST C
+ATOM     59  C4A LIG X 201       2.099  -9.409  -5.773  1.00  0.00      SYST C
+ATOM     60  O4A LIG X 201       1.357 -10.340  -5.325  1.00  0.00      SYST O
+ATOM     61  C5  LIG X 201       2.495  -7.299  -7.104  1.00  0.00      SYST C
+ATOM     62  C6  LIG X 201       2.067  -6.227  -7.925  1.00  0.00      SYST C
+ATOM     63  C5A LIG X 201       3.952  -7.469  -6.702  1.00  0.00      SYST C
+ATOM     64  O4P LIG X 201       4.788  -6.498  -7.250  1.00  0.00      SYST O
+ATOM     65  P   LIG X 201       5.622  -7.023  -8.495  1.00  0.00      SYST P
+ATOM     66  O1P LIG X 201       6.868  -7.883  -7.940  1.00  0.00      SYST O
+ATOM     67  O2P LIG X 201       6.137  -5.768  -9.312  1.00  0.00      SYST O
+ATOM     68  O3P LIG X 201       4.711  -7.961  -9.430  1.00  0.00      SYST O
+ATOM     69  H   LIG X 201      -1.844  -6.064  -8.808  1.00  0.00      SYST H
+ATOM     70  H1  LIG X 201      -2.314  -6.821  -7.305  1.00  0.00      SYST H
+ATOM     71  H2  LIG X 201      -2.039  -7.799  -8.727  1.00  0.00      SYST H
+ATOM     72  H3  LIG X 201      -1.617  -8.998  -6.743  1.00  0.00      SYST H
+ATOM     73  H4  LIG X 201       3.105  -9.426  -5.545  1.00  0.00      SYST H
+ATOM     74  H5  LIG X 201       2.750  -5.531  -8.263  1.00  0.00      SYST H
+ATOM     75  H6  LIG X 201       4.020  -7.414  -5.636  1.00  0.00      SYST H
+ATOM     76  H7  LIG X 201       4.277  -8.417  -7.076  1.00  0.00      SYST H
+ATOM     77  H8  LIG X 201       7.391  -8.213  -8.687  1.00  0.00      SYST H
+ATOM     78  H9  LIG X 201       6.650  -6.069 -10.078  1.00  0.00      SYST H
+CONECT    1    2   18
+CONECT    2    1    3    4
+CONECT    3    2
+CONECT    4    2    5   32
+CONECT    5    4    6    7
+CONECT    6    5
+CONECT    7    5    8   18
+CONECT    8    7    9
+CONECT    9    8   10   16
+CONECT   10    9   11   33
+CONECT   11   10   12   13
+CONECT   12   11   34   35   36
+CONECT   13   11   14   15
+CONECT   14   13   37   38   39
+CONECT   15   13   16   40
+CONECT   16    9   15   17
+CONECT   17   16   18   19
+CONECT   18    1    7   17
+CONECT   19   17   20   41   42
+CONECT   20   19   21   22   43
+CONECT   21   20   44
+CONECT   22   20   23   24   45
+CONECT   23   22   46
+CONECT   24   22   25   26   47
+CONECT   25   24   48
+CONECT   26   24   27   49   50
+CONECT   27   26   28
+CONECT   28   27   29   30   31
+CONECT   29   28   51
+CONECT   30   28
+CONECT   31   28   52
+CONECT   32    4
+CONECT   33   10
+CONECT   34   12
+CONECT   35   12
+CONECT   36   12
+CONECT   37   14
+CONECT   38   14
+CONECT   39   14
+CONECT   40   15
+CONECT   41   19
+CONECT   42   19
+CONECT   43   20
+CONECT   44   21
+CONECT   45   22
+CONECT   46   23
+CONECT   47   24
+CONECT   48   25
+CONECT   49   26
+CONECT   50   26
+CONECT   51   29
+CONECT   52   31
+CONECT   53   54   62
+CONECT   54   53   55   56
+CONECT   55   54   69   70   71
+CONECT   56   54   57   58
+CONECT   57   56   72
+CONECT   58   56   59   61
+CONECT   59   58   60   73
+CONECT   60   59
+CONECT   61   58   62   63
+CONECT   62   53   61   74
+CONECT   63   61   64   75   76
+CONECT   64   63   65
+CONECT   65   64   66   67   68
+CONECT   66   65   77
+CONECT   67   65   78
+CONECT   68   65
+CONECT   69   55
+CONECT   70   55
+CONECT   71   55
+CONECT   72   57
+CONECT   73   59
+CONECT   74   62
+CONECT   75   63
+CONECT   76   63
+CONECT   77   66
+CONECT   78   67
 END
