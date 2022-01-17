@@ -125,7 +125,7 @@ export default function Profile(){
                             <div style={{paddingLeft:'1rem'}}>Progress: {progress}%</div>
                             }
                             <br/>
-                            Password to open the above file is OpenMePLAS5k. The above is a 7z file.
+                            The above is a open 7z file with no password.
                         </Grid>
                         <Grid>
                             Wish to view the structure click <Link to="/app/viewer">here.</Link>

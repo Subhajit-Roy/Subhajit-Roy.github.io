@@ -24,6 +24,10 @@ module.exports = {
             link: '/contributors',
           },
           {
+            name: 'Query',
+            link: '/query'
+          },
+          {
             name: 'Legals',
             link: '#',
             items: [
@@ -48,8 +52,8 @@ module.exports = {
         ],
       },
       {
-        name:'Query',
-        link:'/query',
+        name:'Database',
+        link:'/database',
       },
       {
         name: 'Viewer',
