@@ -203,7 +203,7 @@ export default function IndexPage(){
                       <TableCell align="right">{parseFloat(finalData[index]['binding_affinity']).toFixed(2)} </TableCell>
                     </TableRow>
                     <TableRow>
-                      <TableCell align="left">van der Walls Interaction</TableCell>
+                      <TableCell align="left">van der Waals Interaction</TableCell>
                       <TableCell align="right">{parseFloat(finalData[index]['vdW']).toFixed(2)}</TableCell>
                     </TableRow>
                     <TableRow>
@@ -211,11 +211,11 @@ export default function IndexPage(){
                       <TableCell align="right">{parseFloat(finalData[index]['electrostatic']).toFixed(2)}</TableCell>
                     </TableRow>
                     <TableRow>
-                      <TableCell align="left">Polar Solvational Energy</TableCell>
+                      <TableCell align="left">Polar Solvation Energy</TableCell>
                       <TableCell align="right">{parseFloat(finalData[index]['polar_solvation']).toFixed(2)} </TableCell>
                     </TableRow>
                     <TableRow>
-                      <TableCell align="left">Non-Polar Solvational Energy</TableCell>
+                      <TableCell align="left">Non-Polar Solvation Energy</TableCell>
                       <TableCell align="right">{parseFloat(finalData[index]['non_polar_solvation']).toFixed(2)} </TableCell>
                     </TableRow>
                   </TableBody>
