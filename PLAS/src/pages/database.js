@@ -23,7 +23,7 @@ export default class Database extends React.Component {
                 <div className="container">
                     <header className="major">
                         <h2>Download Database</h2>
-                        <h5>The energatic components can be optained as a csv file and the initial structure as PDB file.</h5>
+                        <h5>The energetic components can be obtained as a csv file and the initial structure as PDB file.</h5>
                     </header>
                     <section>
                             
