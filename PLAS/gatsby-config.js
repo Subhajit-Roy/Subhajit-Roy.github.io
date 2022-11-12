@@ -118,7 +118,7 @@ module.exports = {
       resolve: `gatsby-plugin-offline`,
       options: {
         workboxConfig:{
-          cacheId:`PLAS-5k-v1.1`,
+          cacheId:`PLAS-5k-v1.2`,
         }
       }
     },
