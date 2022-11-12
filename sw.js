@@ -14,7 +14,7 @@
 importScripts("workbox-v4.3.1/workbox-sw.js");
 workbox.setConfig({modulePathPrefix: "workbox-v4.3.1"});
 
-workbox.core.setCacheNameDetails({prefix: "PLAS-5k-v1.2"});
+workbox.core.setCacheNameDetails({prefix: "PLAS-5k-v1.3"});
 
 workbox.core.skipWaiting();
 
@@ -27,17 +27,17 @@ workbox.core.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-cc66bf8d148380fa412f.js"
+    "url": "webpack-runtime-32eaa562c20bb91ccf88.js"
   },
   {
     "url": "framework-dc7e52916cda3e2e3c29.js"
   },
   {
-    "url": "app-8834262ce803522c34d4.js"
+    "url": "app-bd89604f5c6a857519cc.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "bf3af95277238a7ed125ef2bc05fcf1c"
+    "revision": "62504cedfd42594a0f2b108a014d961f"
   },
   {
     "url": "polyfill-c9fa82aa5b1f9c65f078.js"
@@ -154,7 +154,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/app-8834262ce803522c34d4.js`))) {
+  if (!resources || !(await caches.match(`/app-bd89604f5c6a857519cc.js`))) {
     return await fetch(event.request)
   }
 
